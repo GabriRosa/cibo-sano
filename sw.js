@@ -1,9 +1,9 @@
-const CACHE = 'cibo-sano-9350acfadd48';
+const CACHE = 'cibo-sano-803479e646d9';
 const FILES = ['./','./index.html','./style.css','./app.js','./lib.mjs','./recipes.json','./manifest.webmanifest','./icons/icon.svg','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png'];
 const base = self.registration.scope;
 const dataURL = new URL('recipes.json',base).href;
 self.addEventListener('install',event=>{
-  event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES.map(path=>new URL(path,base).href))).then(()=>self.skipWaiting()));
+  event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES.map(path=>new Request(new URL(path,base).href,{cache:'reload'})))).then(()=>self.skipWaiting()));
 });
 self.addEventListener('activate',event=>{
   event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('cibo-sano-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));
