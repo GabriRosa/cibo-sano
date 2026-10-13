@@ -18,6 +18,27 @@ export function filterRecipes(recipes, {query='', category='Tutte', view='all', 
 export function scaledAmount(grams, servings=1) {
   return new Intl.NumberFormat('it-IT', {maximumFractionDigits:1}).format(grams * servings) + ' g';
 }
+export const nutrientKeys = ['kcal', 'protein', 'carbs', 'fat'];
+export function parseGrams(value) {
+  const text = String(value).trim().replace(',', '.');
+  if (!/^(?:\d+(?:\.\d*)?|\.\d+)$/.test(text)) return null;
+  const grams = Number(text);
+  return Number.isFinite(grams) && grams >= 0 && grams <= 10000 ? grams : null;
+}
+export function nutritionFor(recipe, foods, quantities=recipe.ingredients.map(i=>i.grams)) {
+  if (!recipe.ingredients.length || quantities.length!==recipe.ingredients.length) return null;
+  const total = Object.fromEntries(nutrientKeys.map(key=>[key,0]));
+  for (let index=0; index<recipe.ingredients.length; index++) {
+    const grams=quantities[index], food=foods?.[recipe.ingredients[index].name];
+    if (typeof grams!=='number' || !Number.isFinite(grams) || grams<0 || grams>10000 ||
+        !food || nutrientKeys.some(key=>typeof food[key]!=='number' || !Number.isFinite(food[key]) || food[key]<0)) return null;
+    for (const key of nutrientKeys) total[key]+=food[key]*grams/100;
+  }
+  return total;
+}
+export function scaleQuantities(quantities, previousServings, nextServings) {
+  return quantities.map(grams=>grams===null ? null : Math.round(grams*nextServings/previousServings*10000)/10000);
+}
 export function validData(data) {
   if (data?.schemaVersion!==1 || typeof data.version!=='string' || !Array.isArray(data.recipes) || !data.recipes.length) return false;
   const ids = new Set();
@@ -28,6 +49,7 @@ export function validData(data) {
         !Array.isArray(r.ingredients) || !Array.isArray(r.steps) || !r.steps.every(s=>typeof s==='string') ||
         (r.kcal!==null && (typeof r.kcal!=='number' || !Number.isFinite(r.kcal) || r.kcal<=0)) ||
         r.ingredients.some(i=>typeof i.name!=='string' || typeof i.grams!=='number' || !Number.isFinite(i.grams) || i.grams<=0)) return false;
+    if (data.foods && r.kind==='porzione' && !nutritionFor(r,data.foods)) return false;
     ids.add(r.id);
   }
   return true;

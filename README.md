@@ -17,7 +17,7 @@ I preferiti si salvano nel browser del dispositivo. Dalla schermata Informazioni
 La fonte dei dati dell'app è [recipes.json](recipes.json). Ogni voce ha un identificativo stabile: mantienilo quando correggi una ricetta, così preferiti e link continuano a funzionare. Per una nuova scheda copia una voce dello stesso tipo e assegna un nuovo `id`.
 
 - `kind: "originale"`: ingredienti nel campo `ingredientText`, passaggi in `steps`, quantità come riportate dalla fonte. Queste dosi non vengono moltiplicate automaticamente.
-- `kind: "porzione"`: ingredienti strutturati con `name`, `grams`, `added` e `note`; base di una persona. `added: true` indica un ingrediente proposto per completare il pasto. `kcal` è una stima per persona.
+- `kind: "porzione"`: ingredienti strutturati con `name`, `grams`, `added` e `note`; base di una persona. `added: true` indica un ingrediente proposto per completare il pasto. Il comando di preparazione aggiorna `kcal` dalla somma degli ingredienti, per la porzione di base.
 - `notes`, `author`, `url` e `sourceType` mantengono note e attribuzioni. `extraSource` è un link facoltativo. Le categorie ammesse sono definite in [lib.mjs](lib.mjs).
 
 Con Node.js recente, dalla cartella del progetto:
@@ -27,11 +27,23 @@ node scripts/version.mjs
 node --test tests/*.test.mjs
 ```
 
+Il campo `foods` nello stesso file associa il nome esatto di ogni ingrediente strutturato a kcal, proteine (`protein`), carboidrati (`carbs`) e grassi (`fat`) per 100 g. Ogni voce mantiene fonte, riferimento, URL ed eventuale nota sull'alimento assunto. Una nuova ricetta con dosi deve avere una voce completa per ogni ingrediente.
+
 Il primo comando aggiorna l'identificativo e la data del ricettario se cambia il contenuto. Aggiorna anche la versione della cache offline quando cambiano i file dell'app. Il secondo verifica dati, filtri, porzioni e riferimenti alle risorse offline.
 
 Salva le modifiche su Git e inviale al ramo `main`. Con GitHub Pages configurato su **Deploy from a branch → main → / (root)**, ogni aggiornamento del ramo avvia una nuova pubblicazione. La disponibilità effettiva dipende dal completamento della pubblicazione GitHub.
 
 L'app cerca nuove ricette all'apertura online e con il pulsante di aggiornamento. L'aggiornamento dei dati non richiede reinstallazione. Il recupero di nuove ricette da Instagram è un'attività separata: questa app non accede all'account Instagram e non controlla i salvataggi.
+
+## Quantità e valori nutrizionali
+
+Le 45 schede con ingredienti pesati mostrano kcal e macro per la dose di base anche nell'elenco. Nel dettaglio, ogni campo in grammi modifica il totale con la formula `valore per 100 g × grammi / 100`. Il numero di persone scala proporzionalmente le quantità correnti, comprese le modifiche manuali. Da due persone in su è visibile anche il totale diviso per il numero di persone.
+
+Zero esclude un ingrediente. Campi vuoti, negativi, non numerici o superiori a 10.000 g sospendono il calcolo finché non sono corretti. I decimali accettano punto o virgola. Il pulsante di ripristino torna a una persona con le dosi proposte. I pesi modificati durano fino alla chiusura della scheda e non vengono pubblicati o salvati nel browser.
+
+I dati provengono da [CoFID 2021](https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid), Crown copyright, con licenza [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), e dalle etichette dei prodotti indicate in ogni voce. Le tracce CoFID sono conteggiate come zero. Alcuni nomi generici usano un alimento rappresentativo dichiarato nella nota. Lo stato crudo/cotto/sgocciolato deve corrispondere al peso utilizzato. Le energie delle fonti possono differire dal solo calcolo 4/4/9 per fibre, acidi organici e fattori di conversione. Le etichette di marca sono riferimenti, non l'identificazione del prodotto usato dall'utente.
+
+Le altre 80 schede conservano le dosi testuali delle fonti: non viene mostrato un totale nutrizionale senza una lista completa di ingredienti pesati.
 
 ## Anteprima locale
 

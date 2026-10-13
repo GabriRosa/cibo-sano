@@ -1,9 +1,14 @@
 import {readFileSync, writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
+import {nutritionFor} from '../lib.mjs';
 const root=new URL('../',import.meta.url);
 const recipeURL=new URL('recipes.json',root);
 const data=JSON.parse(readFileSync(recipeURL,'utf8'));
-const dataVersion=createHash('sha256').update(JSON.stringify(data.recipes)).digest('hex').slice(0,12);
+for (const recipe of data.recipes) {
+  const nutrition=nutritionFor(recipe,data.foods);
+  if(nutrition)recipe.kcal=Math.round(nutrition.kcal);
+}
+const dataVersion=createHash('sha256').update(JSON.stringify({recipes:data.recipes,foods:data.foods,nutritionInfo:data.nutritionInfo})).digest('hex').slice(0,12);
 if(dataVersion!==data.version){
   data.version=dataVersion;
   data.updatedAt=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Rome'}).format(new Date());

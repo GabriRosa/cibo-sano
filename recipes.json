@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "4c881f1a241d",
+  "version": "e05800899dec",
   "updatedAt": "2026-10-13",
   "recipes": [
     {
@@ -55,7 +55,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 530
+      "kcal": 517
     },
     {
       "id": "idea-26",
@@ -103,7 +103,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 590
+      "kcal": 583
     },
     {
       "id": "idea-30",
@@ -151,7 +151,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 540
+      "kcal": 494
     },
     {
       "id": "idea-12",
@@ -199,7 +199,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 550
+      "kcal": 489
     },
     {
       "id": "idea-04",
@@ -241,7 +241,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 520
+      "kcal": 495
     },
     {
       "id": "idea-34",
@@ -289,7 +289,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 580
+      "kcal": 546
     },
     {
       "id": "idea-27",
@@ -337,7 +337,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 520
+      "kcal": 488
     },
     {
       "id": "idea-24",
@@ -403,7 +403,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 600
+      "kcal": 588
     },
     {
       "id": "idea-17",
@@ -445,7 +445,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 560
+      "kcal": 530
     },
     {
       "id": "idea-09",
@@ -499,7 +499,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 550
+      "kcal": 539
     },
     {
       "id": "idea-02",
@@ -541,7 +541,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 530
+      "kcal": 541
     },
     {
       "id": "idea-23",
@@ -589,7 +589,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 590
+      "kcal": 609
     },
     {
       "id": "idea-03",
@@ -637,7 +637,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 530
+      "kcal": 454
     },
     {
       "id": "idea-15",
@@ -685,7 +685,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 570
+      "kcal": 528
     },
     {
       "id": "idea-31",
@@ -733,7 +733,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 550
+      "kcal": 529
     },
     {
       "id": "idea-01",
@@ -781,7 +781,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 550
+      "kcal": 534
     },
     {
       "id": "idea-44",
@@ -823,7 +823,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 540
+      "kcal": 511
     },
     {
       "id": "idea-11",
@@ -925,7 +925,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 570
+      "kcal": 550
     },
     {
       "id": "idea-28",
@@ -967,7 +967,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 560
+      "kcal": 567
     },
     {
       "id": "idea-37",
@@ -1021,7 +1021,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 580
+      "kcal": 561
     },
     {
       "id": "idea-32",
@@ -1069,7 +1069,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 550
+      "kcal": 532
     },
     {
       "id": "idea-35",
@@ -1117,7 +1117,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 570
+      "kcal": 550
     },
     {
       "id": "idea-07",
@@ -1159,7 +1159,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 600
+      "kcal": 638
     },
     {
       "id": "idea-13",
@@ -1243,7 +1243,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 580
+      "kcal": 555
     },
     {
       "id": "idea-40",
@@ -1285,7 +1285,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 400
+      "kcal": 395
     },
     {
       "id": "idea-08",
@@ -1327,7 +1327,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 440
+      "kcal": 407
     },
     {
       "id": "idea-39",
@@ -1369,7 +1369,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 570
+      "kcal": 576
     },
     {
       "id": "idea-21",
@@ -1411,7 +1411,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 570
+      "kcal": 533
     },
     {
       "id": "idea-41",
@@ -1453,7 +1453,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 550
+      "kcal": 496
     },
     {
       "id": "idea-05",
@@ -1495,7 +1495,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 580
+      "kcal": 549
     },
     {
       "id": "idea-33",
@@ -1537,7 +1537,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 530
+      "kcal": 480
     },
     {
       "id": "idea-25",
@@ -1585,7 +1585,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 590
+      "kcal": 628
     },
     {
       "id": "idea-42",
@@ -1627,7 +1627,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 580
+      "kcal": 546
     },
     {
       "id": "idea-06",
@@ -1681,7 +1681,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 600
+      "kcal": 570
     },
     {
       "id": "idea-16",
@@ -1729,7 +1729,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 450
+      "kcal": 419
     },
     {
       "id": "idea-38",
@@ -1771,7 +1771,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 560
+      "kcal": 523
     },
     {
       "id": "idea-22",
@@ -1819,7 +1819,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 530
+      "kcal": 500
     },
     {
       "id": "idea-43",
@@ -1867,7 +1867,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 510
+      "kcal": 485
     },
     {
       "id": "idea-20",
@@ -1921,7 +1921,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 600
+      "kcal": 486
     },
     {
       "id": "idea-29",
@@ -1969,7 +1969,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 580
+      "kcal": 544
     },
     {
       "id": "idea-45",
@@ -2023,7 +2023,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 570
+      "kcal": 530
     },
     {
       "id": "idea-36",
@@ -2065,7 +2065,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 520
+      "kcal": 489
     },
     {
       "id": "idea-10",
@@ -2119,7 +2119,7 @@
       "extraSource": null,
       "completeness": "ingredienti",
       "servings": 1,
-      "kcal": 570
+      "kcal": 601
     },
     {
       "id": "fonte-046",
@@ -3807,5 +3807,770 @@
       "servings": null,
       "kcal": null
     }
-  ]
+  ],
+  "foods": {
+    "Albumi": {
+      "kcal": 43,
+      "protein": 10.8,
+      "carbs": 0,
+      "fat": 0,
+      "source": "CoFID 2021",
+      "code": "12-938",
+      "reference": "Eggs, chicken, white, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Asparagi": {
+      "kcal": 25,
+      "protein": 2.9,
+      "carbs": 2,
+      "fat": 0.6,
+      "source": "CoFID 2021",
+      "code": "13-157",
+      "reference": "Asparagus, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Bietole": {
+      "kcal": 19,
+      "protein": 1.8,
+      "carbs": 2.9,
+      "fat": 0.2,
+      "source": "CoFID 2021",
+      "code": "13-223",
+      "reference": "Chard, Swiss, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Broccoli": {
+      "kcal": 34,
+      "protein": 4.3,
+      "carbs": 3.2,
+      "fat": 0.6,
+      "source": "CoFID 2021",
+      "code": "13-502",
+      "reference": "Broccoli, green, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Cannellini cotti, sgocciolati": {
+      "kcal": 104,
+      "protein": 7.6,
+      "carbs": 15.9,
+      "fat": 1.6,
+      "source": "CoFID 2021",
+      "code": "13-666",
+      "reference": "Beans, cannellini, canned, re-heated, drained",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Carote": {
+      "kcal": 34,
+      "protein": 0.5,
+      "carbs": 7.7,
+      "fat": 0.4,
+      "source": "CoFID 2021",
+      "code": "13-496",
+      "reference": "Carrots, old, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Cavolfiore": {
+      "kcal": 30,
+      "protein": 2.5,
+      "carbs": 4.4,
+      "fat": 0.4,
+      "source": "CoFID 2021",
+      "code": "13-512",
+      "reference": "Cauliflower, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Cavolo rosso": {
+      "kcal": 21,
+      "protein": 1.1,
+      "carbs": 3.7,
+      "fat": 0.3,
+      "source": "CoFID 2021",
+      "code": "13-190",
+      "reference": "Cabbage, red, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Ceci cotti, sgocciolati": {
+      "kcal": 129,
+      "protein": 8.4,
+      "carbs": 18.3,
+      "fat": 3,
+      "source": "CoFID 2021",
+      "code": "13-670",
+      "reference": "Beans, chick peas, canned, re-heated, drained",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Cetriolo": {
+      "kcal": 14,
+      "protein": 1,
+      "carbs": 1.2,
+      "fat": 0.6,
+      "source": "CoFID 2021",
+      "code": "13-523",
+      "reference": "Cucumber, raw, flesh and skin",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Cipolla": {
+      "kcal": 35,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 0.1,
+      "source": "CoFID 2021",
+      "code": "13-499",
+      "reference": "Onions, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Coniglio disossato": {
+      "kcal": 137,
+      "protein": 21.9,
+      "carbs": 0,
+      "fat": 5.5,
+      "source": "CoFID 2021",
+      "code": "18-387",
+      "reference": "Rabbit, raw, meat only",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Curry in polvere": {
+      "kcal": 233,
+      "protein": 9.5,
+      "carbs": 26.1,
+      "fat": 10.8,
+      "source": "CoFID 2021",
+      "code": "13-876",
+      "reference": "Curry powder",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Edamame cotti, sgusciati": {
+      "kcal": 142,
+      "protein": 12.2,
+      "carbs": 6.5,
+      "fat": 7.6,
+      "source": "CoFID 2021",
+      "code": "13-667",
+      "reference": "Beans, edamame, frozen, boiled in unsalted water",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Erbe aromatiche": {
+      "kcal": 34,
+      "protein": 3,
+      "carbs": 2.7,
+      "fat": 1.3,
+      "source": "CoFID 2021",
+      "code": "13-844",
+      "reference": "Parsley, fresh",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Assunte fresche; il prezzemolo rappresenta il mix."
+    },
+    "Fagiolini": {
+      "kcal": 24,
+      "protein": 2.1,
+      "carbs": 3.1,
+      "fat": 0.4,
+      "source": "CoFID 2021",
+      "code": "13-514",
+      "reference": "Beans, green, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Farina d'avena": {
+      "kcal": 381,
+      "protein": 10.9,
+      "carbs": 70.7,
+      "fat": 8.1,
+      "source": "CoFID 2021",
+      "code": "11-788",
+      "reference": "Porridge oats, unfortified",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Stimata da fiocchi di avena integrali macinati."
+    },
+    "Finocchi": {
+      "kcal": 12,
+      "protein": 0.9,
+      "carbs": 1.8,
+      "fat": 0.2,
+      "source": "CoFID 2021",
+      "code": "13-241",
+      "reference": "Fennel, Florence, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Fiocchi d'avena": {
+      "kcal": 381,
+      "protein": 10.9,
+      "carbs": 70.7,
+      "fat": 8.1,
+      "source": "CoFID 2021",
+      "code": "11-788",
+      "reference": "Porridge oats, unfortified",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Fragole": {
+      "kcal": 30,
+      "protein": 0.6,
+      "carbs": 6.1,
+      "fat": 0.5,
+      "source": "CoFID 2021",
+      "code": "14-324",
+      "reference": "Strawberries, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Funghi": {
+      "kcal": 7,
+      "protein": 1,
+      "carbs": 0.3,
+      "fat": 0.2,
+      "source": "CoFID 2021",
+      "code": "13-505",
+      "reference": "Mushrooms, white, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Gamberi sgusciati": {
+      "kcal": 77,
+      "protein": 17.6,
+      "carbs": 0,
+      "fat": 0.7,
+      "source": "CoFID 2021",
+      "code": "16-387",
+      "reference": "Prawns, king, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Stimati da gamberoni crudi sgusciati."
+    },
+    "Gamberoni sgusciati": {
+      "kcal": 77,
+      "protein": 17.6,
+      "carbs": 0,
+      "fat": 0.7,
+      "source": "CoFID 2021",
+      "code": "16-387",
+      "reference": "Prawns, king, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Lattuga": {
+      "kcal": 11,
+      "protein": 1.2,
+      "carbs": 1.4,
+      "fat": 0.1,
+      "source": "CoFID 2021",
+      "code": "13-520",
+      "reference": "Lettuce, average, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Lenticchie cotte, sgocciolate": {
+      "kcal": 92,
+      "protein": 7.8,
+      "carbs": 14.5,
+      "fat": 0.7,
+      "source": "CoFID 2021",
+      "code": "13-661",
+      "reference": "Lentils, green and brown, whole, dried, boiled in unsalted water",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Mandorle": {
+      "kcal": 554,
+      "protein": 21.2,
+      "carbs": 5.3,
+      "fat": 49.9,
+      "source": "CoFID 2021",
+      "code": "14-896",
+      "reference": "Almonds, whole kernels",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Manzo magro": {
+      "kcal": 129,
+      "protein": 22.5,
+      "carbs": 0,
+      "fat": 4.3,
+      "source": "CoFID 2021",
+      "code": "18-468",
+      "reference": "Beef, lean, average, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Melanzane": {
+      "kcal": 15,
+      "protein": 0.9,
+      "carbs": 2.2,
+      "fat": 0.4,
+      "source": "CoFID 2021",
+      "code": "13-161",
+      "reference": "Aubergine, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Menta": {
+      "kcal": 43,
+      "protein": 3.8,
+      "carbs": 5.3,
+      "fat": 0.7,
+      "source": "CoFID 2021",
+      "code": "13-836",
+      "reference": "Mint, fresh",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Merluzzo, filetti": {
+      "kcal": 75,
+      "protein": 17.5,
+      "carbs": 0,
+      "fat": 0.6,
+      "source": "CoFID 2021",
+      "code": "16-372",
+      "reference": "Cod, flesh only, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Mirtilli": {
+      "kcal": 40,
+      "protein": 0.9,
+      "carbs": 9.1,
+      "fat": 0.2,
+      "source": "CoFID 2021",
+      "code": "14-325",
+      "reference": "Blueberries",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Nasello, filetti": {
+      "kcal": 92,
+      "protein": 18,
+      "carbs": 0,
+      "fat": 2.2,
+      "source": "CoFID 2021",
+      "code": "16-070",
+      "reference": "Hake, flesh only, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Olio EVO": {
+      "kcal": 899,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 99.9,
+      "source": "CoFID 2021",
+      "code": "17-038",
+      "reference": "Oil, olive",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Olive denocciolate": {
+      "kcal": 103,
+      "protein": 0.9,
+      "carbs": 0,
+      "fat": 11,
+      "source": "CoFID 2021",
+      "code": "14-340",
+      "reference": "Olives, green, in brine, drained, flesh and skin",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Assunte olive verdi in salamoia, sgocciolate."
+    },
+    "Orata, filetti": {
+      "kcal": 96,
+      "protein": 17.5,
+      "carbs": 0,
+      "fat": 2.9,
+      "source": "CoFID 2021",
+      "code": "16-006",
+      "reference": "Bream, Sea, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Pane integrale": {
+      "kcal": 217,
+      "protein": 9.4,
+      "carbs": 42,
+      "fat": 2.5,
+      "source": "CoFID 2021",
+      "code": "11-981",
+      "reference": "Bread, wholemeal, average",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Pasta integrale": {
+      "kcal": 329,
+      "protein": 12.6,
+      "carbs": 68.3,
+      "fat": 2.5,
+      "source": "CoFID 2021",
+      "code": "11-718",
+      "reference": "Pasta, wholewheat, spaghetti, dried, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Patate": {
+      "kcal": 82,
+      "protein": 1.9,
+      "carbs": 19.6,
+      "fat": 0.1,
+      "source": "CoFID 2021",
+      "code": "13-489",
+      "reference": "Potatoes, old, raw, flesh only",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Peperoni": {
+      "kcal": 21,
+      "protein": 0.8,
+      "carbs": 4.3,
+      "fat": 0.2,
+      "source": "CoFID 2021",
+      "code": "13-524",
+      "reference": "Pepper, capsicum, red, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Assunti peperoni rossi."
+    },
+    "Pera": {
+      "kcal": 43,
+      "protein": 0.3,
+      "carbs": 10.9,
+      "fat": 0.1,
+      "source": "CoFID 2021",
+      "code": "14-321",
+      "reference": "Pears, raw, flesh and skin",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Petto di pollo": {
+      "kcal": 106,
+      "protein": 24,
+      "carbs": 0,
+      "fat": 1.1,
+      "source": "CoFID 2021",
+      "code": "18-290",
+      "reference": "Chicken, light meat, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Petto di tacchino": {
+      "kcal": 105,
+      "protein": 24.4,
+      "carbs": 0,
+      "fat": 0.8,
+      "source": "CoFID 2021",
+      "code": "18-349",
+      "reference": "Turkey, light meat, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Platessa, filetti": {
+      "kcal": 76,
+      "protein": 16.4,
+      "carbs": 0,
+      "fat": 1.2,
+      "source": "CoFID 2021",
+      "code": "16-381",
+      "reference": "Plaice, flesh only, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Polpo pulito": {
+      "kcal": 83,
+      "protein": 17.9,
+      "carbs": 0,
+      "fat": 1.3,
+      "source": "CoFID 2021",
+      "code": "16-259",
+      "reference": "Octopus, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Pomodorini": {
+      "kcal": 22,
+      "protein": 1.1,
+      "carbs": 3.6,
+      "fat": 0.5,
+      "source": "CoFID 2021",
+      "code": "13-519",
+      "reference": "Tomatoes, cherry, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Porri": {
+      "kcal": 23,
+      "protein": 1.5,
+      "carbs": 4.1,
+      "fat": 0.2,
+      "source": "CoFID 2021",
+      "code": "13-624",
+      "reference": "Leeks, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Prezzemolo": {
+      "kcal": 34,
+      "protein": 3,
+      "carbs": 2.7,
+      "fat": 1.3,
+      "source": "CoFID 2021",
+      "code": "13-844",
+      "reference": "Parsley, fresh",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Quinoa": {
+      "kcal": 309,
+      "protein": 13.8,
+      "carbs": 55.7,
+      "fat": 5,
+      "source": "CoFID 2021",
+      "code": "14-843",
+      "reference": "Quinoa, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Riso basmati": {
+      "kcal": 351,
+      "protein": 8.1,
+      "carbs": 83.7,
+      "fat": 0.5,
+      "source": "CoFID 2021",
+      "code": "11-857",
+      "reference": "Rice, white, basmati, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Rucola": {
+      "kcal": 18,
+      "protein": 3.6,
+      "carbs": 0,
+      "fat": 0.4,
+      "source": "CoFID 2021",
+      "code": "13-522",
+      "reference": "Rocket, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Salmone, filetto": {
+      "kcal": 217,
+      "protein": 20.4,
+      "carbs": 0,
+      "fat": 15,
+      "source": "CoFID 2021",
+      "code": "16-356",
+      "reference": "Salmon, farmed, flesh only, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Assunto salmone allevato crudo."
+    },
+    "Sedano": {
+      "kcal": 9,
+      "protein": 0.5,
+      "carbs": 1.4,
+      "fat": 0.1,
+      "source": "CoFID 2021",
+      "code": "13-636",
+      "reference": "Celery, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Seppie pulite": {
+      "kcal": 71,
+      "protein": 16.1,
+      "carbs": 0,
+      "fat": 0.7,
+      "source": "CoFID 2021",
+      "code": "16-254",
+      "reference": "Cuttlefish, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Sgombro, filetti": {
+      "kcal": 233,
+      "protein": 18,
+      "carbs": 0,
+      "fat": 17.9,
+      "source": "CoFID 2021",
+      "code": "16-393",
+      "reference": "Mackerel, flesh only, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Sogliola, filetti": {
+      "kcal": 89,
+      "protein": 18.1,
+      "carbs": 0,
+      "fat": 1.8,
+      "source": "CoFID 2021",
+      "code": "16-039",
+      "reference": "Dover sole, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Spinaci": {
+      "kcal": 25,
+      "protein": 2.8,
+      "carbs": 1.6,
+      "fat": 0.8,
+      "source": "CoFID 2021",
+      "code": "13-572",
+      "reference": "Spinach, mature, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Succo di limone": {
+      "kcal": 7,
+      "protein": 0.3,
+      "carbs": 1.6,
+      "fat": 0,
+      "source": "CoFID 2021",
+      "code": "14-277",
+      "reference": "Lemon juice, fresh",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Tonno al naturale, sgocciolato": {
+      "kcal": 109,
+      "protein": 24.9,
+      "carbs": 0,
+      "fat": 1,
+      "source": "CoFID 2021",
+      "code": "16-416",
+      "reference": "Tuna, canned in brine, drained",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Tonno fresco": {
+      "kcal": 107,
+      "protein": 25.2,
+      "carbs": 0,
+      "fat": 0.7,
+      "source": "CoFID 2021",
+      "code": "16-399",
+      "reference": "Tuna, flesh only, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Uovo intero": {
+      "kcal": 131,
+      "protein": 12.6,
+      "carbs": 0,
+      "fat": 9,
+      "source": "CoFID 2021",
+      "code": "12-937",
+      "reference": "Eggs, chicken, whole, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Verza": {
+      "kcal": 27,
+      "protein": 2.4,
+      "carbs": 4.1,
+      "fat": 0.2,
+      "source": "CoFID 2021",
+      "code": "13-510",
+      "reference": "Cabbage, green, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Stimata da cavolo verde crudo."
+    },
+    "Zenzero fresco": {
+      "kcal": 44,
+      "protein": 1.8,
+      "carbs": 8.1,
+      "fat": 0.8,
+      "source": "CoFID 2021",
+      "code": "13-890",
+      "reference": "Ginger, fresh",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Zucca": {
+      "kcal": 13,
+      "protein": 0.7,
+      "carbs": 2.2,
+      "fat": 0.2,
+      "source": "CoFID 2021",
+      "code": "13-326",
+      "reference": "Pumpkin, flesh only, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Zucchine": {
+      "kcal": 16,
+      "protein": 1.3,
+      "carbs": 2.3,
+      "fat": 0.2,
+      "source": "CoFID 2021",
+      "code": "13-627",
+      "reference": "Courgette, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Bresaola": {
+      "kcal": 160,
+      "protein": 32,
+      "carbs": 0.5,
+      "fat": 3.4,
+      "source": "Etichetta di riferimento",
+      "reference": "Rigamonti, bresaola 100% italiana",
+      "url": "https://www.rigamontisalumificio.it/bresaola-carne-100-italiana/",
+      "note": "Carboidrati dichiarati <0,5 g: usato il limite superiore."
+    },
+    "Feta light": {
+      "kcal": 184,
+      "protein": 23,
+      "carbs": 0.7,
+      "fat": 9.9,
+      "source": "Etichetta di riferimento",
+      "reference": "Olympus, formaggio light",
+      "url": "https://www.olympusfoods.it/products/formaggio/formaggio-light.html",
+      "note": ""
+    },
+    "Grana": {
+      "kcal": 398,
+      "protein": 33,
+      "carbs": 0,
+      "fat": 29,
+      "source": "Etichetta di riferimento",
+      "reference": "Consorzio Grana Padano",
+      "url": "https://www.educazionenutrizionale.granapadano.it/it/carrello-sostenibile-vegetariano/etichette-e-valori-nutrizionali-sostenibile",
+      "note": ""
+    },
+    "Miso": {
+      "kcal": 164,
+      "protein": 10,
+      "carbs": 17,
+      "fat": 5.4,
+      "source": "Etichetta di riferimento",
+      "reference": "Clearspring, White Miso",
+      "url": "https://www.clearspring.co.uk/products/organic-japanese-white-miso-unpasteurised",
+      "note": "Assunto miso bianco."
+    },
+    "Tofu al naturale": {
+      "kcal": 149,
+      "protein": 16,
+      "carbs": 0.7,
+      "fat": 9,
+      "source": "Etichetta di riferimento",
+      "reference": "Valsoia, tofu",
+      "url": "https://www.valsoia.it/prodotti/pietanze-vegetali/il-tofu/",
+      "note": ""
+    },
+    "Skyr bianco senza zuccheri aggiunti": {
+      "kcal": 60,
+      "protein": 10,
+      "carbs": 4,
+      "fat": 0.2,
+      "source": "Etichetta di riferimento",
+      "reference": "Arla, Skyr Natur",
+      "url": "https://www.arlafoods.de/produkte/arla-skyr/natur-1-kg/",
+      "note": ""
+    },
+    "Yogurt greco bianco 0%": {
+      "kcal": 54,
+      "protein": 10.3,
+      "carbs": 3,
+      "fat": 0,
+      "source": "Etichetta di riferimento",
+      "reference": "FAGE Total 0%",
+      "url": "https://it.fage/prodotti/yogurt-bianco/fage-total-0",
+      "note": ""
+    },
+    "Yogurt greco bianco 2%": {
+      "kcal": 70,
+      "protein": 9.9,
+      "carbs": 3,
+      "fat": 2,
+      "source": "Etichetta di riferimento",
+      "reference": "FAGE Total 2%",
+      "url": "https://de.fage/joghurts/fage-total-2",
+      "note": ""
+    },
+    "Cioccolato fondente": {
+      "kcal": 566,
+      "protein": 9.5,
+      "carbs": 35,
+      "fat": 41,
+      "source": "Etichetta di riferimento",
+      "reference": "Lindt Excellence 70%",
+      "url": "https://www.lindt.at/excellence-70-100g",
+      "note": "Assunto cioccolato al 70%."
+    },
+    "Semi di chia": {
+      "kcal": 469,
+      "protein": 18,
+      "carbs": 0.8,
+      "fat": 36,
+      "source": "Etichetta di riferimento",
+      "reference": "Sarchio, semi di chia",
+      "url": "https://www.sarchio.com/it/Semi-di-Chia/933",
+      "note": ""
+    },
+    "Pangrattato": {
+      "kcal": 395,
+      "protein": 11.6,
+      "carbs": 78,
+      "fat": 3.2,
+      "source": "Etichetta di riferimento",
+      "reference": "San Carlo, pan grattato",
+      "url": "https://www.sancarlo.it/it/prodotti_scheda.asp?ProductId=545&NutrizionId=546"
+    }
+  },
+  "nutritionInfo": {
+    "basis": "per 100 g di parte edibile, nello stato indicato dalla voce di riferimento",
+    "retrievedAt": "2026-10-13",
+    "notice": "Stime da CoFID 2021 e da etichette di prodotti di riferimento. I valori del prodotto effettivamente usato possono differire. Tracce CoFID conteggiate come zero.",
+    "license": "Dati CoFID: Crown copyright, Open Government Licence v3.0.",
+    "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  }
 }
