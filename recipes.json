@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "4c2297db83d4",
+  "version": "652463430df3",
   "updatedAt": "2026-10-13",
   "recipes": [
     {
@@ -8641,6 +8641,3241 @@
       "quantityBasis": "fonte-e-stime",
       "sourceRecipeId": "fonte-009",
       "batchServings": 1
+    },
+    {
+      "id": "colazione-001",
+      "title": "Budino pumpkin spice latte",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "400 ml latte; 50 g caffè; 125 g purea di zucca; 50 g zucchero oppure eritritolo; 1 cucchiaino di spezie pumpkin spice; 55 g amido di mais; panna per decorare.",
+      "ingredients": [
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Caffè preparato",
+          "grams": 12.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucca cotta",
+          "grams": 31.25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Dolcificante eritritolo e stevia",
+          "grams": 12.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cannella",
+          "grams": 0.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Amido di mais",
+          "grams": 13.75,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Riunire latte, caffè, purea di zucca, dolcificante, spezie e amido in un pentolino.",
+        "Cuocere a fiamma bassa mescolando fino ad addensamento. Versare negli stampi e refrigerare almeno 3 ore."
+      ],
+      "notes": "Dolce al cucchiaio, non una colazione completa da solo.",
+      "author": "dessertony",
+      "url": "https://www.instagram.com/dessertony/reel/Dd1ixspu2Ce/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 100,
+      "portionLabel": "1 budino (¼ del totale)",
+      "quantityNote": "Scelti latte parzialmente scremato ed eritritolo; per le spezie è usata cannella come riferimento. Panna decorativa esclusa. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-001",
+      "batchServings": 4
+    },
+    {
+      "id": "colazione-002",
+      "title": "Budino di albumi e uova",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "200 g albumi; 2 uova; 200 g acqua; Yummy Drops Zero; cannella.",
+      "ingredients": [
+        {
+          "name": "Albumi",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cannella",
+          "grams": 1,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare albumi, uova, acqua e aromi in un pentolino.",
+        "Scaldare continuando a mescolare fino a consistenza cremosa. Versare in un contenitore e riporre in frigorifero per qualche ora."
+      ],
+      "notes": "",
+      "author": "francesco.laddomada",
+      "url": "https://www.instagram.com/francesco.laddomada/reel/DdyX4d9qt9R/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 219,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Due uova stimate in 100 g senza guscio. Gocce dolcificanti facoltative escluse; cannella stimata in 1 g. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-002",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-003",
+      "title": "Cubotti freddi ricotta, cocco e cacao",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Per 12 pezzi: base con 170 ml latte, 15 g gelatina, 400 g ricotta, vaniglia e dolcificante, una manciata di cocco; copertura con 150 ml latte, 5 g gelatina, 15 g cacao e dolcificante.",
+      "ingredients": [
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 80,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Gelatina alimentare",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Ricotta",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Vaniglia in pasta",
+          "grams": 0.75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Dolcificante eritritolo e stevia",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cocco rapè",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 3.75,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Lasciare idratare 15 g di gelatina in 170 ml di latte, seguendo anche le indicazioni della confezione. Sciogliere a fuoco basso senza bollire.",
+        "Unire ricotta, vaniglia, dolcificante e cocco; versare nello stampo e raffreddare.",
+        "Preparare la copertura con il latte e la gelatina restanti, cacao e dolcificante. Versarla sulla base e refrigerare finché rassoda; tagliare in 12 cubotti."
+      ],
+      "notes": "",
+      "author": "mamme.senza.gonfiore",
+      "url": "https://www.instagram.com/mamme.senza.gonfiore/reel/DdpC7fzt59M/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 242,
+      "portionLabel": "3 cubotti",
+      "quantityNote": "Quantificate la manciata di cocco in 20 g e la vaniglia in 3 g per il totale; proposti 20 g di eritritolo. Una porzione contiene tre dei dodici cubotti. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-003",
+      "batchServings": 4
+    },
+    {
+      "id": "colazione-005",
+      "title": "Mousse latte, cioccolato e caseina",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "330 ml latte; 70 g cioccolato fondente; 50 g caseine alla vaniglia Life Pro.",
+      "ingredients": [
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 165,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 35,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Caseina in polvere",
+          "grams": 25,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Scaldare il latte fino a farlo fumare, senza portarlo a bollore.",
+        "Amalgamare il cioccolato con il latte caldo e le caseine, usando una frusta o un frullatore per eliminare i grumi.",
+        "Lasciare in frigorifero per una notte."
+      ],
+      "notes": "La caseina addensa più delle whey: sostituirla può cambiare la consistenza.",
+      "author": "2foodfitlovers",
+      "url": "https://www.instagram.com/2foodfitlovers/reel/DcwKcBjC81k/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 364,
+      "portionLabel": "1 coppetta (½ del totale)",
+      "quantityNote": "Scelto latte parzialmente scremato. Caseina e cioccolato usano le etichette di riferimento indicate nei dettagli. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-005",
+      "batchServings": 2
+    },
+    {
+      "id": "colazione-006",
+      "title": "Cheesecake fiocchi di latte e yogurt",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "150 g fiocchi di latte; 150 g yogurt greco 5%; 2 uova; 30 ml sciroppo d’agave; 35 g amido di mais; vaniglia.",
+      "ingredients": [
+        {
+          "name": "Fiocchi di latte",
+          "grams": 75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 5%",
+          "grams": 75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sciroppo d’agave",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Amido di mais",
+          "grams": 17.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Vaniglia in pasta",
+          "grams": 1.5,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Frullare gli ingredienti fino a ottenere una crema liscia e versare in uno stampo piccolo rivestito.",
+        "Cuocere in friggitrice ad aria a 150–160 °C per 25–30 minuti. Lasciare raffreddare, poi refrigerare almeno 3 ore."
+      ],
+      "notes": "",
+      "author": "alessandrodonofrio_",
+      "url": "https://www.instagram.com/alessandrodonofrio_/reel/Dcq9PIGMB5i/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 338,
+      "portionLabel": "½ cheesecake",
+      "quantityNote": "Divisa in due porzioni. Agave: 30 ml stimati in 40 g. Creme e granella facoltative escluse. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-006",
+      "batchServings": 2
+    },
+    {
+      "id": "colazione-007",
+      "title": "Tiramisù sardo con pane carasau",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "250 g formaggio spalmabile light; 300 g yogurt greco 0%; 20 g tuorlo pastorizzato; 40 g dolcificante; vaniglia; 80 g carasau; latte e caffè per bagnare; cacao. Proteine in polvere facoltative: 20 g.",
+      "ingredients": [
+        {
+          "name": "Formaggio spalmabile light",
+          "grams": 62.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Tuorlo",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Dolcificante eritritolo e stevia",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Vaniglia in pasta",
+          "grams": 0.75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pane carasau",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Caffè preparato",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 2.5,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare formaggio spalmabile, yogurt, tuorlo pastorizzato, dolcificante e vaniglia.",
+        "Inumidire il carasau con latte e caffè. Alternarlo alla crema, iniziando con uno strato di crema.",
+        "Refrigerare almeno 4 ore e terminare con il cacao."
+      ],
+      "notes": "Usare tuorlo pastorizzato: questa preparazione non prevede cottura.",
+      "author": "alan_valca",
+      "url": "https://www.instagram.com/alan_valca/reel/Db3cfjdsbjm/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 245,
+      "portionLabel": "¼ della teglia",
+      "quantityNote": "Stimati 80 g latte, 80 g caffè e 10 g cacao per la teglia. Proteine facoltative escluse. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-007",
+      "batchServings": 4
+    },
+    {
+      "id": "colazione-008",
+      "title": "Biscotti freddi di gallette e budino",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Per 4 biscotti: 25 g gallette di riso; 200 g budino proteico.",
+      "ingredients": [
+        {
+          "name": "Gallette di riso",
+          "grams": 12.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Budino proteico al cioccolato",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Sbriciolare le gallette e amalgamare al budino.",
+        "Formare quattro biscotti e lasciare in congelatore per circa un’ora."
+      ],
+      "notes": "Spuntino o parte di una colazione.",
+      "author": "alan_valca",
+      "url": "https://www.instagram.com/alan_valca/reel/Db0y9HJsFCz/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 123,
+      "portionLabel": "2 biscotti",
+      "quantityNote": "Per il budino è usata l’etichetta di riferimento al cioccolato. La porzione è metà preparazione. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-008",
+      "batchServings": 2
+    },
+    {
+      "id": "colazione-009",
+      "title": "Overnight avena, chia, cocco e frutti di bosco",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "150 g yogurt greco magro; 10 g chia; 30 g avena; 70 ml bevanda vegetale senza zuccheri; 50–150 g frutta; 10 g cocco.",
+      "ingredients": [
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Semi di chia",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Bevanda di soia senza zuccheri",
+          "grams": 70,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Mirtilli",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cocco rapè",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare yogurt, avena, chia e bevanda vegetale.",
+        "Preparare la ciotola la sera e lasciarla in frigorifero per la notte. Completare con frutta e cocco."
+      ],
+      "notes": "",
+      "author": "beardedscara",
+      "url": "https://www.instagram.com/beardedscara/reel/DbkyOAMNbvJ/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 361,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Scelti 100 g di mirtilli e bevanda di soia senza zuccheri fra le alternative della fonte. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-009",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-010",
+      "title": "Gelato mango, yogurt e fiocchi di latte",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "150 g mango; 150 g yogurt greco al 5% o al 10%; 150 g fiocchi di latte; 20 ml miele facoltativi.",
+      "ingredients": [
+        {
+          "name": "Mango",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 5%",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fiocchi di latte",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Frullare mango, yogurt e fiocchi di latte.",
+        "Congelare per almeno 2 ore; lasciare ammorbidire circa 30 minuti prima di servire."
+      ],
+      "notes": "",
+      "author": "alessandrodonofrio_",
+      "url": "https://www.instagram.com/alessandrodonofrio_/reel/DbTZRkzsDug/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 366,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Scelto yogurt al 5%. Miele facoltativo escluso. Il totale è una ciotola abbondante. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-010",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-011",
+      "title": "Cheesecake fiocchi di latte e Philadelphia Protein",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "150 g fiocchi di latte; 175 g Philadelphia Protein; 30 g amido di mais; 1 uovo; 30 g eritritolo; vaniglia.",
+      "ingredients": [
+        {
+          "name": "Fiocchi di latte",
+          "grams": 75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Philadelphia Protein",
+          "grams": 87.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Amido di mais",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Dolcificante eritritolo e stevia",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Vaniglia in pasta",
+          "grams": 1.5,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Lavorare tutti gli ingredienti fino a ottenere un impasto omogeneo e versare nello stampo rivestito.",
+        "Cuocere in friggitrice ad aria a 160 °C per 32 minuti. Raffreddare e lasciare in frigorifero almeno 3 ore."
+      ],
+      "notes": "",
+      "author": "lucaromano.food",
+      "url": "https://www.instagram.com/lucaromano.food/reel/DagSrHtqJmJ/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 244,
+      "portionLabel": "½ cheesecake",
+      "quantityNote": "Un uovo stimato in 50 g; vaniglia 3 g. Calcolo con Philadelphia Protein italiano da 87 kcal/100 g. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-011",
+      "batchServings": 2
+    },
+    {
+      "id": "colazione-012",
+      "title": "Lattaiolo alla vaniglia e limone",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "1 litro latte vegetale; 70 g dolcificante; 50 g farina; 4 uova; vaniglia, cannella e scorza di limone.",
+      "ingredients": [
+        {
+          "name": "Bevanda di soia senza zuccheri",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Dolcificante eritritolo e stevia",
+          "grams": 17.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina di frumento",
+          "grams": 12.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Vaniglia in pasta",
+          "grams": 1.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cannella",
+          "grams": 0.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Scorza di limone",
+          "grams": 0.75,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Scaldare la bevanda vegetale con vaniglia, cannella e scorza di limone.",
+        "Separare le uova: montare gli albumi e lavorare i tuorli con il dolcificante. Unire farina e latte aromatizzato, poi incorporare gli albumi.",
+        "Versare in uno stampo di circa 35 × 25 cm e cuocere in forno statico a 170 °C per 45 minuti. Lasciare raffreddare."
+      ],
+      "notes": "",
+      "author": "alan_valca",
+      "url": "https://www.instagram.com/alan_valca/reel/DaLPuzlMyNV/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 180,
+      "portionLabel": "¼ della teglia",
+      "quantityNote": "Scelta bevanda di soia senza zuccheri. Uova stimate in 200 g; aromi pesati come proposta. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-012",
+      "batchServings": 4
+    },
+    {
+      "id": "colazione-013",
+      "title": "Tiramisù con Pavesini e Philadelphia Protein",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Dal commento pubblico dell’autore, per 4 persone: 4 pacchetti Pavesini, caffè di moka, 1 confezione Philadelphia Protein, 200 g yogurt greco 0%, 30 g proteine in polvere, sciroppo zero quanto basta, 30 g cioccolato 85%, cacao amaro.",
+      "ingredients": [
+        {
+          "name": "Pavesini",
+          "grams": 25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Philadelphia Protein",
+          "grams": 43.75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Proteine whey in polvere",
+          "grams": 7.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente 85%",
+          "grams": 7.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Caffè preparato",
+          "grams": 25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 2,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Inumidire i Pavesini con il caffè.",
+        "Preparare la crema con Philadelphia Protein, yogurt greco e proteine in polvere. La fonte prevede anche sciroppo zero a piacere.",
+        "Alternare biscotti e crema nella pirofila formando almeno tre strati. Sciogliere il cioccolato e distribuirlo sulla superficie; completare con cacao.",
+        "Lasciare rassodare in frigorifero prima di servire."
+      ],
+      "notes": "La durata del riposo non è stata recuperata: procedimento parziale.",
+      "author": "albertocasella__",
+      "url": "https://www.instagram.com/albertocasella__/reel/DZr2O6lO9Dj/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 244,
+      "portionLabel": "¼ del tiramisù",
+      "quantityNote": "Assunti pacchetti Pavesini da 25 g e confezione Philadelphia Protein da 175 g. Proposti 100 g caffè e 8 g cacao per il totale. Sciroppo zero escluso. Per il fondente 85% è usata l’etichetta Lindt di riferimento. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-013",
+      "batchServings": 4
+    },
+    {
+      "id": "colazione-014",
+      "title": "Pull-apart alla cannella",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Due stampi da 20 cm: 100 ml latte di soia; 12 g lievito fresco; 1 cucchiaino zucchero; 250 g Manitoba; 250 g farina 0; 100–150 g zucchero; 120 ml acqua; 60 ml olio di girasole; ripieno con 50 g burro vegetale, 2 cucchiai cannella e 50 g zucchero di canna.",
+      "ingredients": [
+        {
+          "name": "Bevanda di soia senza zuccheri",
+          "grams": 6.25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito di birra fresco",
+          "grams": 0.75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchero di canna",
+          "grams": 11.25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina Manitoba",
+          "grams": 15.625,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina di frumento",
+          "grams": 15.625,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 7.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio di semi",
+          "grams": 3.438,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Burro vegetale",
+          "grams": 3.125,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cannella",
+          "grams": 0.75,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Sciogliere il lievito nel latte di soia con un cucchiaino di zucchero e attendere 20 minuti.",
+        "Impastare con farine, zucchero, acqua e olio; lasciare lievitare per circa 2 ore.",
+        "Farcire con burro vegetale, zucchero di canna e cannella e dare la forma mostrata nel reel, distribuendo in due stampi da 20 cm. Lasciare lievitare altre 2 ore.",
+        "Cuocere a 160 °C ventilato per circa 25 minuti."
+      ],
+      "notes": "La formatura non è spiegata nella descrizione: usare il video di riferimento. Dolce da forno con zucchero e grassi, da porzionare.",
+      "author": "tortinsu",
+      "url": "https://www.instagram.com/tortinsu/reel/DViswr0jRT8/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 211,
+      "portionLabel": "1 fetta (¹⁄₁₆ del totale)",
+      "quantityNote": "Scelti 125 g zucchero nell’impasto, 5 g per il lievito e 50 g nel ripieno; olio 60 ml ≈ 55 g. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-014",
+      "batchServings": 16
+    },
+    {
+      "id": "colazione-015",
+      "title": "Plumcake al limone con farina di riso",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "1 limone medio biologico; 3 uova; 120 g zucchero; 100 ml latte; 100 ml olio di riso o semi; 100 g farina di riso; 50 g farina di mandorle; 75 g amido; 1 bustina lievito; 1 cucchiaio estratto di vaniglia. Glassa: 2 cucchiai zucchero a velo, succo di mezzo limone, scorza.",
+      "ingredients": [
+        {
+          "name": "Limone intero edibile",
+          "grams": 12,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchero",
+          "grams": 12,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio di semi",
+          "grams": 9.2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina di riso",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina di mandorle",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Amido di mais",
+          "grams": 7.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito per dolci",
+          "grams": 1.6,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Vaniglia in pasta",
+          "grams": 1.2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchero a velo",
+          "grams": 2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Succo di limone",
+          "grams": 2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Scorza di limone",
+          "grams": 0.2,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Tagliare il limone a pezzi eliminando semi ed estremità, mantenendo la buccia edibile.",
+        "Frullare il limone con uova, zucchero, latte e olio. Incorporare farine, amido, lievito e vaniglia con una frusta.",
+        "Versare nello stampo da plumcake. Cuocere a 180 °C statico per circa 45 minuti; coprire se la superficie scurisce troppo.",
+        "Mescolare zucchero a velo e succo di limone per la glassa; distribuirla sul dolce freddo e aggiungere scorza."
+      ],
+      "notes": "",
+      "author": "lamenthapiperita",
+      "url": "https://www.instagram.com/lamenthapiperita/reel/DVRICMuCFi6/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 262,
+      "portionLabel": "1 fetta (¹⁄₁₀ del totale)",
+      "quantityNote": "Limone stimato in 120 g; uova 150 g; olio 100 ml ≈ 92 g. Glassa inclusa, con quantità stimate. Usato latte parzialmente scremato. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-015",
+      "batchServings": 10
+    },
+    {
+      "id": "colazione-016",
+      "title": "Budino al caffè e cacao",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "200 ml caffè; 100 ml acqua; 100 g eritritolo; 1 cucchiaio cannella; 20 g cacao; 40 g amido di mais. Proteine facoltative: 20 g.",
+      "ingredients": [
+        {
+          "name": "Caffè preparato",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Dolcificante eritritolo e stevia",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cannella",
+          "grams": 3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Amido di mais",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare tutti gli ingredienti in un pentolino.",
+        "Scaldare mescolando costantemente finché il composto si addensa. Trasferire negli stampi e refrigerare per circa un’ora."
+      ],
+      "notes": "Dolce al cucchiaio povero di proteine; da solo non equivale a una colazione completa.",
+      "author": "beardedscara",
+      "url": "https://www.instagram.com/beardedscara/reel/DUiSq5ZjZai/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 111,
+      "portionLabel": "½ preparazione",
+      "quantityNote": "Mantenuta la dose di dolcificante riportata. Cannella stimata in 6 g; proteine facoltative escluse. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-016",
+      "batchServings": 2
+    },
+    {
+      "id": "colazione-017",
+      "title": "Cheesecake fredda yogurt e biscotti al caffè",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Biscotti, yogurt greco, caffè zuccherato, cacao; miele facoltativo. Nessuna dose numerica.",
+      "ingredients": [
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 170,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Biscotti secchi",
+          "grams": 35,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Caffè preparato",
+          "grams": 40,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchero",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 4,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Inumidire i biscotti nel caffè zuccherato.",
+        "Inserirli nello yogurt greco e lasciare ammorbidire in frigorifero. Completare con cacao."
+      ],
+      "notes": "Durata del riposo non indicata.",
+      "author": "cookist",
+      "url": "https://www.instagram.com/cookist/reel/DTlZ67IDPVk/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 276,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Tutte le dosi sono proposte per una persona. Scelti yogurt 0% e biscotti secchi; miele facoltativo escluso. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-017",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-018",
+      "title": "Mousse di yogurt, chia e cacao",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "250 g yogurt greco 0%; 30 g chia; 30 g cacao (oppure arachidi in polvere); 20 g miele (oppure crema di datteri).",
+      "ingredients": [
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Semi di chia",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Miele",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Amalgamare yogurt, semi di chia, cacao e miele.",
+        "Riporre in frigorifero per almeno 2 ore, finché il composto acquista consistenza."
+      ],
+      "notes": "La mousse del reel di William usa ingredienti e quantità molto simili.",
+      "author": "beardedscara",
+      "url": "https://www.instagram.com/beardedscara/reel/DTaLJVSjYGK/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 427,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Scelte le varianti cacao e miele; mantenute le dosi della fonte. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-018",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-019",
+      "title": "Mousse cacao e chia di William",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "250 g yogurt greco; 30 g semi di chia; 30 g cacao amaro; 20 g miele.",
+      "ingredients": [
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Semi di chia",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Miele",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare yogurt, chia, cacao e miele fino a distribuirli uniformemente.",
+        "Lasciare riposare in frigorifero fino ad addensamento."
+      ],
+      "notes": "Ricetta equivalente alla mousse di beardedscara: mantenuta come fonte distinta. Durata del riposo non specificata.",
+      "author": "william_sghinolfi",
+      "url": "https://www.instagram.com/william_sghinolfi/reel/DPjoM_CiBFO/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 427,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Scelto yogurt greco 0%. Le quantità sono quelle della fonte. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-019",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-020",
+      "title": "Cheesecake basca al fondente",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "250 g cioccolato fondente 75%; 450 g yogurt greco 0%; 4 uova; dolcificante facoltativo.",
+      "ingredients": [
+        {
+          "name": "Cioccolato fondente",
+          "grams": 31.25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 56.25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 25,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Fondere il cioccolato e amalgamarlo con yogurt e uova.",
+        "Versare in uno stampo da 18 cm rivestito. Cuocere in friggitrice ad aria a 155 °C per 30 minuti, oppure in forno statico a 160 °C per 30 minuti.",
+        "Raffreddare e lasciare in frigorifero almeno 3 ore."
+      ],
+      "notes": "",
+      "author": "alan_valca",
+      "url": "https://www.instagram.com/alan_valca/reel/DKhmNXdoqNI/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 240,
+      "portionLabel": "1 fetta (⅛ della torta)",
+      "quantityNote": "Uova stimate in 200 g. Il calcolo usa cioccolato di riferimento al 70%, vicino al 75% della fonte. Dolcificante facoltativo escluso. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-020",
+      "batchServings": 8
+    },
+    {
+      "id": "colazione-021",
+      "title": "Budino proteico cacao e caffè",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "200 ml latte; 20 g cacao; 20 g proteine gusto brownie; cannella; caffè; Yummy Drops; 20 g amido di mais.",
+      "ingredients": [
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Proteine whey in polvere",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cannella",
+          "grams": 1,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Caffè preparato",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Amido di mais",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare gli ingredienti in un pentolino e cuocere a fuoco medio-basso, girando fino a ottenere una crema.",
+        "Trasferire nella ciotola e refrigerare per qualche ora."
+      ],
+      "notes": "",
+      "author": "massimopietrobongobbi",
+      "url": "https://www.instagram.com/massimopietrobongobbi/reel/DJCP4tMMtzS/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 311,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Caffè stimato in 30 g e cannella in 1 g. Latte parzialmente scremato e whey di riferimento. Gocce dolcificanti escluse. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-021",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-022",
+      "title": "Pane al cioccolato e nocciole",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Per 3 pani: 1 kg farina di media forza; 800 ml acqua; 5 g lievito fresco; 20 g sale; 500 g gocce di cioccolato; 200 g nocciole.",
+      "ingredients": [
+        {
+          "name": "Farina di frumento",
+          "grams": 33.333,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 26.667,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito di birra fresco",
+          "grams": 0.167,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sale",
+          "grams": 0.667,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 16.667,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Nocciole",
+          "grams": 6.667,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Impastare farina, lievito e 650 ml dell’acqua. Incorporare sale e acqua restante, poi cioccolato e nocciole.",
+        "Fare pieghe e lasciare lievitare fino al raddoppio. Dividere in tre, preformare e attendere 30 minuti.",
+        "Formare i pani e lasciare lievitare per 2 ore in frigorifero.",
+        "Cuocere con vapore a 220 °C per 25 minuti, poi a 180 °C per altri 20 minuti."
+      ],
+      "notes": "",
+      "author": "alessio.pellizzoni",
+      "url": "https://www.instagram.com/alessio.pellizzoni/reel/DJ3xqJmi7ZZ/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 255,
+      "portionLabel": "1 fetta (¹⁄₁₀ di un pane)",
+      "quantityNote": "Proposte 10 fette per ciascuno dei tre pani. La dose è 1/30 dell’impasto; non è una colazione completa da sola. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-022",
+      "batchServings": 30
+    },
+    {
+      "id": "colazione-023",
+      "title": "Energy balls avena e arachidi",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "50 g fiocchi d’avena; 15 g miele; 20 g burro di arachidi; 20 g cioccolato fondente oppure crema di nocciole; 5 g cacao.",
+      "ingredients": [
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 16.667,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Miele",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Burro di arachidi",
+          "grams": 6.667,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 6.667,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 1.667,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare avena, miele, burro di arachidi, cioccolato e cacao.",
+        "Compattare il composto e formare le palline."
+      ],
+      "notes": "",
+      "author": "martinabaiardi.fitnessfood",
+      "url": "https://www.instagram.com/martinabaiardi.fitnessfood/reel/DJjKVjcoYa8/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 161,
+      "portionLabel": "2 palline (su 6)",
+      "quantityNote": "Scelto il cioccolato fra le alternative. Proposta una resa di 6 palline, due per porzione. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-023",
+      "batchServings": 3
+    },
+    {
+      "id": "colazione-024",
+      "title": "Fudge di ceci e cioccolato",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "1 tazza ceci cotti; 1 tazza cioccolato fondente; copertura facoltativa con ½ tazza cioccolato e 1 cucchiaio olio di cocco.",
+      "ingredients": [
+        {
+          "name": "Ceci cotti, sgocciolati",
+          "grams": 20.625,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 31.875,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Fondere il cioccolato destinato all’impasto e frullarlo con i ceci cotti e sgocciolati.",
+        "Compattare in uno stampo e refrigerare almeno 4 ore.",
+        "Fondere il cioccolato della copertura, stenderlo sul dolce e far rassodare prima di tagliare."
+      ],
+      "notes": "",
+      "author": "mrshollingsworths",
+      "url": "https://www.instagram.com/mrshollingsworths/reel/DJO6mRYseJg/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 207,
+      "portionLabel": "1 quadrotto (⅛ del totale)",
+      "quantityNote": "Conversioni proposte: ceci 165 g; cioccolato 170 g nell’impasto e 85 g sopra. Copertura inclusa, olio di cocco facoltativo escluso. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-024",
+      "batchServings": 8
+    },
+    {
+      "id": "colazione-025",
+      "title": "Crema spalmabile cacao e miele",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "100 g cacao amaro; 30 g miele; 180 g acqua fredda.",
+      "ingredients": [
+        {
+          "name": "Cacao amaro",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Miele",
+          "grams": 3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 18,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Frullare cacao, miele e acqua fredda fino a ottenere una crema uniforme."
+      ],
+      "notes": "",
+      "author": "healthyterranea",
+      "url": "https://www.instagram.com/healthyterranea/reel/DJYoch7qulF/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 40,
+      "portionLabel": "1 dose da 31 g",
+      "quantityNote": "Dose proposta di 31 g, pari a un decimo del totale. Da usare come crema, non come colazione completa. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-025",
+      "batchServings": 10
+    },
+    {
+      "id": "colazione-026-sacher",
+      "title": "Frozen porridge Sacher",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Base: 30 g avena, 1 cucchiaio latte, 130 g yogurt; caffè facoltativo. Guarnizione: confettura di albicocche e cioccolato fondente.",
+      "ingredients": [
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 130,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Confettura di albicocche",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare avena e latte e stenderli come base. Aggiungere lo yogurt e i condimenti indicati.",
+        "Lasciare rassodare al freddo prima di servire: la fonte chiama la preparazione frozen porridge, senza precisare durata o temperatura del riposo."
+      ],
+      "notes": "",
+      "author": "caterinacaramelli",
+      "url": "https://www.instagram.com/caterinacaramelli/reel/DIg3DwJMY4K/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 300,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Scelto yogurt 0%. Latte stimato in 15 g, confettura 20 g e cioccolato 10 g; caffè facoltativo escluso. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-026",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-026-mango-cocco",
+      "title": "Frozen porridge mango e cocco",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Base: 30 g avena, 1 cucchiaio latte, 130 g yogurt; caffè facoltativo. Guarnizione: mango e cocco.",
+      "ingredients": [
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 130,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Mango",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cocco rapè",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare avena e latte e stenderli come base. Aggiungere lo yogurt e i condimenti indicati.",
+        "Lasciare rassodare al freddo prima di servire: la fonte chiama la preparazione frozen porridge, senza precisare durata o temperatura del riposo."
+      ],
+      "notes": "",
+      "author": "caterinacaramelli",
+      "url": "https://www.instagram.com/caterinacaramelli/reel/DIg3DwJMY4K/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 300,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Scelto yogurt 0%. Latte stimato in 15 g, mango 100 g e cocco 10 g. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-026",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-026-cacao-cocco",
+      "title": "Frozen porridge crema cacao e cocco",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Base: 30 g avena, 1 cucchiaio latte, 130 g yogurt; caffè facoltativo. Guarnizione: crema al cacao e cocco.",
+      "ingredients": [
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 130,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Crema cacao e nocciole",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cocco rapè",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare avena e latte e stenderli come base. Aggiungere lo yogurt e i condimenti indicati.",
+        "Lasciare rassodare al freddo prima di servire: la fonte chiama la preparazione frozen porridge, senza precisare durata o temperatura del riposo."
+      ],
+      "notes": "",
+      "author": "caterinacaramelli",
+      "url": "https://www.instagram.com/caterinacaramelli/reel/DIg3DwJMY4K/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 338,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Scelto yogurt 0%. Latte 15 g, crema cacao 15 g e cocco 10 g sono dosi proposte. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-026",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-026-mug-cacao",
+      "title": "Mug cake al cacao con yogurt",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "30 g farina d’avena istantanea al cioccolato; 80 g acqua; 1 cucchiaino lievito; yogurt greco e cacao per guarnire.",
+      "ingredients": [
+        {
+          "name": "Farina d’avena al cacao",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 80,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito per dolci",
+          "grams": 3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 130,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare farina d’avena istantanea al cioccolato, acqua e lievito in una tazza adatta al microonde.",
+        "Cuocere a 900 W per circa 3 minuti e mezzo; aggiungere yogurt e guarnizione."
+      ],
+      "notes": "",
+      "author": "caterinacaramelli",
+      "url": "https://www.instagram.com/caterinacaramelli/reel/DIg3DwJMY4K/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 203,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Proposti 130 g yogurt e 5 g cacao; lievito 3 g. Per la farina aromatizzata è usata una miscela nutrizionale di riferimento. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-026",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-026-mug-carota",
+      "title": "Mug cake carote, mandorle e cocco",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "1 uovo; 70 g carota; 10 g farina di cocco; 25 g farina di riso integrale; 15 g farina di mandorle; un pizzico di lievito.",
+      "ingredients": [
+        {
+          "name": "Uovo intero",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Carote",
+          "grams": 70,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina di cocco",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina di riso",
+          "grams": 25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina di mandorle",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito per dolci",
+          "grams": 1,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Frullare o amalgamare finemente gli ingredienti nella tazza.",
+        "Cuocere al microonde a 900 W per circa 3 minuti e mezzo."
+      ],
+      "notes": "",
+      "author": "caterinacaramelli",
+      "url": "https://www.instagram.com/caterinacaramelli/reel/DIg3DwJMY4K/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 301,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Uovo stimato in 50 g e lievito 1 g. Per il riso integrale è usato il riferimento nutrizionale della farina di riso generica. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-026",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-026-mirtilli-bianco",
+      "title": "Frozen porridge mirtilli e cioccolato bianco",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Base: 30 g avena, 1 cucchiaio latte, 130 g yogurt; caffè facoltativo. Guarnizione: composta di mirtilli e crema al cioccolato bianco.",
+      "ingredients": [
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 130,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Composta di frutta",
+          "grams": 25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Crema al cioccolato bianco",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare avena e latte e stenderli come base. Aggiungere lo yogurt e i condimenti indicati.",
+        "Lasciare rassodare al freddo prima di servire: la fonte chiama la preparazione frozen porridge, senza precisare durata o temperatura del riposo."
+      ],
+      "notes": "",
+      "author": "caterinacaramelli",
+      "url": "https://www.instagram.com/caterinacaramelli/reel/DIg3DwJMY4K/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 302,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Latte 15 g, composta 25 g, crema bianca 15 g: dosi proposte. Per la crema non identificata si usa il cioccolato bianco come stima. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-026",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-026-quinoa",
+      "title": "Quinoa soffiata con fragole e cioccolato",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "30 g quinoa soffiata; 130 g yogurt; cioccolato alle nocciole e fragole.",
+      "ingredients": [
+        {
+          "name": "Quinoa soffiata",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 130,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Nocciole",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fragole",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare quinoa soffiata e yogurt.",
+        "Completare con cioccolato alle nocciole fuso e fragole."
+      ],
+      "notes": "",
+      "author": "caterinacaramelli",
+      "url": "https://www.instagram.com/caterinacaramelli/reel/DIg3DwJMY4K/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 331,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Scelto yogurt 0%. Guarnizione proposta: 15 g fondente più 5 g nocciole e 100 g fragole; il mix rappresenta il cioccolato alle nocciole della fonte. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-026",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-026-mug-lamponi",
+      "title": "Mug cake cacao e lamponi",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "30 g farina d’avena istantanea al cioccolato; 80 g acqua; 1 cucchiaino lievito; yogurt greco e lamponi.",
+      "ingredients": [
+        {
+          "name": "Farina d’avena al cacao",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 80,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito per dolci",
+          "grams": 3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 130,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lamponi",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare farina d’avena istantanea al cioccolato, acqua e lievito in una tazza adatta al microonde.",
+        "Cuocere a 900 W per circa 3 minuti e mezzo; aggiungere yogurt e guarnizione."
+      ],
+      "notes": "",
+      "author": "caterinacaramelli",
+      "url": "https://www.instagram.com/caterinacaramelli/reel/DIg3DwJMY4K/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 212,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Proposti 130 g yogurt e 100 g lamponi; lievito 3 g. Farina aromatizzata stimata da miscela di avena e cacao. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-026",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-026-mug-fragole",
+      "title": "Mug cake cacao e composta di fragole",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "30 g farina d’avena istantanea al cioccolato; 80 g acqua; 1 cucchiaino lievito; yogurt greco e composta di fragole.",
+      "ingredients": [
+        {
+          "name": "Farina d’avena al cacao",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 80,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito per dolci",
+          "grams": 3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 130,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Composta di frutta",
+          "grams": 25,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare farina d’avena istantanea al cioccolato, acqua e lievito in una tazza adatta al microonde.",
+        "Cuocere a 900 W per circa 3 minuti e mezzo; aggiungere yogurt e guarnizione."
+      ],
+      "notes": "",
+      "author": "caterinacaramelli",
+      "url": "https://www.instagram.com/caterinacaramelli/reel/DIg3DwJMY4K/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 218,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Proposti 130 g yogurt e 25 g composta; lievito 3 g. Farina aromatizzata stimata da miscela di avena e cacao. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-026",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-026-mango-bianco",
+      "title": "Frozen porridge mango e cioccolato bianco",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Base: 30 g avena, 1 cucchiaio latte, 130 g yogurt; caffè facoltativo. Guarnizione: mango e cioccolato bianco.",
+      "ingredients": [
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 130,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Mango",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato bianco",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare avena e latte e stenderli come base. Aggiungere lo yogurt e i condimenti indicati.",
+        "Lasciare rassodare al freddo prima di servire: la fonte chiama la preparazione frozen porridge, senza precisare durata o temperatura del riposo."
+      ],
+      "notes": "",
+      "author": "caterinacaramelli",
+      "url": "https://www.instagram.com/caterinacaramelli/reel/DIg3DwJMY4K/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 319,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Proposti 15 g latte, 100 g mango e 15 g cioccolato bianco. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-026",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-027",
+      "title": "Snickers bowl yogurt e arachidi",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "150 g yogurt greco; 1 cucchiaio burro di arachidi; 1 cucchiaino miele. Guarnizione facoltativa: altro cucchiaio burro di arachidi, arachidi e cioccolato.",
+      "ingredients": [
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Burro di arachidi",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Miele",
+          "grams": 7,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Arachidi",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Amalgamare yogurt, un cucchiaio di burro di arachidi e miele.",
+        "Aggiungere burro di arachidi e arachidi della guarnizione; coprire con un sottile strato di cioccolato fuso.",
+        "Lasciare in frigorifero per 20 minuti o per una notte; la fonte propone anche 5 minuti in congelatore."
+      ],
+      "notes": "",
+      "author": "giuseppe_healthy",
+      "url": "https://www.instagram.com/giuseppe_healthy/reel/DJY6m-Vs9l3/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 425,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Guarnizione inclusa: burro di arachidi 15+15 g, arachidi 10 g, cioccolato 15 g. Miele 7 g. Scelto yogurt 0%. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-027",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-028",
+      "title": "Overnight tiramisù avena e chia",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "30 g fiocchi d’avena; 100 g latte; 150 g yogurt greco; caffè; 10 g chia; cacao.",
+      "ingredients": [
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Caffè preparato",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Semi di chia",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare avena, latte, yogurt, caffè e chia.",
+        "Completare con cacao e lasciare riposare in frigorifero."
+      ],
+      "notes": "La descrizione non indica la durata del riposo.",
+      "author": "fit.tinaa_",
+      "url": "https://www.instagram.com/fit.tinaa_/reel/DIV6W4FsGMw/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 304,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Proposti 30 g caffè e 5 g cacao. Scelti latte parzialmente scremato e yogurt 0%. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-028",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-029",
+      "title": "Brownie cheesecake marmorizzata",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Brownie: 150 g burro, 150 g zucchero, 2 uova, 100 g farina, 30 g cacao, ½ cucchiaino sale, 100 g cioccolato. Crema: 300 g formaggio spalmabile, 1 uovo, 7 g zucchero vanigliato, ½ cucchiaino vanillina, 60 g zucchero.",
+      "ingredients": [
+        {
+          "name": "Burro",
+          "grams": 9.375,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchero",
+          "grams": 13.562,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 9.375,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina di frumento",
+          "grams": 6.25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 1.875,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sale",
+          "grams": 0.125,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 6.25,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Formaggio spalmabile",
+          "grams": 18.75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Vaniglia in pasta",
+          "grams": 0.188,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Per il brownie, lavorare uova e zucchero con il burro fuso; incorporare farina, cacao, sale e cioccolato.",
+        "Per la crema, mescolare formaggio spalmabile, uovo, zucchero e vaniglia.",
+        "Distribuire nello stampo quasi tutto il brownie, poi la crema e il brownie restante. Creare le venature con uno stecchino.",
+        "Cuocere a 180 °C per 25–30 minuti e raffreddare prima di tagliare."
+      ],
+      "notes": "Dolce ricco di burro e zucchero: la porzione è un piccolo quadrotto, non una colazione completa.",
+      "author": "andrianakulchytska",
+      "url": "https://www.instagram.com/andrianakulchytska/reel/DHgQbloII-T/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 247,
+      "portionLabel": "1 quadrotto (¹⁄₁₆ del totale)",
+      "quantityNote": "Conteggiati 217 g di zucchero totali, 150 g uova e 3 g aroma alla vaniglia come riferimento. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-029",
+      "batchServings": 16
+    },
+    {
+      "id": "colazione-030",
+      "title": "Cheesecake basca banana e cioccolato",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "1 banana; 450 g Philadelphia Protein; 300 g yogurt greco; 40 g eritritolo; 2 uova; 50 g fondente; 30 g cacao.",
+      "ingredients": [
+        {
+          "name": "Banana",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Philadelphia Protein",
+          "grams": 75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Dolcificante eritritolo e stevia",
+          "grams": 6.667,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 16.667,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 8.333,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Frullare gli ingredienti e versare in uno stampo rivestito da 16–18 cm.",
+        "Cuocere a 200 °C statico per 40 minuti, con una teglia d’acqua sul fondo del forno.",
+        "Raffreddare e refrigerare per almeno 5 ore."
+      ],
+      "notes": "",
+      "author": "alan_valca",
+      "url": "https://www.instagram.com/alan_valca/reel/DHERKhtownP/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 193,
+      "portionLabel": "1 fetta (⅙ della torta)",
+      "quantityNote": "Banana stimata in 120 g edibili e uova in 100 g. Scelto yogurt 0% e prodotto Philadelphia Protein italiano. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-030",
+      "batchServings": 6
+    },
+    {
+      "id": "colazione-031",
+      "title": "Banana bread integrale con yogurt e albumi",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Dal video: banana e uovo; 100 ml albumi; 100 g yogurt greco; 120 g farina integrale; 8 g lievito per dolci; 20 g gocce di cioccolato. Il reel propone cinque porzioni.",
+      "ingredients": [
+        {
+          "name": "Banana",
+          "grams": 24,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Albumi",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina integrale",
+          "grams": 24,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito per dolci",
+          "grams": 1.6,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 4,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Schiacciare la banana e mescolare con uovo, albumi e yogurt.",
+        "Incorporare farina integrale, lievito e gocce di cioccolato. Versare in uno stampo da plumcake rivestito.",
+        "Cuocere in forno ventilato a 180 °C per 50 minuti."
+      ],
+      "notes": "La fetta è una componente della colazione; banana e peso dell’uovo sono stimati.",
+      "author": "hasp.original",
+      "url": "https://www.instagram.com/hasp.original/reel/DGvqYpZtGWN/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 156,
+      "portionLabel": "1 fetta (⅕ del totale)",
+      "quantityNote": "Banana stimata in 120 g edibili, uovo in 50 g. Scelto yogurt 0%. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-031",
+      "batchServings": 5
+    },
+    {
+      "id": "colazione-032",
+      "title": "Torta chewy cacao e riso glutinoso",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "1 uovo; 100 ml albumi; 100 ml latte vegetale; 20 g dolcificante; 35 g proteine in polvere oppure amido; 100 g farina di riso glutinoso; 50 g amido di mais; 2 g sale; 20 g cacao; 8 g lievito; 30 g fondente facoltativi.",
+      "ingredients": [
+        {
+          "name": "Uovo intero",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Albumi",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Bevanda di soia senza zuccheri",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Dolcificante eritritolo e stevia",
+          "grams": 4,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Proteine whey in polvere",
+          "grams": 7,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina di riso glutinoso",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Amido di mais",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sale",
+          "grams": 0.4,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 4,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito per dolci",
+          "grams": 1.6,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 6,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare uovo, albumi, latte vegetale e dolcificante.",
+        "Unire proteine in polvere, farina di riso glutinoso, amido, sale, cacao e lievito; aggiungere il cioccolato.",
+        "Versare in uno stampo da 16 cm e cuocere a 180 °C ventilato per 25 minuti."
+      ],
+      "notes": "",
+      "author": "alan_valca",
+      "url": "https://www.instagram.com/alan_valca/reel/DGqiSGYoMTx/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 213,
+      "portionLabel": "1 fetta (⅕ della torta)",
+      "quantityNote": "Scelte whey, bevanda di soia senza zuccheri e aggiunta facoltativa di 30 g cioccolato. Uovo stimato in 50 g. Aroma facoltativo escluso. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-032",
+      "batchServings": 5
+    },
+    {
+      "id": "colazione-033",
+      "title": "Cramique con gocce di cioccolato",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Impasto: 110 g farina 00, 250 g Manitoba, 10 g lievito fresco, 100 g latte, 1 uovo e 2 tuorli, 60 g zucchero, 1 cucchiaino sale, 50 g burro, 100 g gocce di cioccolato. Tangzhong: 50 g latte, 50 g acqua, 20 g Manitoba. Finitura: 1 tuorlo, 1 cucchiaio latte, 1 cucchiaino zucchero.",
+      "ingredients": [
+        {
+          "name": "Farina di frumento",
+          "grams": 9.167,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina Manitoba",
+          "grams": 22.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito di birra fresco",
+          "grams": 0.833,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 13.75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 4.167,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Tuorlo",
+          "grams": 4.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchero",
+          "grams": 5.417,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 4.167,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sale",
+          "grams": 0.417,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Burro",
+          "grams": 4.167,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 8.333,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Preparare il tangzhong scaldando 50 g latte, 50 g acqua e 20 g Manitoba fino ad addensare; farlo raffreddare.",
+        "Impastare farine restanti, lievito, latte, uovo, due tuorli e zucchero. Unire tangzhong e sale e lavorare circa 10 minuti, poi aggiungere il burro.",
+        "Riposare 20 minuti; distribuire il cioccolato, fare pieghe e formare il pane. Lasciare lievitare circa 2 ore.",
+        "Spennellare con un tuorlo e un cucchiaio di latte, incidere e cospargere di zucchero. Cuocere a 180 °C per 25 minuti."
+      ],
+      "notes": "",
+      "author": "evasfoodaddiction",
+      "url": "https://www.instagram.com/evasfoodaddiction/reel/DGAtamwMXF1/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 239,
+      "portionLabel": "1 fetta (¹⁄₁₂ del pane)",
+      "quantityNote": "Inclusa la finitura: latte totale 165 g, tuorli totali 54 g, zucchero totale 65 g. Uovo 50 g e sale 5 g stimati. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-033",
+      "batchServings": 12
+    },
+    {
+      "id": "colazione-034",
+      "title": "Brownie baked oats alla banana",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "2 banane; 180 g avena; 20 g farina d’avena con whey gusto brownie; 20 g cacao; 1 cucchiaino lievito; sale; 80 g fondente; 390 ml latte. Olio per lo stampo.",
+      "ingredients": [
+        {
+          "name": "Banana",
+          "grams": 40,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Preparato avena e whey",
+          "grams": 3.333,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 3.333,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito per dolci",
+          "grams": 0.667,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sale",
+          "grams": 0.167,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 13.333,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Latte parzialmente scremato",
+          "grams": 65,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio di semi",
+          "grams": 0.833,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Schiacciare le banane e mescolare con avena, preparato proteico, cacao, lievito, sale e latte.",
+        "Aggiungere 50 g di cioccolato e versare in una teglia unta. Distribuire sopra i 30 g restanti.",
+        "Cuocere a 180 °C per 40 minuti. Raffreddare prima di tagliare. La fonte propone di riscaldare la porzione al microonde per un minuto."
+      ],
+      "notes": "",
+      "author": "unpizzicodieli",
+      "url": "https://www.instagram.com/unpizzicodieli/reel/DF2UiY6AeBf/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 284,
+      "portionLabel": "1 porzione (⅙ della teglia)",
+      "quantityNote": "Banane stimate in 240 g edibili, lievito 4 g e olio 5 g. Il preparato avena/whey usa una composizione di riferimento dichiarata. Yogurt o latte extra di servizio esclusi. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-034",
+      "batchServings": 6
+    },
+    {
+      "id": "colazione-035",
+      "title": "Mattonella croccante yogurt e cioccolato",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "30 g cereali soffiati; 150 g yogurt greco; 30 ml latte di soia; 1 cucchiaino sciroppo di yacon. Copertura: 5–10 g cereali soffiati e 15 g cioccolato.",
+      "ingredients": [
+        {
+          "name": "Riso soffiato",
+          "grams": 38,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Bevanda di soia senza zuccheri",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sciroppo di yacon",
+          "grams": 7,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare 30 g di cereali soffiati con yogurt, bevanda di soia e sciroppo. Compattare in uno stampo.",
+        "Mescolare il cioccolato fuso con i cereali restanti e distribuirlo sulla superficie. Lasciare rassodare al freddo."
+      ],
+      "notes": "Tempo di rassodamento non specificato nella descrizione.",
+      "author": "giuseppe_healthy",
+      "url": "https://www.instagram.com/giuseppe_healthy/reel/DCXDVTmOGsS/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 330,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Scelti riso soffiato, yogurt 0% e 8 g di cereali per la copertura. Sciroppo stimato in 7 g, con etichetta di riferimento dichiarata. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-035",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-036",
+      "title": "Barrette proteiche con cereali e cioccolato",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Dal video: 60 g proteine in polvere; 60 ml acqua; 2 cucchiai miele; burro di arachidi; fiocchi d’avena; 50 g cereali; copertura di cioccolato.",
+      "ingredients": [
+        {
+          "name": "Proteine whey in polvere",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Miele",
+          "grams": 7,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Burro di arachidi",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 8.333,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cornflakes",
+          "grams": 8.333,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Amalgamare le proteine con l’acqua, poi incorporare miele e burro di arachidi.",
+        "Unire fiocchi d’avena e cereali, compattare in uno stampo rivestito.",
+        "Distribuire il cioccolato fuso sopra la base. Far rassodare al freddo e tagliare in barrette."
+      ],
+      "notes": "Alcune dosi e la durata di rassodamento non sono state recuperate: sono indicate le quantità proposte per il calcolo.",
+      "author": "hasp.original",
+      "url": "https://www.instagram.com/hasp.original/reel/DC2PUlGNJau/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": 1,
+      "kcal": 212,
+      "portionLabel": "1 barretta (⅙ del totale)",
+      "quantityNote": "Proposti 42 g miele, 30 g burro di arachidi, 50 g avena e 60 g cioccolato. Cereali rappresentati da cornflakes; proteine whey di riferimento. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-036",
+      "batchServings": 6
+    },
+    {
+      "id": "colazione-037",
+      "title": "Tortino mela e cacao",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "160 g mela; 1 uovo; 15 g cacao; ½ cucchiaino lievito. Gocce di cioccolato facoltative.",
+      "ingredients": [
+        {
+          "name": "Mela",
+          "grams": 160,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lievito per dolci",
+          "grams": 2,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Ridurre la mela in purea e amalgamarla con uovo, cacao e lievito.",
+        "Cuocere al microonde per 2 minuti alla massima potenza, oppure in forno statico a 180 °C per 25–30 minuti."
+      ],
+      "notes": "La potenza del microonde non è precisata dalla fonte: verificare che l’impasto, compreso l’uovo, sia cotto.",
+      "author": "giuseppe_healthy",
+      "url": "https://www.instagram.com/giuseppe_healthy/reel/DB8pq0oiBKL/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 197,
+      "portionLabel": "1 tortino",
+      "quantityNote": "Uovo stimato in 50 g e lievito in 2 g. Gocce di cioccolato facoltative escluse. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-037",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-038",
+      "title": "Cheesecake zucca e fiocchi di latte",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "200 g zucca; 200 g fiocchi di latte; 1 uovo; 15 g dolcificante; cannella.",
+      "ingredients": [
+        {
+          "name": "Zucca cotta",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fiocchi di latte",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Dolcificante eritritolo e stevia",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cannella",
+          "grams": 1,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Cuocere la zucca; la fonte indica circa 10 minuti.",
+        "Frullarla per un minuto con fiocchi di latte, uovo, dolcificante e cannella.",
+        "Versare nello stampo e cuocere a 180 °C ventilato per 60 minuti."
+      ],
+      "notes": "",
+      "author": "alan_valca",
+      "url": "https://www.instagram.com/alan_valca/reel/C_3Pl9momyH/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 298,
+      "portionLabel": "1 cheesecake piccola",
+      "quantityNote": "Il calcolo assume 200 g di zucca già cotta e senza altri condimenti. Uovo 50 g, cannella 1 g. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-038",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-039",
+      "title": "Tortine yogurt e cacao",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Per 2 tortine: 200 g yogurt greco; 1 uovo; 60 ml albumi; 20 g cacao magro; 15 g eritritolo. Olio per ungere.",
+      "ingredients": [
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Albumi",
+          "grams": 60,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Dolcificante eritritolo e stevia",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio di semi",
+          "grams": 2,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare yogurt, uovo, albumi, cacao ed eritritolo.",
+        "Distribuire in due cocottine leggermente unte e cuocere in friggitrice ad aria a 180 °C per 20 minuti."
+      ],
+      "notes": "",
+      "author": "marco1roma",
+      "url": "https://www.instagram.com/marco1roma/reel/C_Qu89rI5J9/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 280,
+      "portionLabel": "2 tortine",
+      "quantityNote": "Scelto yogurt 0%, uovo 50 g e olio 2 g. La porzione comprende entrambe le tortine. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-039",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-040",
+      "title": "Crêpes di quinoa",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "100 g quinoa secca; 200 g acqua per frullare; sale; olio per la padella. Acqua di ammollo da eliminare.",
+      "ingredients": [
+        {
+          "name": "Quinoa",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sale",
+          "grams": 0.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio di semi",
+          "grams": 2.5,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mettere in ammollo la quinoa per 3–4 ore, poi scolarla e risciacquarla.",
+        "Frullare con i 200 g d’acqua previsti per la pastella e un pizzico di sale.",
+        "Ungere leggermente la padella, stendere uno strato sottile e cuocere circa 30–40 secondi per lato."
+      ],
+      "notes": "",
+      "author": "dianaealessio",
+      "url": "https://www.instagram.com/dianaealessio/reel/C_laSp5gVZR/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 177,
+      "portionLabel": "½ impasto, senza farcitura",
+      "quantityNote": "Olio totale stimato in 5 g, sale 1 g. Quinoa pesata secca. Farcitura non prevista dalla fonte e non inclusa nei valori. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-040",
+      "batchServings": 2
+    },
+    {
+      "id": "colazione-041",
+      "title": "Biscotti avena e burro di arachidi",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "80 g farina d’avena; sale e bicarbonato; 10 g eritritolo; 10 g miele; 1 uovo; 50 g burro di arachidi. Resa: 7–8 biscotti.",
+      "ingredients": [
+        {
+          "name": "Farina d'avena",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sale",
+          "grams": 0.188,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Bicarbonato",
+          "grams": 0.375,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Dolcificante eritritolo e stevia",
+          "grams": 3.75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Miele",
+          "grams": 3.75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 18.75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Burro di arachidi",
+          "grams": 18.75,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare tutti gli ingredienti fino a ottenere un impasto uniforme.",
+        "Formare 7–8 biscotti, appiattirli e cuocerli a 170–180 °C statico per circa 15 minuti."
+      ],
+      "notes": "",
+      "author": "dietista.chiarazannini",
+      "url": "https://www.instagram.com/dietista.chiarazannini/reel/C5qBuepAG1p/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 263,
+      "portionLabel": "3 biscotti (su 8)",
+      "quantityNote": "Scelta una resa di 8 biscotti e una porzione di 3. Uovo 50 g, bicarbonato 1 g e sale 0,5 g stimati. Cappuccino non incluso. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-041",
+      "batchServings": 2.6666666666666665
+    },
+    {
+      "id": "colazione-042",
+      "title": "Cookie dough bites ceci e mandorle",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "Per 31 palline: 60 g mandorle; 550 g ceci cotti; 1 bustina vanillina; 45 g miele o sciroppo equivalente; sale; 50 g gocce di cioccolato.",
+      "ingredients": [
+        {
+          "name": "Mandorle",
+          "grams": 9.677,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Ceci cotti, sgocciolati",
+          "grams": 88.71,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Vaniglia in pasta",
+          "grams": 0.484,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Miele",
+          "grams": 7.258,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sale",
+          "grams": 0.161,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 8.065,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Frullare mandorle, ceci, aroma, miele e sale fino a ottenere un composto modellabile.",
+        "Incorporare le gocce di cioccolato, formare 31 palline e lasciare in frigorifero per circa 2 ore."
+      ],
+      "notes": "",
+      "author": "dietista.chiarazannini",
+      "url": "https://www.instagram.com/dietista.chiarazannini/reel/C8MPr2pg1zN/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 236,
+      "portionLabel": "5 palline (su 31)",
+      "quantityNote": "Scelto miele. Ceci pesati cotti e sgocciolati; aroma rappresentato da 3 g di pasta alla vaniglia. Porzione proposta di 5 palline. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. La dose mostrata è una quota del dolce; per preparare l’intero impasto usa le dosi della fonte.",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-042",
+      "batchServings": 6.2
+    },
+    {
+      "id": "colazione-043",
+      "title": "Croccante al caffè con yogurt",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "100 g yogurt greco; 1 cucchiaino cacao; 1 espresso; dolcificante; 10 g cioccolato; 10–15 g riso soffiato.",
+      "ingredients": [
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Caffè preparato",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Riso soffiato",
+          "grams": 12.5,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare yogurt, cacao e caffè; riporre brevemente in congelatore mentre si prepara la copertura.",
+        "Sciogliere il cioccolato e unirvi il riso soffiato. Distribuire sulla base e lasciare in frigorifero per circa 30 minuti."
+      ],
+      "notes": "",
+      "author": "dietista.chiarazannini",
+      "url": "https://www.instagram.com/dietista.chiarazannini/reel/C9mUY45AcFM/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 174,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Scelto yogurt 0%. Cacao 5 g, caffè 30 g e riso soffiato 12,5 g. Dolcificante facoltativo escluso. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-043",
+      "batchServings": 1
+    },
+    {
+      "id": "colazione-044",
+      "title": "Overnight rice ricotta e fichi",
+      "category": "Dolci e colazioni",
+      "collection": "Colazioni",
+      "kind": "originale",
+      "ingredientText": "100 g ricotta; 2 fichi; 20 g riso soffiato; 15 g gocce di cioccolato.",
+      "ingredients": [
+        {
+          "name": "Ricotta",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fichi freschi",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Riso soffiato",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cioccolato fondente",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Mescolare ricotta, fichi a pezzi, riso soffiato e gocce di cioccolato.",
+        "Compattare in un coppapasta e refrigerare per circa 30 minuti."
+      ],
+      "notes": "",
+      "author": "dietista.chiarazannini",
+      "url": "https://www.instagram.com/dietista.chiarazannini/reel/C-pV_yagDdg/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "kcal": 347,
+      "portionLabel": "1 ciotola",
+      "quantityNote": "Due fichi stimati in 100 g di parte edibile. Le altre dosi sono quelle della fonte. Le quantità mancanti e le conversioni da pezzi o cucchiai sono stime. ",
+      "quantityBasis": "fonte-e-stime",
+      "sourceRecipeId": "colazione-044",
+      "batchServings": 1
     }
   ],
   "foods": {
@@ -10618,6 +13853,473 @@
       "reference": "Simply Peanut",
       "url": "https://www.pbfit.com/products/pbfit-simply-peanut",
       "note": "Stima convertita dalla dose di due cucchiai, assunta da 16 g: 70 kcal, 9 g proteine, 2 g grassi, 5 g carboidrati USA di cui 2 g fibre. Qui i carboidrati escludono le fibre; marca e peso del cucchiaio possono differire."
+    },
+    "Caffè preparato": {
+      "kcal": 2,
+      "protein": 0.2,
+      "carbs": 0.3,
+      "fat": 0,
+      "source": "CoFID 2021",
+      "code": "17-833",
+      "reference": "Coffee, infusion, average",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Gelatina alimentare": {
+      "kcal": 338,
+      "protein": 84.4,
+      "carbs": 0,
+      "fat": 0,
+      "source": "CoFID 2021",
+      "code": "17-360",
+      "reference": "Gelatine",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Nocciole": {
+      "kcal": 650,
+      "protein": 14.1,
+      "carbs": 6,
+      "fat": 63.5,
+      "source": "CoFID 2021",
+      "code": "14-874",
+      "reference": "Hazelnuts, kernel only",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Arachidi": {
+      "kcal": 564,
+      "protein": 25.8,
+      "carbs": 12.5,
+      "fat": 46,
+      "source": "CoFID 2021",
+      "code": "14-877",
+      "reference": "Peanuts, kernel only, plain, unsalted",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Mango": {
+      "kcal": 48,
+      "protein": 0.7,
+      "carbs": 10.7,
+      "fat": 0.6,
+      "source": "CoFID 2021",
+      "code": "14-378",
+      "reference": "Mangoes, ripe, flesh only, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Lamponi": {
+      "kcal": 25,
+      "protein": 0.8,
+      "carbs": 5.1,
+      "fat": 0.3,
+      "source": "CoFID 2021",
+      "code": "14-375",
+      "reference": "Raspberries, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Fichi freschi": {
+      "kcal": 43,
+      "protein": 1.3,
+      "carbs": 9.5,
+      "fat": 0.3,
+      "source": "CoFID 2021",
+      "code": "14-091",
+      "reference": "Figs, whole green fruit, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Mela": {
+      "kcal": 51,
+      "protein": 0.6,
+      "carbs": 11.6,
+      "fat": 0.5,
+      "source": "CoFID 2021",
+      "code": "14-319",
+      "reference": "Apples, eating, raw, flesh and skin",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Farina di riso": {
+      "kcal": 366,
+      "protein": 6.4,
+      "carbs": 80.1,
+      "fat": 0.8,
+      "source": "CoFID 2021",
+      "code": "11-021",
+      "reference": "Flour, rice",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Farina Manitoba": {
+      "kcal": 353,
+      "protein": 11.3,
+      "carbs": 79.2,
+      "fat": 1.2,
+      "source": "CoFID 2021",
+      "code": "11-887",
+      "reference": "Flour, wheat, bread/strong, white",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Riferimento: farina bianca forte per pane."
+    },
+    "Farina integrale": {
+      "kcal": 327,
+      "protein": 11.6,
+      "carbs": 69.9,
+      "fat": 2,
+      "source": "CoFID 2021",
+      "code": "11-889",
+      "reference": "Flour, wheat, wholemeal",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Cioccolato bianco": {
+      "kcal": 529,
+      "protein": 8,
+      "carbs": 58.3,
+      "fat": 30.9,
+      "source": "CoFID 2021",
+      "code": "17-091",
+      "reference": "Chocolate, white",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Lievito di birra fresco": {
+      "kcal": 53,
+      "protein": 11.4,
+      "carbs": 1.1,
+      "fat": 0.4,
+      "source": "CoFID 2021",
+      "code": "17-378",
+      "reference": "Yeast, bakers, compressed",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Tuorlo": {
+      "kcal": 347,
+      "protein": 16.4,
+      "carbs": 0,
+      "fat": 31.3,
+      "source": "CoFID 2021",
+      "code": "12-939",
+      "reference": "Eggs, chicken, yolk, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Panna da montare": {
+      "kcal": 381,
+      "protein": 2,
+      "carbs": 2.7,
+      "fat": 40.3,
+      "source": "CoFID 2021",
+      "code": "12-333",
+      "reference": "Cream, fresh, whipping",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Biscotti secchi": {
+      "kcal": 432,
+      "protein": 6.6,
+      "carbs": 75.7,
+      "fat": 13.5,
+      "source": "CoFID 2021",
+      "code": "11-801",
+      "reference": "Biscuits, plain, reduced fat",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Biscotti generici a ridotto contenuto di grassi; controllare quelli utilizzati."
+    },
+    "Confettura di albicocche": {
+      "kcal": 261,
+      "protein": 0.4,
+      "carbs": 69.3,
+      "fat": 0,
+      "source": "CoFID 2021",
+      "code": "17-688",
+      "reference": "Jam, stone fruit",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Composta di frutta": {
+      "kcal": 123,
+      "protein": 0.5,
+      "carbs": 31.9,
+      "fat": 0.1,
+      "source": "CoFID 2021",
+      "code": "17-075",
+      "reference": "Jam, reduced sugar",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Confettura a ridotto contenuto di zuccheri: stima per composte di fragole o mirtilli non identificate."
+    },
+    "Crema cacao e nocciole": {
+      "kcal": 575,
+      "protein": 3.3,
+      "carbs": 59.4,
+      "fat": 37.7,
+      "source": "CoFID 2021",
+      "code": "17-659",
+      "reference": "Chocolate spread",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Crema al cioccolato generica: composizione effettiva variabile."
+    },
+    "Lievito per dolci": {
+      "kcal": 163,
+      "protein": 5.2,
+      "carbs": 37.8,
+      "fat": 0,
+      "source": "CoFID 2021",
+      "code": "17-355",
+      "reference": "Baking powder",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": ""
+    },
+    "Farina di mandorle": {
+      "kcal": 554,
+      "protein": 21.2,
+      "carbs": 5.3,
+      "fat": 49.9,
+      "source": "CoFID 2021",
+      "code": "14-896",
+      "reference": "Almonds, whole kernels",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Assunte mandorle intere macinate, non farina disoleata."
+    },
+    "Farina di riso glutinoso": {
+      "kcal": 366,
+      "protein": 6.4,
+      "carbs": 80.1,
+      "fat": 0.8,
+      "source": "CoFID 2021",
+      "code": "11-021",
+      "reference": "Flour, rice",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Riferimento nutrizionale: farina di riso generica. Per la consistenza serve comunque riso glutinoso."
+    },
+    "Scorza di limone": {
+      "kcal": 19,
+      "protein": 1,
+      "carbs": 3.2,
+      "fat": 0.3,
+      "source": "CoFID 2021",
+      "reference": "Lemons, whole, without pips",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Approssimazione da limone intero per la piccola dose di scorza.",
+      "code": "14-128"
+    },
+    "Zucchero a velo": {
+      "kcal": 394,
+      "protein": 0,
+      "carbs": 105,
+      "fat": 0,
+      "source": "CoFID 2021",
+      "reference": "Sugar, white",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Assunto zucchero macinato senza altri ingredienti.",
+      "code": "17-063"
+    },
+    "Zucchero di canna": {
+      "kcal": 394,
+      "protein": 0,
+      "carbs": 105,
+      "fat": 0,
+      "source": "CoFID 2021",
+      "reference": "Sugar, white",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Approssimazione da saccarosio.",
+      "code": "17-063"
+    },
+    "Burro vegetale": {
+      "kcal": 688,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 76.4,
+      "source": "CoFID 2021",
+      "code": "12-500",
+      "reference": "Baking fat and margarine (75-90% fat), hard block",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Riferimento margarina: il prodotto usato può avere un tenore di grassi diverso."
+    },
+    "Crema al cioccolato bianco": {
+      "kcal": 529,
+      "protein": 8,
+      "carbs": 58.3,
+      "fat": 30.9,
+      "source": "CoFID 2021",
+      "code": "17-091",
+      "reference": "Chocolate, white",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Stima da cioccolato bianco: la crema commerciale non è identificata nella fonte."
+    },
+    "Yogurt greco bianco 5%": {
+      "kcal": 93,
+      "protein": 9,
+      "carbs": 3,
+      "fat": 5,
+      "source": "FAGE Italia",
+      "reference": "Total 5%",
+      "url": "https://it.fage/prodotti/fage-total-5/fage-total-5-450g",
+      "note": ""
+    },
+    "Philadelphia Protein": {
+      "kcal": 87,
+      "protein": 11,
+      "carbs": 4.9,
+      "fat": 2.5,
+      "source": "Philadelphia Italia",
+      "reference": "Philadelphia Protein",
+      "url": "https://www.philadelphia.eu/it/i-prodotti/philadelphia-protein/index.html",
+      "note": ""
+    },
+    "Cioccolato fondente 85%": {
+      "kcal": 584,
+      "protein": 12.5,
+      "carbs": 22,
+      "fat": 46,
+      "source": "Lindt Italia",
+      "reference": "Excellence 85%",
+      "url": "https://www.lindt.it/tavoletta-excellence-85-100g",
+      "note": ""
+    },
+    "Pavesini": {
+      "kcal": 389,
+      "protein": 7,
+      "carbs": 83,
+      "fat": 2.5,
+      "source": "Pavesini",
+      "reference": "Gli originali",
+      "url": "https://www.pavesini.it/prodotti/gli-originali",
+      "note": ""
+    },
+    "Budino proteico al cioccolato": {
+      "kcal": 76,
+      "protein": 10,
+      "carbs": 5.5,
+      "fat": 1.5,
+      "source": "Ehrmann",
+      "reference": "High Protein Pudding Chocolate",
+      "url": "https://shop.ehrmann.de/products/ehrmann-high-protein-pudding-chocolate",
+      "note": ""
+    },
+    "Caseina in polvere": {
+      "kcal": 358,
+      "protein": 82,
+      "carbs": 4.7,
+      "fat": 1.2,
+      "source": "Myprotein",
+      "reference": "Caseina a rilascio prolungato non aromatizzata",
+      "url": "https://www.myprotein.it/p/nutrizione-sportiva/caseina-a-rilascio-prolungato/10798909/",
+      "note": "Riferimento generico: non è l’etichetta Life Pro vaniglia citata nel reel. Il gusto e la marca cambiano i valori."
+    },
+    "Proteine whey in polvere": {
+      "kcal": 412,
+      "protein": 82,
+      "carbs": 4,
+      "fat": 7.5,
+      "source": "Myprotein",
+      "reference": "Impact Whey Protein non aromatizzata",
+      "url": "https://www.myprotein.it/p/nutrizione-sportiva/impact-whey-protein-campione/10529583/",
+      "note": "Riferimento generico per le polveri aromatizzate nei reel; il prodotto effettivo può differire."
+    },
+    "Riso soffiato": {
+      "kcal": 375,
+      "protein": 7.5,
+      "carbs": 83.8,
+      "fat": 0.9,
+      "source": "Fiorentini",
+      "reference": "Riso soffiato",
+      "url": "https://fiorentinialimentari.it/prodotto/riso-soffiato/",
+      "note": ""
+    },
+    "Gallette di riso": {
+      "kcal": 379,
+      "protein": 8.8,
+      "carbs": 80,
+      "fat": 1.9,
+      "source": "Fiorentini",
+      "reference": "Bio gallette di riso",
+      "url": "https://fiorentinialimentari.it/prodotto/bio-gallette-di-riso/",
+      "note": ""
+    },
+    "Quinoa soffiata": {
+      "kcal": 379,
+      "protein": 12,
+      "carbs": 69,
+      "fat": 4.9,
+      "source": "Probios",
+      "reference": "Quinoa soffiata Bio&Te",
+      "url": "https://shop.probios.it/prodotti/cereali-colazne/cereali-soffiati/quinoa-soffiata.html",
+      "note": ""
+    },
+    "Farina di cocco": {
+      "kcal": 351,
+      "protein": 22,
+      "carbs": 20,
+      "fat": 12,
+      "source": "Baule Volante",
+      "reference": "Farina di cocco",
+      "url": "https://www.baulevolante.it/prodotto/farina-di-cocco",
+      "note": "Farina parzialmente sgrassata: diversa dal cocco rapè."
+    },
+    "Cannella": {
+      "kcal": 243,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 1.2,
+      "source": "Blife",
+      "reference": "Cannella in polvere bio",
+      "url": "https://www.blifesrl.it/cannella-in-polvere-bio/",
+      "note": ""
+    },
+    "Sciroppo d’agave": {
+      "kcal": 297,
+      "protein": 0,
+      "carbs": 71,
+      "fat": 0,
+      "source": "Eridania",
+      "reference": "Sciroppo d’agave Bio",
+      "url": "https://eridania.it/prodotti/linea-bio/sciroppo-d-agave-bio/",
+      "note": ""
+    },
+    "Sciroppo di yacon": {
+      "kcal": 197,
+      "protein": 2.1,
+      "carbs": 24.9,
+      "fat": 0.2,
+      "source": "Yacon & Co",
+      "reference": "Sirop de yacon nature",
+      "url": "https://yacon.co/products/sirop-de-yacon-copie",
+      "note": "Riferimento di marca diversa da quella citata nel reel."
+    },
+    "Vaniglia in pasta": {
+      "kcal": 303,
+      "protein": 0,
+      "carbs": 73,
+      "fat": 0,
+      "source": "Mega Dolciaria",
+      "reference": "Vaniglia Bourbon Pasta",
+      "url": "https://megadolciaria.it/wp-content/uploads/2020/07/pas141m-ok.pdf",
+      "note": "Riferimento per estratto o aroma non identificato: pasta dolcificata. Quantità e prodotto sono una scelta proposta."
+    },
+    "Farina d’avena al cacao": {
+      "kcal": 374.1,
+      "protein": 11.66,
+      "carbs": 64.78,
+      "fat": 9.46,
+      "source": "Stima da ingredienti",
+      "reference": "90% Farina d'avena; 10% Cacao amaro",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Miscela di riferimento 90% avena e 10% cacao; non riproduce l’etichetta del preparato aromatizzato della fonte."
+    },
+    "Preparato avena e whey": {
+      "kcal": 390.29999999999995,
+      "protein": 32.23,
+      "carbs": 50.690000000000005,
+      "fat": 7.919999999999999,
+      "source": "Stima da ingredienti",
+      "reference": "70% Farina d'avena; 30% Proteine whey in polvere",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
+      "note": "Stima 70% avena e 30% whey. Il preparato Prozis citato nel reel non ha etichetta verificata: i valori possono differire."
     }
   },
   "nutritionInfo": {
@@ -10626,5 +14328,19 @@
     "notice": "Stime da CoFID 2021 e da etichette di prodotti di riferimento. I valori del prodotto effettivamente usato possono differire. Tracce CoFID conteggiate come zero.",
     "license": "Dati CoFID: Crown copyright, Open Government Licence v3.0.",
     "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "collectionNotes": {
+    "Colazioni": {
+      "sourceCount": 44,
+      "recipeCount": 52,
+      "unresolved": [
+        {
+          "title": "Torta proteica",
+          "author": "emanuela_malavisi",
+          "url": "https://www.instagram.com/emanuela_malavisi/reel/DdgeUNANcmg/",
+          "reason": "La descrizione rimanda a una ricetta inviata in privato. Nel video si distinguono uova, cioccolato e un ingrediente bianco, ma non si può identificarlo con certezza né recuperare dosi e cottura."
+        }
+      ]
+    }
   }
 }

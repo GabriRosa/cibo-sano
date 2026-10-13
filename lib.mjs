@@ -9,6 +9,7 @@ export function filterRecipes(recipes, {query='', category='Tutte', view='all', 
   const terms = normalize(query).split(/\s+/).filter(Boolean);
   const rows = recipes.filter(r => (category==='Tutte' || r.category===category) &&
     (view!=='favorites' || favorites.has(r.id)) && (view!=='portions' || r.kind==='porzione') &&
+    (view!=='breakfast' || r.collection==='Colazioni') &&
     terms.every(term => searchableText(r).split(/[^\p{L}\p{N}]+/u).some(word => word.startsWith(term))));
   const byTitle = (a,b) => a.title.localeCompare(b.title, 'it');
   if (sort==='az') rows.sort(byTitle);

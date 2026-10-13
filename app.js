@@ -55,7 +55,13 @@ function render() {
   $('recipes').innerHTML = filtered.slice(0, visibleLimit).map(card).join('');
   $('favorite-count').textContent = data.recipes.filter(r=>favorites.has(r.id)).length;
   $('result-count').textContent = `${filtered.length} ${filtered.length===1?'scheda':'schede'}`;
-  $('results-title').textContent = state.query ? 'Risultati della ricerca' : state.view==='favorites' ? 'Le tue preferite' : state.view==='portions' ? 'Una porzione, già pensata' : state.category!=='Tutte' ? state.category : 'Trova la tua prossima idea';
+  $('results-title').textContent = state.query ? 'Risultati della ricerca' : state.view==='breakfast' ? 'Le tue colazioni' : state.view==='favorites' ? 'Le tue preferite' : state.view==='portions' ? 'Una porzione, già pensata' : state.category!=='Tutte' ? state.category : 'Trova la tua prossima idea';
+  const collection = data.collectionNotes?.Colazioni;
+  $('collection-notes').hidden = state.view!=='breakfast' || !collection;
+  if (collection && state.view==='breakfast') {
+    const unresolved = Array.isArray(collection.unresolved) ? collection.unresolved : [];
+    $('collection-notes').innerHTML = `<summary>Da ${e(collection.sourceCount)} reel: ${e(collection.recipeCount)} ricette · ${unresolved.length} da completare</summary><p>Un reel contiene dieci idee, disponibili come schede separate. Le porzioni dei dolci indicano una fetta o un numero di pezzi; non sempre corrispondono a una colazione completa.</p>${unresolved.map(r=>`<p><b>${e(r.title)}</b> · @${e(r.author)}. ${e(r.reason)} ${sourceURL(r.url)?`<a href="${e(sourceURL(r.url))}" target="_blank" rel="noopener noreferrer">Apri il reel ↗</a>`:''}</p>`).join('')}`;
+  }
   $('load-more').hidden = filtered.length <= visibleLimit;
   $('load-more').textContent = `Mostra altre ${Math.min(24, Math.max(0,filtered.length-visibleLimit))} ricette`;
   $('empty').hidden = filtered.length!==0;
