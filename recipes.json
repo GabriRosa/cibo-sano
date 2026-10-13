@@ -1,0 +1,3811 @@
+{
+  "schemaVersion": 1,
+  "version": "4c881f1a241d",
+  "updatedAt": "2026-10-13",
+  "recipes": [
+    {
+      "id": "idea-14",
+      "title": "Bresaola, rucola e grana",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Bresaola",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Rucola",
+          "grams": 80,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Grana",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pomodorini",
+          "grams": 200,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 80,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 5,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 530
+    },
+    {
+      "id": "idea-26",
+      "title": "Coniglio alle erbe",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Coniglio disossato",
+          "grams": 160,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Erbe aromatiche",
+          "grams": 3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Patate",
+          "grams": 250,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Carote",
+          "grams": 200,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Erbe proposte: rosmarino e salvia.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 590
+    },
+    {
+      "id": "idea-30",
+      "title": "Crema di broccoli e porri",
+      "category": "Vegetali e legumi",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Broccoli",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Porri",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cannellini cotti, sgocciolati",
+          "grams": 180,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 50,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Acqua per la consistenza desiderata; cannellini come completamento proteico.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 540
+    },
+    {
+      "id": "idea-12",
+      "title": "Frittata di albumi e peperoni",
+      "category": "Vegetali e legumi",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Albumi",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoni",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 50,
+          "added": true,
+          "note": "Circa 1 uovo medio, senza guscio"
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 80,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 550
+    },
+    {
+      "id": "idea-04",
+      "title": "Gamberi e zucchine",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Gamberi sgusciati",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchine",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Riso basmati",
+          "grams": 60,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 520
+    },
+    {
+      "id": "idea-34",
+      "title": "Gamberoni alla griglia",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Gamberoni sgusciati",
+          "grams": 220,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Riso basmati",
+          "grams": 70,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Zucchine",
+          "grams": 250,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Succo di limone",
+          "grams": 20,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 580
+    },
+    {
+      "id": "idea-27",
+      "title": "Hamburger di pollo con insalata",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Petto di pollo",
+          "grams": 170,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lattuga",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pomodorini",
+          "grams": 150,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 80,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Pollo macinato senza pelle; lattuga scelta come insalata. Le calorie di un hamburger confezionato possono differire.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 520
+    },
+    {
+      "id": "idea-24",
+      "title": "Insalata greca con feta light",
+      "category": "Vegetali e legumi",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Feta light",
+          "grams": 120,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Ceci cotti, sgocciolati",
+          "grams": 100,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pomodorini",
+          "grams": 150,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Cetriolo",
+          "grams": 150,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Cipolla",
+          "grams": 30,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olive denocciolate",
+          "grams": 20,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 50,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 5,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "La composizione dell’insalata è proposta: nel titolo della fonte è esplicitata soltanto la feta light. Controllare l’etichetta del formaggio.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 600
+    },
+    {
+      "id": "idea-17",
+      "title": "Manzo e fagiolini",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Manzo magro",
+          "grams": 160,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fagiolini",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 80,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 560
+    },
+    {
+      "id": "idea-09",
+      "title": "Manzo e grana",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Manzo magro",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Grana",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Rucola",
+          "grams": 80,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pomodorini",
+          "grams": 150,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 80,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 5,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 550
+    },
+    {
+      "id": "idea-02",
+      "title": "Merluzzo con pomodorini",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Merluzzo, filetti",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pomodorini",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Patate",
+          "grams": 300,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 530
+    },
+    {
+      "id": "idea-23",
+      "title": "Nasello al prezzemolo",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Nasello, filetti",
+          "grams": 220,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Prezzemolo",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Patate",
+          "grams": 280,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Carote",
+          "grams": 250,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 590
+    },
+    {
+      "id": "idea-03",
+      "title": "Omelette di albumi e funghi",
+      "category": "Vegetali e legumi",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Albumi",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Funghi",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 50,
+          "added": true,
+          "note": "Circa 1 uovo medio, senza guscio"
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 80,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 530
+    },
+    {
+      "id": "idea-15",
+      "title": "Orata al limone",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Orata, filetti",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Succo di limone",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchine",
+          "grams": 250,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Patate",
+          "grams": 250,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 570
+    },
+    {
+      "id": "idea-31",
+      "title": "Platessa al limone",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Platessa, filetti",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Succo di limone",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchine",
+          "grams": 250,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Riso basmati",
+          "grams": 70,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 550
+    },
+    {
+      "id": "idea-01",
+      "title": "Pollo al limone e spinaci",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Petto di pollo",
+          "grams": 160,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Succo di limone",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Spinaci",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Riso basmati",
+          "grams": 60,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 550
+    },
+    {
+      "id": "idea-44",
+      "title": "Pollo e verza",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Petto di pollo",
+          "grams": 170,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Verza",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 80,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 540
+    },
+    {
+      "id": "idea-11",
+      "title": "Pollo, cavolfiore e curry",
+      "category": "Pasta e cereali",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Petto di pollo",
+          "grams": 160,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cavolfiore",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Curry in polvere",
+          "grams": 2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Riso basmati",
+          "grams": 60,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 550
+    },
+    {
+      "id": "idea-19",
+      "title": "Polpette di tacchino",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Petto di tacchino",
+          "grams": 170,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 25,
+          "added": true,
+          "note": "Mezzo uovo medio sbattuto; oppure raddoppiare per 2 porzioni"
+        },
+        {
+          "name": "Pangrattato",
+          "grams": 20,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Zucchine",
+          "grams": 250,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 60,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Tacchino macinato. Uovo e pangrattato sono una proposta per legare le polpette; zucchine e pane completano il piatto.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 570
+    },
+    {
+      "id": "idea-28",
+      "title": "Polpo e patate",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Polpo pulito",
+          "grams": 220,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Patate",
+          "grams": 300,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fagiolini",
+          "grams": 200,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "I 220 g di polpo sono pesati crudi e puliti, non già cotti.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 560
+    },
+    {
+      "id": "idea-37",
+      "title": "Polpo, sedano e ceci",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Polpo pulito",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sedano",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Ceci cotti, sgocciolati",
+          "grams": 120,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pomodorini",
+          "grams": 150,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 50,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "I 200 g di polpo sono pesati crudi e puliti.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 580
+    },
+    {
+      "id": "idea-32",
+      "title": "Quinoa, edamame e pollo",
+      "category": "Pasta e cereali",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Quinoa",
+          "grams": 60,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Edamame cotti, sgusciati",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Petto di pollo",
+          "grams": 120,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchine",
+          "grams": 200,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 5,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 550
+    },
+    {
+      "id": "idea-35",
+      "title": "Riso basmati, pollo e curry",
+      "category": "Pasta e cereali",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Riso basmati",
+          "grams": 70,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Petto di pollo",
+          "grams": 160,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Curry in polvere",
+          "grams": 2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchine",
+          "grams": 250,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 570
+    },
+    {
+      "id": "idea-07",
+      "title": "Salmone e asparagi",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Salmone, filetto",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Asparagi",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Patate",
+          "grams": 250,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 5,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 600
+    },
+    {
+      "id": "idea-13",
+      "title": "Seppie e bietole",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Seppie pulite",
+          "grams": 220,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Bietole",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Patate",
+          "grams": 300,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 540
+    },
+    {
+      "id": "idea-18",
+      "title": "Sgombro e finocchi",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Sgombro, filetti",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Finocchi",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 60,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 5,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 580
+    },
+    {
+      "id": "idea-40",
+      "title": "Skyr, fragole e chia",
+      "category": "Dolci e colazioni",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Skyr bianco senza zuccheri aggiunti",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fragole",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Semi di chia",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 30,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 400
+    },
+    {
+      "id": "idea-08",
+      "title": "Skyr, mirtilli e mandorle",
+      "category": "Dolci e colazioni",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Skyr bianco senza zuccheri aggiunti",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Mirtilli",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Mandorle",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Fiocchi d'avena",
+          "grams": 30,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 440
+    },
+    {
+      "id": "idea-39",
+      "title": "Sogliola e carote",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Sogliola, filetti",
+          "grams": 220,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Carote",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Patate",
+          "grams": 250,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 570
+    },
+    {
+      "id": "idea-21",
+      "title": "Spiedini di pollo e peperoni",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Petto di pollo",
+          "grams": 170,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoni",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Riso basmati",
+          "grams": 60,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 570
+    },
+    {
+      "id": "idea-41",
+      "title": "Straccetti di pollo e peperoni",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Petto di pollo",
+          "grams": 170,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoni",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 80,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 550
+    },
+    {
+      "id": "idea-05",
+      "title": "Tacchino e broccoli",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Petto di tacchino",
+          "grams": 170,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Broccoli",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 90,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 580
+    },
+    {
+      "id": "idea-33",
+      "title": "Tacchino e melanzane",
+      "category": "Carne",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Petto di tacchino",
+          "grams": 170,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Melanzane",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 80,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Fesa fresca, non affettato.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 530
+    },
+    {
+      "id": "idea-25",
+      "title": "Tofu e verdure",
+      "category": "Vegetali e legumi",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Tofu al naturale",
+          "grams": 220,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchine",
+          "grams": 150,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Peperoni",
+          "grams": 100,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Riso basmati",
+          "grams": 60,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 5,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Zucchine e peperoni sono la scelta proposta per le verdure generiche della fonte; calorie del tofu variabili per marca.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 590
+    },
+    {
+      "id": "idea-42",
+      "title": "Tonno e cavolo rosso",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Tonno fresco",
+          "grams": 180,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cavolo rosso",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Riso basmati",
+          "grams": 60,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 580
+    },
+    {
+      "id": "idea-06",
+      "title": "Tonno, ceci e rucola",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Tonno al naturale, sgocciolato",
+          "grams": 120,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Ceci cotti, sgocciolati",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Rucola",
+          "grams": 80,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pomodorini",
+          "grams": 150,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 50,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 600
+    },
+    {
+      "id": "idea-16",
+      "title": "Tortino cioccolato e pera, con skyr",
+      "category": "Dolci e colazioni",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Cioccolato fondente",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pera",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Farina d'avena",
+          "grams": 30,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Uovo intero",
+          "grams": 50,
+          "added": true,
+          "note": "Circa 1 uovo medio, senza guscio"
+        },
+        {
+          "name": "Skyr bianco senza zuccheri aggiunti",
+          "grams": 150,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Versione proposta: farina e uovo per il tortino; skyr a lato. La fonte cita solo cioccolato e pere. Impasto e cottura non sono stati verificati: è una proposta di ingredienti e porzione, non una ricetta collaudata.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 450
+    },
+    {
+      "id": "idea-38",
+      "title": "Uova in camicia e spinaci",
+      "category": "Vegetali e legumi",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Uovo intero",
+          "grams": 150,
+          "added": false,
+          "note": "Circa 3 uova medie, senza guscio"
+        },
+        {
+          "name": "Spinaci",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 80,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 560
+    },
+    {
+      "id": "idea-22",
+      "title": "Uova strapazzate e spinaci",
+      "category": "Vegetali e legumi",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Uovo intero",
+          "grams": 100,
+          "added": false,
+          "note": "Circa 2 uova medie, senza guscio"
+        },
+        {
+          "name": "Spinaci",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Albumi",
+          "grams": 150,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 70,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 530
+    },
+    {
+      "id": "idea-43",
+      "title": "Vellutata di porri e patate",
+      "category": "Vegetali e legumi",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Porri",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Patate",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cannellini cotti, sgocciolati",
+          "grams": 180,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 100,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 5,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Acqua per la consistenza desiderata; cannellini e yogurt come completamento proteico.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 510
+    },
+    {
+      "id": "idea-20",
+      "title": "Vellutata di zucca e zenzero",
+      "category": "Vegetali e legumi",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Zucca",
+          "grams": 300,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zenzero fresco",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Lenticchie cotte, sgocciolate",
+          "grams": 180,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 150,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 50,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Acqua per la consistenza desiderata. Lenticchie e yogurt sono il completamento proteico proposto.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 600
+    },
+    {
+      "id": "idea-29",
+      "title": "Wrap di lattuga e tonno",
+      "category": "Pesce",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Lattuga",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Tonno al naturale, sgocciolato",
+          "grams": 140,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Ceci cotti, sgocciolati",
+          "grams": 120,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 60,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Pane a lato; le foglie di lattuga formano il wrap.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 580
+    },
+    {
+      "id": "idea-45",
+      "title": "Yogurt greco, cetriolo e menta",
+      "category": "Vegetali e legumi",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Yogurt greco bianco 2%",
+          "grams": 250,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cetriolo",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Menta",
+          "grams": 3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Ceci cotti, sgocciolati",
+          "grams": 100,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 70,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 5,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Yogurt come crema salata, con ceci e pane a lato: porzione proposta come pasto principale.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 570
+    },
+    {
+      "id": "idea-36",
+      "title": "Zucchine a spaghetti e gamberi",
+      "category": "Pasta e cereali",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Zucchine",
+          "grams": 300,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Gamberi sgusciati",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pasta integrale",
+          "grams": 60,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 10,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Pasta proposta insieme agli spaghetti di zucchine per completare il pasto.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 520
+    },
+    {
+      "id": "idea-10",
+      "title": "Zuppa di miso e tofu",
+      "category": "Vegetali e legumi",
+      "kind": "porzione",
+      "ingredientText": "",
+      "ingredients": [
+        {
+          "name": "Miso",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Tofu al naturale",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchine",
+          "grams": 150,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Carote",
+          "grams": 100,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Riso basmati",
+          "grams": 50,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 5,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [],
+      "notes": "Acqua per la zuppa: circa 350–450 ml. Il tofu varia molto: usare la sua etichetta per affinare le calorie.",
+      "author": "francesca_tortora_76",
+      "url": "https://www.instagram.com/francesca_tortora_76/reel/DdrUvbsAlKY/",
+      "sourceType": "Idea dell’autrice, dosi proposte",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": 1,
+      "kcal": 570
+    },
+    {
+      "id": "fonte-046",
+      "title": "Anguria al microonde con feta e rucola",
+      "category": "Dolci e colazioni",
+      "kind": "originale",
+      "ingredientText": "1 cocomero, preferibilmente senza semi; feta; rucola; olio.",
+      "ingredients": [],
+      "steps": [
+        "Tagliare l’anguria a spicchi.",
+        "Cuocere in microonde 30 minuti totali, in intervalli da 10 minuti, eliminando ogni volta l’acqua rilasciata.",
+        "Raffreddare in frigorifero e servire con feta, rucola e olio."
+      ],
+      "notes": "Potenza del microonde e quantità dei condimenti non indicate.",
+      "author": "lucaromano_yt",
+      "url": "https://www.instagram.com/lucaromano_yt/reel/DMQwYBNA-Lg/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-034",
+      "title": "Barrette di quinoa, cioccolato e proteine",
+      "category": "Dolci e colazioni",
+      "kind": "originale",
+      "ingredientText": "Quinoa; fragole; cioccolato; 4 misurini di proteine vegetali Birdman Falcon al cioccolato.",
+      "ingredients": [],
+      "steps": [
+        "Tostare la quinoa in padella asciutta.",
+        "Lavare le fragole, affettarle e disporle nell’essiccatore.",
+        "Sciogliere il cioccolato a bagnomaria e incorporare gradualmente i quattro misurini di proteine, mescolando.",
+        "Distribuire negli stampi per barrette; aggiungere fragole essiccate e quinoa tostata.",
+        "Mettere in freezer per 2 ore e sformare."
+      ],
+      "notes": "Mancano le quantità di quinoa, fragole e cioccolato, e il peso del misurino. Il sottotitolo indica 117 gradi per l’essiccatore, senza specificare °F/°C né durata: dato ambiguo, non convertito e non presentato come temperatura operativa. Nessuna trascrizione audio automatica.",
+      "author": "birdman_life",
+      "url": "https://www.instagram.com/birdman_life/reel/DIKq6hoxMqe/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-063",
+      "title": "Barrette proteiche",
+      "category": "Dolci e colazioni",
+      "kind": "originale",
+      "ingredientText": "60 g proteine in polvere; 60 ml acqua; 2 cucchiai miele; 1 cucchiaio burro di arachidi; 1 pizzico sale; 100 g fiocchi di avena; 50 g cereali; 70 g cioccolato fondente.",
+      "ingredients": [],
+      "steps": [
+        "Mescolare le proteine in polvere con l’acqua, poi aggiungere miele, burro di arachidi e sale.",
+        "Incorporare fiocchi di avena e cereali.",
+        "Trasferire in un contenitore rettangolare foderato con carta da forno e compattare.",
+        "Sciogliere il cioccolato in microonde o a bagnomaria e distribuirlo sulla superficie.",
+        "Mettere in freezer per 20 minuti, estrarre e tagliare a barrette."
+      ],
+      "notes": "Tipo e gusto delle proteine, tipo esatto di cereali e dimensioni del contenitore non specificati dalle scritte. Il video mostra circa sei barrette.",
+      "author": "hasp.original",
+      "url": "https://www.instagram.com/hasp.original/reel/DC2PUlGNJau/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "completa",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-001",
+      "title": "Bruschette con salsiccia, zucca e stracchino",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "4 fette di pane; 300 g stracchino; 300 g salsiccia; 200 g purea di zucca; pepe nero q.b.",
+      "ingredients": [],
+      "steps": [
+        "Tagliare il pane a fette non troppo sottili.",
+        "Togliere il budello alla salsiccia, sminuzzarla e amalgamarla con stracchino e purea di zucca. La descrizione suggerisce zucca cotta in forno o padella e poi frullata.",
+        "Spalmare sulle fette e cuocere in forno o friggitrice ad aria a 200 °C per 10–15 minuti, fino alla crosticina dorata."
+      ],
+      "notes": "",
+      "author": "ilmiopiattoacolori",
+      "url": "https://www.instagram.com/ilmiopiattoacolori/reel/Dd_-72SNiJa/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-090",
+      "title": "Burger di tonno con salsa allo yogurt",
+      "category": "Pesce",
+      "kind": "originale",
+      "ingredientText": "260 g tonno al naturale in scatola; 2 fette pane in cassetta; 2 cucchiai parmigiano; 30 g olive verdi; timo; 1 cucchiaio olio. Salsa: 100 g yogurt; 1 cucchiaio tahina; mezzo cucchiaino curcuma; 1 cucchiaio lime; sale.",
+      "ingredients": [],
+      "steps": [
+        "Frullare gli ingredienti del burger circa 60 secondi.",
+        "Formare palline, metterle in padella con un filo d’olio e schiacciarle a burger.",
+        "Cuocere fino a doratura e servire con la salsa alla curcuma."
+      ],
+      "notes": "La fonte separa gli ingredienti della salsa, ma non ne descrive la preparazione. Il procedimento estratto copre i burger; tempo e calore in padella non sono indicati.",
+      "author": "cottoaldente",
+      "url": "https://www.instagram.com/cottoaldente/reel/CiuYmlWDlZs/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-081",
+      "title": "Burger di zucca e patate filanti",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "Per 5–6: 500 g patate; 350 g zucca; 1 uovo; 2 cucchiai parmigiano; sale e spezie; fecola di patate solo se l’impasto è troppo molle; pangrattato o farina di mais; 50–60 g mozzarella light. Nei passaggi compaiono anche cornflakes tritati come panatura e olio spray.",
+      "ingredients": [],
+      "steps": [
+        "Lessare patate e zucca a pezzi e schiacciarle.",
+        "Unire uovo, parmigiano, sale e spezie.",
+        "Formare burger con una fettina di mozzarella al centro, coprire con altro impasto e impanare.",
+        "Ungere con olio spray e cuocere in friggitrice ad aria a 190 °C per 12 minuti o in forno a 200 °C per 15–20 minuti."
+      ],
+      "notes": "L’elenco propone farina di mais; i passaggi citano invece cornflakes tritati come alternativa al pangrattato.",
+      "author": "giuseppe_healthy",
+      "url": "https://www.instagram.com/giuseppe_healthy/reel/Cj2fbQgjSgD/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-065",
+      "title": "Burrito di manzo, uova e formaggio",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Per 6 burrito. Manzo: 800 g macinato magro, grassi 5% o meno; 2 cucchiaini paprika; 2 cucchiaini aglio in polvere; 1 cucchiaino ciascuno di cipolla in polvere, cayenna, cumino e origano; 2 cucchiaini sale; 2 cucchiaini pepe nero; 250 ml salsa di pomodoro; olio spray. Uova: 12 uova sbattute; 15 g burro light; sale e pepe. Salsa: 1 avocado; 160 g yogurt greco 0%; 60 ml latte scremato o parzialmente scremato; 1 cucchiaino miele; succo di mezzo lime; sale e pepe. Inoltre: 6 tortillas, 180 g formaggio grattugiato light e 240 g formaggio light a fette, 12 fette.",
+      "ingredients": [],
+      "steps": [
+        "Tostare il burrito in padella, eventualmente con burro, appoggiando per primo il lato della chiusura per sigillarlo.",
+        "Far raffreddare prima di avvolgere."
+      ],
+      "notes": "Tradotto dall’inglese. Mancano cottura del manzo e delle uova, preparazione della salsa e assemblaggio. La descrizione contiene anche istruzioni per conservare e riscaldare, che non completano la ricetta.",
+      "author": "panaceapalm",
+      "url": "https://www.instagram.com/panaceapalm/reel/DAtPZThNG1o/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-060",
+      "title": "Burrito di pollo sfilacciato",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "180 g sovracoscia di pollo; cipolla; porri; carota; aglio; paprika; curcuma; curry. Nei passaggi: olio, acqua, concentrato di pomodoro e piadina.",
+      "ingredients": [],
+      "steps": [
+        "Cuocere le verdure con poco olio e acqua.",
+        "Aggiungere il pollo, rosolare e continuare la cottura con acqua e concentrato di pomodoro.",
+        "Sfilacciare il pollo cotto e mescolare al fondo.",
+        "Farcire la piadina e chiudere."
+      ],
+      "notes": "Solo il pollo ha una dose; durata di cottura assente.",
+      "author": "gabriele_sofia_healthy_chef",
+      "url": "https://www.instagram.com/gabriele_sofia_healthy_chef/reel/DDpaCj1t9-Z/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-056",
+      "title": "Butter chicken fit",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Per 2: 300 g petto di pollo; 150 g yogurt greco 0%; succo di mezzo limone; 200 g passata; 1 cucchiaio olio EVO; 1 cucchiaino pesto di aglio e zenzero; un pizzico zucchero; 1 cucchiaino ciascuno di garam masala, paprika e curcuma; sale e pepe.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "",
+      "author": "_nehaluddin_",
+      "url": "https://www.instagram.com/_nehaluddin_/reel/DJHnbEdshGy/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-024",
+      "title": "Capragna estiva con pane carasau",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 4: 460 g fagioli bianchi di Spagna; 300 g pomodorini; 130 g bevanda di soia naturale; 100 g pesto; 60 g olio EVO; 3 mozzarelle vegetali da 125 g; 2 cucchiai lievito alimentare; 6 fogli pane carasau. Nei passaggi: sale e grattugiato vegetale.",
+      "ingredients": [],
+      "steps": [
+        "Frullare fagioli, bevanda di soia, olio, lievito alimentare e sale. Refrigerare 15 minuti.",
+        "Rosolare i pomodorini in quarti con olio e sale 5 minuti e affettare le mozzarelle.",
+        "In una teglia 24×15 cm stendere un po’ di crema, poi 2 pezzi di carasau inumiditi brevemente.",
+        "Aggiungere mozzarella, 3 cucchiai abbondanti di crema, pomodorini, pesto e grattugiato; ripetere per altri due strati.",
+        "Finire con carasau, crema, pomodorini con sughetto, pesto e grattugiato. Refrigerare almeno 1 ora."
+      ],
+      "notes": "Il grattugiato vegetale non ha una dose indicata.",
+      "author": "di.pazza",
+      "url": "https://www.instagram.com/di.pazza/reel/DZc2HMiMLlS/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-057",
+      "title": "Carote a nastri con salsa piccante",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "Per 1–2: 4–5 carote; 1 spicchio aglio; 3 cucchiai olio; 1 cucchiaio salsa di soia; 1 cucchiaio aceto di mele; peperoncino indicato come “1/2 cucchiaini”; sesamo.",
+      "ingredients": [],
+      "steps": [
+        "Pelare le carote e ricavare nastri con il pelapatate.",
+        "Tritare l’aglio in una ciotolina e versarvi l’olio molto caldo.",
+        "Attendere qualche secondo e unire gli altri ingredienti della salsa.",
+        "Condire le carote, mescolare e attendere almeno 10 minuti."
+      ],
+      "notes": "La dose “1/2 cucchiaini” di peperoncino è ambigua nella fonte: non è stata convertita in una quantità certa.",
+      "author": "eatsgiulia",
+      "url": "https://www.instagram.com/eatsgiulia/reel/DIHD20so25p/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-051",
+      "title": "Ceci al cocco e curry con riso",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Cipolla; aglio; ceci ammollati una notte e cotti oppure precotti; latte di cocco; curry; curcuma; prezzemolo; sale; pepe; riso. Per ceci croccanti: ceci, paprika, olio, sale, aglio secco.",
+      "ingredients": [],
+      "steps": [
+        "Fare un soffritto leggero con cipolla e aglio.",
+        "Unire ceci cotti, latte di cocco, curry, curcuma e prezzemolo tritato.",
+        "Sobbollire qualche minuto per addensare, aggiustare di sale e pepe e abbinare al riso.",
+        "Per la componente croccante: condire i ceci con paprika, olio, sale e aglio secco; cuocere in friggitrice ad aria a 190 °C per 15 minuti, mescolando spesso."
+      ],
+      "notes": "Ingredienti ricavati dai passaggi: non sono fornite quantità. La cottura del riso non è descritta.",
+      "author": "fabiohofame",
+      "url": "https://www.instagram.com/fabiohofame/reel/DJ6WKgNoc0t/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-043",
+      "title": "Ceci con peperoni e pomodoro",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "Per 2: 1 cipolla bianca; 4 peperoni; 1 cucchiaio concentrato di pomodoro; 120 g ceci decorticati secchi; 50 g farina di ceci; 40 g olive taggiasche; 7–8 pomodori senza buccia; prezzemolo.",
+      "ingredients": [],
+      "steps": [
+        "Cuocere i ceci circa 1 ora, conservando l’acqua per la zuppetta."
+      ],
+      "notes": "La descrizione non spiega il resto della preparazione né l’uso della farina di ceci.",
+      "author": "dilettasecco",
+      "url": "https://www.instagram.com/dilettasecco/reel/DPb0TSqDBTH/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-010",
+      "title": "Cetrioli al sumiso",
+      "category": "Salse e basi",
+      "kind": "originale",
+      "ingredientText": "150 g cetrioli baby; un pizzico sale; 20 g miso; mezzo cucchiaio zucchero; mezzo cucchiaio aceto di riso; mezzo cucchiaio sesamo tostato. Facoltativo: 15 g myoga affettato.",
+      "ingredients": [],
+      "steps": [
+        "Affettare finemente i cetrioli, salarli e lasciarli riposare 10 minuti.",
+        "Strizzarli delicatamente.",
+        "Mescolare gli ingredienti del condimento e amalgamarli ai cetrioli."
+      ],
+      "notes": "Tradotto dall’inglese. L’autore specifica cetrioli baby.",
+      "author": "aisletotokyo",
+      "url": "https://www.instagram.com/aisletotokyo/reel/DdeY9cQt2ea/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-049",
+      "title": "Chicken tikka masala fit",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Per 3–4: 300 g petto di pollo; 100 g yogurt greco 0%; 1 cucchiaino ciascuno di paprika, garam masala, curcuma e cumino; succo di mezzo limone; sale. Salsa: mezza cipolla; 1 cucchiaino pesto di aglio e zenzero; peperoni giallo, verde e rosso per un totale di 1 peperone; 1 cucchiaio olio EVO; 200 ml passata; 50 ml latte di cocco.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "",
+      "author": "_nehaluddin_",
+      "url": "https://www.instagram.com/_nehaluddin_/reel/DKkUxRaNgg9/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-011",
+      "title": "Chicken zosui",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 4: 220 g coscia di pollo; 80 g cavolo cinese; 40 g carota; 1 cipollotto; 2 uova; 180 ml riso; mezzo cucchiaio olio di sesamo; 1.200 ml acqua; sale e pepe. Marinata: 3 cucchiai salsa di soia; 2 cucchiai vino bianco secco poco acido; mezzo cucchiaio zucchero; 1 pezzo zenzero. Alternativa: 1 cucchiaio sake + 1 di mirin al posto del vino, senza zucchero.",
+      "ingredients": [],
+      "steps": [
+        "Sciacquare e scolare il riso. Affettare la carota, tagliare il cavolo e sbattere le uova.",
+        "Affettare il bianco del cipollotto per guarnire e tagliare il verde a pezzi di 3 cm. Grattugiare lo zenzero e mescolare la marinata.",
+        "Tagliare il pollo a bocconi e marinarlo 15 minuti.",
+        "Rosolarlo nell’olio di sesamo a fuoco medio, tenendo da parte il liquido della marinata.",
+        "Quando è dorato e la soia comincia a tostare, unire acqua, marinata tenuta da parte, verde del cipollotto, carota e cavolo. Portare a bollore.",
+        "Aggiungere il riso, coprire e cuocere a fuoco basso 12 minuti. Regolare sale e pepe.",
+        "Versare le uova a filo e mescolare delicatamente. Servire con il bianco del cipollotto."
+      ],
+      "notes": "Tradotto dall’inglese. Il riso è misurato in ml nella fonte; non è stato convertito in grammi.",
+      "author": "aisletotokyo",
+      "url": "https://www.instagram.com/aisletotokyo/reel/Ddb0NEpsrst/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-064",
+      "title": "Cloud bread al cacao",
+      "category": "Dolci e colazioni",
+      "kind": "originale",
+      "ingredientText": "180 ml albume a temperatura ambiente; 45 g fecola di patate; 40 g eritritolo più dolcificante q.b. (gli autori usano 0,1 g sucralosio), oppure 60 g zucchero; 5 g cacao; qualche goccia succo di limone; gocce di cioccolato facoltative.",
+      "ingredients": [],
+      "steps": [
+        "Montare l’albume con il limone.",
+        "Unire gradualmente eritritolo, dolcificante e fecola senza smontare; aggiungere infine il cacao.",
+        "Formare il composto su carta forno e aggiungere eventualmente gocce di cioccolato.",
+        "Cuocere in forno statico preriscaldato a 160 °C per 50 minuti."
+      ],
+      "notes": "",
+      "author": "2foodfitlovers",
+      "url": "https://www.instagram.com/2foodfitlovers/reel/DBeYNGOyjXo/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-067",
+      "title": "Cous cous di gambo di cavolfiore",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "200 g gambi di cavolfiore; 120 g ceci già cotti; 12 pomodori secchi sott’olio; 1 spicchio aglio; 1 cucchiaio capperi all’aceto di vino; 100 g noci; succo di mezzo limone; dado vegetale in polvere; basilico e menta; olio EVO; sale e pepe. Nei passaggi: mezzo bicchiere acqua e circa 2 cucchiai olio di conservazione dei pomodori.",
+      "ingredients": [],
+      "steps": [
+        "Tritare i gambi grossolanamente nel mixer per ottenere granelli.",
+        "Cuocerli in padella con olio, aglio, dado e mezzo bicchiere d’acqua a fuoco medio per 5–10 minuti. Aggiungere i ceci e saltare qualche minuto.",
+        "Frullare pomodori secchi, capperi, noci, olio dei pomodori, lo spicchio d’aglio già usato e le erbe; diluire con poca acqua fredda se serve.",
+        "Condire il cavolfiore con il pesto, aggiungere limone e menta."
+      ],
+      "notes": "",
+      "author": "rucoolaaa",
+      "url": "https://www.instagram.com/rucoolaaa/reel/DBLk57Wg6xv/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-078",
+      "title": "Crema di broccoli con patate croccanti",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "Per 4: 2 porri; 2 broccoli medio-grandi; 3 patate grandi; rosmarino, paprika e aglio. Brodo: scarti dei broccoli e dei porri; 1 carota; 1 cipolla; 1 pezzo sedano; 1,7 l acqua. Nei passaggi: sale, pepe, peperoncino e olio.",
+      "ingredients": [],
+      "steps": [
+        "Preparare il brodo con gli scarti, carota, cipolla e sedano, cuocendo almeno 30 minuti. Cuocervi anche una patata.",
+        "Stufare i porri a pezzi coperti di brodo. Aggiungere i broccoli a pezzetti e due dita di brodo; salare, pepare, unire peperoncino e cuocere 10–15 minuti.",
+        "Tagliare le altre patate a cubetti e condirle con aglio, olio, sale, pepe, rosmarino e paprika.",
+        "Scaldare aglio, olio e rosmarino in padella e dorare i cubetti senza muoverli finché il primo lato è ben colorito.",
+        "Frullare la crema con la patata lessata nel brodo, rosmarino, sale, pepe e olio a filo. Servire con le patate croccanti."
+      ],
+      "notes": "Per il brodo l’elenco indica acqua fredda, i passaggi acqua calda: discrepanza presente nella fonte.",
+      "author": "tirmagno",
+      "url": "https://www.instagram.com/tirmagno/reel/Ckgo5mUNZPz/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-071",
+      "title": "Crocchette di pollo, patate e cipolla",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Pollo disossato; patata; cipolla; 1 uovo; amido di mais; sale; pepe. Olio visibile prima della cottura.",
+      "ingredients": [],
+      "steps": [
+        "Mettere nel tritatutto pollo, patata, cipolla, un uovo, amido di mais, sale e pepe; frullare.",
+        "Formare piccole crocchette e sistemarle su carta da forno nel cestello. Nel video viene aggiunto olio.",
+        "Cuocere in friggitrice ad aria a 180 °C per 20 minuti."
+      ],
+      "notes": "Dosi mancanti tranne l’uovo. La patata è già sbucciata; non è specificato se sia precotta. L’uovo compare chiaramente e viene indicato nella scritta inglese, anche se non nel commento italiano. Tempi e temperatura trascritti dal video.",
+      "author": "nutrizionista_andreagiommi",
+      "url": "https://www.instagram.com/nutrizionista_andreagiommi/reel/C5yWrUZsKRE/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-007",
+      "title": "Crêpes 1 2 3",
+      "category": "Dolci e colazioni",
+      "kind": "originale",
+      "ingredientText": "Per circa 4 crêpes: 45 g farina; 2 uova oppure 110 g albumi; 200 ml latte parzialmente scremato oppure bevanda di mandorla senza zucchero; 1 cucchiaio olio oppure 10 g olio di cocco; sale oppure dolcificante q.b. Farciture proposte: 50 g salmone selvaggio e 40 g Philadelphia Protein; oppure 100 g ricotta magra e 10 g gocce di cioccolato fondente.",
+      "ingredients": [],
+      "steps": [
+        "Mescolare farina, uova e un cucchiaio di latte.",
+        "Aggiungere olio, sale e latte rimasto; mescolare. La pastella resta liquida.",
+        "Ungere leggermente una padella antiaderente e versare parte del composto.",
+        "Girare quando si formano le bolle, cuocere altri 8–10 secondi e farcire."
+      ],
+      "notes": "",
+      "author": "beardedscara",
+      "url": "https://www.instagram.com/beardedscara/reel/Ddi8xactiax/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-074",
+      "title": "Crêpes di carote",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "Per 4 crêpes: 180 g carote pesate crude; 1 uovo; 65 g farina; 10 g parmigiano o grana; 100 ml acqua; sale, pepe e olio. Farcitura proposta: formaggio fresco e prosciutto.",
+      "ingredients": [],
+      "steps": [
+        "Frullare carote già lessate, uovo, acqua, parmigiano e sale.",
+        "Cuocere la pastella in padella con un filo d’olio e il coperchio.",
+        "Girare e cuocere dall’altro lato un paio di minuti; farcire."
+      ],
+      "notes": "La farina è nell’elenco ingredienti ma non compare nei passaggi: omissione rilevante per la pastella. Non è stato inventato il passaggio mancante.",
+      "author": "cucinamammaela",
+      "url": "https://www.instagram.com/cucinamammaela/reel/C2cwVhjIzVa/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-022",
+      "title": "Crêpes tre bicchieri con cocco",
+      "category": "Dolci e colazioni",
+      "kind": "originale",
+      "ingredientText": "1 bicchiere acqua bollente; 1 bicchiere latte; 1 bicchiere farina; 3 cucchiai olio di semi; 3 uova medie. Ripieno: yogurt naturale, fiocchi di cocco, latte condensato.",
+      "ingredients": [],
+      "steps": [
+        "Mescolare acqua bollente, latte e farina.",
+        "Unire uova e olio e amalgamare.",
+        "Cuocere in padella ben calda e leggermente unta circa 1 minuto per lato, fino a gonfiarle.",
+        "Mescolare yogurt, cocco e latte condensato; stendere sulle crêpes e chiudere."
+      ],
+      "notes": "Capienza del bicchiere e dosi del ripieno non indicate. La forma di chiusura rimanda al video.",
+      "author": "andrianakulchytska",
+      "url": "https://www.instagram.com/andrianakulchytska/reel/DZUUBEwoyvH/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-019",
+      "title": "Fergese",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "Per 4: 3 peperoni grandi; 300 g feta; 125 g ricotta vaccina; 700 g pelati frullati o passata; 1 spicchio aglio; olio EVO; sale, pepe nero e paprika.",
+      "ingredients": [],
+      "steps": [
+        "Tagliare i peperoni a pezzi, eliminando la parte bianca. Friggerli in abbondante olio fino a renderli morbidi e scolarli.",
+        "Insaporire un po’ dello stesso olio con aglio, poi rimuoverlo.",
+        "Unire pomodoro, sale, pepe e paprika e cuocere a fuoco basso circa 5 minuti.",
+        "Aggiungere feta sbriciolata e ricotta; cuocere altri 5 minuti.",
+        "Unire i peperoni e lasciare insaporire ancora qualche minuto. Servire con pane."
+      ],
+      "notes": "",
+      "author": "semplicemente_buono_",
+      "url": "https://www.instagram.com/semplicemente_buono_/reel/DaTGAv5qgTM/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-026",
+      "title": "Focaccine di patate e fagioli",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "Per 4: 250 g patate; 240 g fagioli cotti; 3 cucchiai maizena, circa 24 g; 2 cucchiai lievito alimentare, circa 10 g, oppure formaggio grattugiato; sale, pepe e olio; ripieno a piacere.",
+      "ingredients": [],
+      "steps": [
+        "Sbucciare e lessare le patate.",
+        "Scolarle, schiacciarle con i fagioli e impastare con maizena, lievito alimentare, sale e pepe.",
+        "Formare un disco, farcirlo e chiuderlo con un altro disco sigillando i bordi.",
+        "Cuocere in friggitrice ad aria, padella o forno per 5–10 minuti, controllando."
+      ],
+      "notes": "Temperatura e farcitura non specificate.",
+      "author": "beardedscara",
+      "url": "https://www.instagram.com/beardedscara/reel/DZHvVelNXdG/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-027",
+      "title": "Focaccine di patate, broccoli e ceci",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "Per 6: 400 g patate; 150 g broccoli; 120 g farina di ceci; 30 g amido di mais; circa 80 g Edamer; 2 cucchiai olio EVO; sale e pepe.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "Spiega solo le sostituzioni nutrizionali e consiglia amido sulle mani per modellare. Mancano preparazione e cottura.",
+      "author": "dietistaatipica",
+      "url": "https://www.instagram.com/dietistaatipica/reel/DTswO0qjHQ4/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-020",
+      "title": "Gazpacho",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "1 kg pomodori; 1 cetriolo; 1 peperone rosso; mezza cipolla; 50 g pane; 250 ml acqua; 50 ml aceto di vino; 30 g sale; 50 ml olio EVO. Per servire: feta e crostini, oppure tofu e crostini, oppure nessun topping.",
+      "ingredients": [],
+      "steps": [
+        "Ammollare il pane in acqua e aceto.",
+        "Eliminare i semi dai pomodori e tagliare gli ortaggi grossolanamente.",
+        "Frullare tutto e raffreddare in frigorifero, anche dal giorno prima.",
+        "Servire con il topping scelto."
+      ],
+      "notes": "La fonte riporta 30 g di sale: dato trascritto senza correggerlo, da verificare prima dell’uso.",
+      "author": "elisacccofficial",
+      "url": "https://www.instagram.com/elisacccofficial/reel/DaF0lmgMOms/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-069",
+      "title": "Gazpacho con ceci",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "3 pomodori maturi; 1 cetriolo; 1 spicchio aglio; 1 costa sedano; 1 peperone rosso; mezza cipolla; 150 g ceci; olio, sale e pepe. Pane tostato facoltativo per servire.",
+      "ingredients": [],
+      "steps": [
+        "Frullare insieme gli ortaggi e i ceci.",
+        "Condire e servire freddo, eventualmente con pane tostato."
+      ],
+      "notes": "La descrizione non precisa se il peso dei ceci si riferisce al prodotto cotto; non contiene una fase di cottura.",
+      "author": "saraballantini.it",
+      "url": "https://www.instagram.com/saraballantini.it/reel/C_A3emXAYr6/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-021",
+      "title": "Gazpacho con pesche e feta",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "250 g pomodorini datterini; mezzo cetriolo; mezza cipolla rossa; 1 pesca; mezzo peperoncino; sale, olio e aceto q.b.; un’altra pesca da grigliare; feta q.b.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "Non descrive la preparazione del gazpacho. L’unica indicazione operativa è che la seconda pesca va grigliata.",
+      "author": "alessio.pellizzoni",
+      "url": "https://www.instagram.com/alessio.pellizzoni/reel/DZuWBHcI6cR/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-053",
+      "title": "Gelati proteici in tre gusti",
+      "category": "Dolci e colazioni",
+      "kind": "originale",
+      "ingredientText": "Caramello: 200 ml latte; 20 g proteine vegetali gusto speculoos; 10 g miele; 60–80 g banana. Cioccolato: 150 ml latte; 100 g yogurt greco o normale; 15 g cacao; 10 g burro d’arachidi in polvere; 15 g proteine al cioccolato; 15 g miele. Frutti di bosco: 100 g frutti di bosco o fragole; 15 g proteine vegetali alla fragola; 100 g yogurt greco alla fragola o bianco; 150 ml latte; 15 ml miele; 20 g burro di nocciole facoltativo. Per rilavorare: 30–40 ml latte.",
+      "ingredients": [],
+      "steps": [
+        "Frullare gli ingredienti del gusto scelto nel contenitore e congelare almeno 8–12 ore.",
+        "Con la macchina Ninja: eseguire 2 cicli Light Ice Cream, aggiungere 30–40 ml latte e 1 ciclo Re-spin. In questo passaggio si possono aggiungere gocce di cioccolato.",
+        "Alternativa descritta senza macchina: congelare la frutta, aggiungere ghiaccio nel frullatore, fare 3–4 cicli e usare 5–8 g gomma di guar; congelare circa 1 ora oppure consumare come spumone."
+      ],
+      "notes": "Un reel contiene tre gusti: resta un solo elemento nel conteggio. Per il gusto ai frutti di bosco la fonte misura il miele in ml. L’alternativa senza macchina non specifica la quantità di ghiaccio.",
+      "author": "fit.tiamo",
+      "url": "https://www.instagram.com/fit.tiamo/reel/DIlXNDQCGIU/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-016",
+      "title": "Gnocchi con pollo e insalata",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Gnocchi confezionati; pecorino grattugiato (confezione leggibile); spezie/condimenti; petto di pollo; uovo; pangrattato; lattuga; salsa cremosa gialla di composizione non identificabile.",
+      "ingredients": [],
+      "steps": [
+        "Distribuire gli gnocchi su carta da forno; aggiungere condimenti e pecorino, quindi mescolare. Sono mostrati poi dorati, ma la cottura non viene spiegata.",
+        "Passare il petto di pollo nell’uovo sbattuto e nel pangrattato. Il video lo mostra poi cotto e tagliato a strisce.",
+        "Tagliare la lattuga, disporla in una ciotola e aggiungere pollo e gnocchi.",
+        "Completare con la salsa cremosa."
+      ],
+      "notes": "Non sono visibili dosi, tempi o temperature; non viene spiegata la salsa. Una spezia rossa è visibile ma l’etichetta non è leggibile: non è stata identificata per supposizione. Nessun sottotitolo di ricetta.",
+      "author": "fitbale",
+      "url": "https://www.instagram.com/fitbale/reel/DbJLiE6sKpr/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-050",
+      "title": "Hummus con limone caramellato e menta",
+      "category": "Salse e basi",
+      "kind": "originale",
+      "ingredientText": "1 limone con buccia non trattata; 3 cucchiai sciroppo d’acero o agave oppure zucchero; olio EVO; 500 g ceci già cotti; 150 g tahina; sale e pepe; 4 cubetti ghiaccio; 10 foglie menta.",
+      "ingredients": [],
+      "steps": [
+        "Affettare sottilmente il limone e caramellarlo in padella con olio e sciroppo.",
+        "Far raffreddare, poi unire agli altri ingredienti nel frullatore.",
+        "Frullare fino a ottenere un hummus liscio."
+      ],
+      "notes": "",
+      "author": "giuliapisco",
+      "url": "https://www.instagram.com/giuliapisco/reel/DKZ6I9xMj4p/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-040",
+      "title": "Insalata di cetriolo e manzo",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "1 cetriolo intero; 2 cucchiai yogurt greco 0%; 10 g jalapeños; 10 g sriracha; 15 ml salsa di soia; 100 g macinato magro al 5% già cotto; condimenti non specificati.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "Tradotto dall’inglese. Nessun procedimento.",
+      "author": "charlieley",
+      "url": "https://www.instagram.com/charlieley/reel/DQcVRwVjLUU/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-017",
+      "title": "Insalata di cetriolo, tonno e uova",
+      "category": "Pesce",
+      "kind": "originale",
+      "ingredientText": "4 uova sode; 1 scatoletta tonno; 1 cetriolo; un quarto cipolla rossa; 2 yogurt 0% (l’autrice usa skyr); succo di 1 limone; 1 avocado; sale e pepe.",
+      "ingredients": [],
+      "steps": [
+        "Affettare cetriolo e cipolla molto finemente con una mandolina.",
+        "Mescolare tutti gli ingredienti e servire."
+      ],
+      "notes": "Tradotto dal francese. Peso di yogurt e scatoletta non indicato.",
+      "author": "helloandfood",
+      "url": "https://www.instagram.com/helloandfood/reel/DbBJAP7sXFj/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-008",
+      "title": "Insalata di patate e uova",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "5 uova; 1 cipolla rossa; 2 patate; cetrioli; cetriolini sottaceto; yogurt greco; maionese; senape in grani; erba cipollina; sale e pepe.",
+      "ingredients": [],
+      "steps": [
+        "Rassodare le uova e lessare le patate fino a renderle morbide. Tagliare entrambe a pezzetti.",
+        "Unire cipolla, cetrioli e cetriolini.",
+        "Mescolare yogurt, maionese, senape, erba cipollina, sale e pepe; condire l’insalata."
+      ],
+      "notes": "Tradotto dal tedesco. Dosi dei condimenti e dei cetrioli non indicate.",
+      "author": "we_cancook",
+      "url": "https://www.instagram.com/we_cancook/reel/DdgqUAdMCwq/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-045",
+      "title": "Insalata di tonno e cetriolo",
+      "category": "Pesce",
+      "kind": "originale",
+      "ingredientText": "Tonno in scatola (la fonte scrive “Tina of Tuna”, verosimilmente una scatoletta); 100 g cetriolo; succo di limone; 30 g maionese light; 150 g yogurt greco; 40 g cipolla rossa; 2 cucchiai salsa di soia.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "Tradotto dall’inglese. Nessun procedimento; peso del tonno e quantità di limone assenti.",
+      "author": "ashleachfitness",
+      "url": "https://www.instagram.com/ashleachfitness/reel/DPMWOlyig8_/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-032",
+      "title": "Insalata di uova con salsa piccante",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "1 cetriolo medio, 170 g; 1 cipollotto; 1 carota, 70 g; 3 uova; 40 g yogurt greco; 20 g senape; 25 g maionese light; 20 ml salsa piccante, ad esempio sriracha; 1 g sale; pepe.",
+      "ingredients": [],
+      "steps": [
+        "Lavare e tagliare le verdure a piccoli dadi.",
+        "Bollire le uova 12 minuti, raffreddarle in acqua e ghiaccio, sbucciarle e separare tuorli e albumi.",
+        "Tagliare gli albumi. Schiacciare i tuorli e mescolarli agli ingredienti della salsa.",
+        "Riunire il tutto in un contenitore e scuotere per condire."
+      ],
+      "notes": "",
+      "author": "alan_valca",
+      "url": "https://www.instagram.com/alan_valca/reel/DRzPf_JDInl/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-023",
+      "title": "Maionese all’acqua",
+      "category": "Salse e basi",
+      "kind": "originale",
+      "ingredientText": "2 uova sode; 10–15 ml aceto di vino bianco; 30 ml acqua; un pizzico abbondante sale.",
+      "ingredients": [],
+      "steps": [
+        "Bollire le uova 8 minuti.",
+        "Sbucciarle, tagliarle e metterle nel bicchiere del frullatore.",
+        "Unire aceto, acqua e sale e frullare fino a ottenere una salsa liscia."
+      ],
+      "notes": "",
+      "author": "elisacccofficial",
+      "url": "https://www.instagram.com/elisacccofficial/reel/DZkH3vesbwc/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-066",
+      "title": "Meal prep di pollo, peperoni e riso",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 6 pasti: 1,2 kg pollo; 600 g passata di pomodoro; 5 peperoni; cipolla senza dose; 600 g riso.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "Nessun procedimento nella descrizione.",
+      "author": "lucaromano_yt",
+      "url": "https://www.instagram.com/lucaromano_yt/reel/C64EUQ1tanO/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-030",
+      "title": "Merluzzo al curry con riso",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 2: 400 g merluzzo surgelato; 160 g riso basmati; 1 cucchiaio olio EVO; 1 spicchio aglio; 40 g formaggio spalmabile light; peperoncino, sale, pepe e curry q.b.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "",
+      "author": "ericsliw",
+      "url": "https://www.instagram.com/ericsliw/reel/DSKSqG0Agg5/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-042",
+      "title": "Muhammara",
+      "category": "Salse e basi",
+      "kind": "originale",
+      "ingredientText": "Per 4: 4 peperoni rossi; 60 g noci; 3 cucchiai pangrattato; succo di mezzo limone; mezzo spicchio aglio; sale, pepe e olio; 200 g estratto di melagrana ristretto con zucchero e mezzo cucchiaio aceto; menta e peperoncino per servire.",
+      "ingredients": [],
+      "steps": [
+        "Cuocere i peperoni a 190 °C per circa 25 minuti.",
+        "Tostare noci e pangrattato in padella.",
+        "Aggiungere un po’ d’acqua per la consistenza."
+      ],
+      "notes": "Mancano i passaggi per riunire e frullare la crema e le modalità di riduzione dell’estratto. Quantità dello zucchero assente. Non sono stati ricostruiti.",
+      "author": "tirmagno",
+      "url": "https://www.instagram.com/tirmagno/reel/DPTclNxjZXm/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-091",
+      "title": "Naan al formaggio senza lievito",
+      "category": "Salse e basi",
+      "kind": "originale",
+      "ingredientText": "Per 8: 300 g farina; 250 g yogurt greco; 1 cucchiaino sale; mezzo cucchiaino bicarbonato; 100 g mozzarella light per il ripieno.",
+      "ingredients": [],
+      "steps": [
+        "Impastare gli ingredienti della base fino a ottenere un panetto liscio e riposare 30 minuti.",
+        "Dividere in 8 pezzi; tagliare e strizzare bene la mozzarella.",
+        "Formare dei sacchetti di impasto, inserire la mozzarella, chiudere e stendere delicatamente in dischi di circa 10 cm senza forarli.",
+        "Cuocere in padella senza grassi a fuoco medio. Girare alle prime bolle e proseguire fino a gonfiarli; coprire se faticano a gonfiarsi."
+      ],
+      "notes": "",
+      "author": "giuseppe_healthy",
+      "url": "https://www.instagram.com/giuseppe_healthy/reel/CikGgOmj-3V/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-047",
+      "title": "Noodles con cetrioli e salsa al sesamo",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "2 cetrioli; 200 g glass noodles o altri noodles; 4 cucchiai pasta di sesamo o tahina; 30 ml salsa di soia; 1 cucchiaio olio di sesamo; 1 cucchiaino sciroppo d’agave o acero; 2 cucchiai aceto di riso; 150 ml latte d’avena o soia senza zucchero; sriracha facoltativa; sesamo. Nei passaggi: ghiaccio.",
+      "ingredients": [],
+      "steps": [
+        "Tagliare i cetrioli a julienne con un pelapatate.",
+        "Cuocere i noodles seguendo la confezione.",
+        "Mescolare tahina, soia, olio di sesamo, sciroppo e aceto; diluire con latte vegetale.",
+        "Unire ghiaccio, cetrioli e noodles. Mescolare e completare con sriracha e sesamo."
+      ],
+      "notes": "",
+      "author": "giuliapisco",
+      "url": "https://www.instagram.com/giuliapisco/reel/DMpue8jqfBE/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-025",
+      "title": "Noodles giganti di patate",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 3: 500 g patate; 200 g fecola di patate; sale. Salsa proposta: 3 cucchiai salsa di soia; 1 cucchiaio aceto; 1 cucchiaino zucchero; peperoncino macinato; erba cipollina; olio EVO caldo.",
+      "ingredients": [],
+      "steps": [
+        "Cuocere le patate, scolarle e farle intiepidire.",
+        "Impastare con fecola e sale.",
+        "Formare i noodles a mano o con una sac à poche e cuocerli qualche minuto in acqua bollente.",
+        "Servire semplici oppure con la salsa preferita."
+      ],
+      "notes": "Procedimento completo per i noodles di base; quello della salsa proposta non è descritto.",
+      "author": "beardedscara",
+      "url": "https://www.instagram.com/beardedscara/reel/DZZxw2utyjn/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-006",
+      "title": "Noodles piccanti di patate",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Impasto: 500 g patate; 50 ml acqua; sale; 350 g fecola di patate. Salsa: 1 cucchiaio peperoncino secco; 1 cucchiaio gochujang; 2 spicchi aglio; un pezzo abbondante di zenzero; 50 ml olio bollente; sesamo q.b.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "Nessun procedimento. La fecola è indicativa e va regolata in base all’umidità delle patate; suggerisce meno peperoncino e gochujang per una salsa meno piccante.",
+      "author": "alessio.pellizzoni",
+      "url": "https://www.instagram.com/alessio.pellizzoni/reel/Ddi9weSImMk/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-028",
+      "title": "Nuggets di fagioli",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "240 g fagioli; pastella di 20 g farina di ceci e acqua; sale, paprika, rosmarino e pangrattato q.b.; un filo d’olio nel procedimento.",
+      "ingredients": [],
+      "steps": [
+        "Frullare fagioli, spezie e sale.",
+        "Formare i nuggets e passarli nella pastella di farina di ceci e acqua, poi nel pangrattato.",
+        "Condire con un filo d’olio e cuocere in forno o friggitrice ad aria a 180 °C per 15 minuti."
+      ],
+      "notes": "La descrizione non specifica se il peso dei fagioli si riferisce al prodotto cotto.",
+      "author": "chiara.fiorani",
+      "url": "https://www.instagram.com/chiara.fiorani/reel/DUVWRtImIiv/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-077",
+      "title": "Pasta con broccoli, pomodori secchi e alici",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 4: 300 g pasta; 1 broccolo; 6 pomodori secchi; 3 alici sott’olio; 2 spicchi aglio; 50 g olive taggiasche; sale e olio EVO.",
+      "ingredients": [],
+      "steps": [
+        "Separare le cimette e lessarle in acqua salata circa 10 minuti. Asciugare e tagliare i pomodori secchi.",
+        "Insaporire abbondante olio con l’aglio, eliminarlo e sciogliervi le alici.",
+        "Unire broccoli, pomodori e 2 mestoli dell’acqua dei broccoli; cuocere altri 10 minuti.",
+        "Lessare la pasta fino a metà cottura e terminarla in padella, aggiungendo acqua se occorre.",
+        "Fuori dal fuoco aggiungere olio e olive e saltare."
+      ],
+      "notes": "",
+      "author": "rafael.nistor",
+      "url": "https://www.instagram.com/rafael.nistor/reel/Ck5kFREDhqu/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-013",
+      "title": "Pasta con salmone e feta",
+      "category": "Pesce",
+      "kind": "originale",
+      "ingredientText": "Per 4 porzioni: 200 g salmone; 200 g feta light; un paio di manciate di pomodorini; 320 g pasta; un filo di olio; sale, pepe e spezie a piacere.",
+      "ingredients": [],
+      "steps": [
+        "Mettere salmone, feta e pomodorini in una pirofila; aggiungere olio, pepe e spezie a piacere.",
+        "Cuocere in forno a 180 °C per 15–20 minuti. Nel frattempo lessare la pasta.",
+        "Schiacciare con una forchetta salmone, feta e pomodorini cotti, ottenendo un condimento cremoso.",
+        "Scolare la pasta, unirla nella pirofila e mescolare. Dividere in quattro porzioni."
+      ],
+      "notes": "Recuperata integralmente dal commento dell’autore indicato nella descrizione.",
+      "author": "marcucino__",
+      "url": "https://www.instagram.com/marcucino__/reel/DcY4iBFpGWn/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": "https://www.instagram.com/p/DcY4iBFpGWn/c/17896399830604562/",
+      "completeness": "completa",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-068",
+      "title": "Pasta con zucca e feta",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 2–3: 240 g pasta; 400 g zucca; mezzo panetto di feta; sale, olio, rosmarino, pepe e noce moscata. Per finire il piatto il testo indica altra feta e zucca arrostita.",
+      "ingredients": [],
+      "steps": [
+        "Tagliare la zucca e metterla in pirofila con feta, rosmarino, olio, sale, pepe e noce moscata.",
+        "Cuocere in friggitrice ad aria a 180 °C per circa 20 minuti.",
+        "Nel frattempo cuocere la pasta, conservando l’acqua.",
+        "Schiacciare zucca e feta e unire la pasta, diluendo se necessario.",
+        "Servire con feta sbriciolata, pezzi di zucca arrostita, olio e pepe."
+      ],
+      "notes": "Peso del panetto di feta e quantità delle aggiunte finali non indicati.",
+      "author": "unfilodolio_",
+      "url": "https://www.instagram.com/unfilodolio_/reel/DAasIyYIn6o/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-079",
+      "title": "Pasta di zucca con due ingredienti",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "150 g purea di zucca cotta; 110 g farina 0 o 00; sale q.b.; condimento a piacere.",
+      "ingredients": [],
+      "steps": [
+        "Portare a bollore una pentola d’acqua.",
+        "Impastare zucca, farina e sale in un panetto morbido.",
+        "Tagliare pezzi di impasto con le forbici direttamente nell’acqua bollente.",
+        "Cuocere circa 3–4 minuti, scolare e condire."
+      ],
+      "notes": "",
+      "author": "giuseppe_healthy",
+      "url": "https://www.instagram.com/giuseppe_healthy/reel/CkqHlnxKFAy/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-083",
+      "title": "Pasta e ceci",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Ceci già cotti; pasta corta; aglio; olio; peperoncino rosso; alici; rosmarino; concentrato di pomodoro; acqua; formaggio grattugiato per servire.",
+      "ingredients": [],
+      "steps": [
+        "Affettare l’aglio e il peperoncino. Scaldarli in pentola con olio, alici e rosmarino.",
+        "Aggiungere i ceci già cotti, il concentrato di pomodoro e acqua; portare a bollore.",
+        "Prelevare una parte dei ceci con il liquido, frullarla e rimetterla in pentola.",
+        "Unire la pasta direttamente alla zuppa e portarla a cottura, aggiungendo acqua secondo necessità.",
+        "Servire con formaggio grattugiato."
+      ],
+      "notes": "Passaggi ricostruiti dalle immagini. Nessuna dose o tempo di cottura leggibile; la descrizione dichiara soltanto 20 minuti complessivi. Il tipo di formaggio non è verificabile dalle immagini. Non è stata ottenuta una trascrizione dell’audio.",
+      "author": "cucinaconruben",
+      "url": "https://www.instagram.com/cucinaconruben/reel/Cjp7QztABFE/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-018",
+      "title": "Pasta e noodles di konjac con feta e pomodorini",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "250 g pomodorini; 150 g feta light; 1 g sale; acqua di cottura; 50 g pasta; 150 g noodles di konjac; basilico.",
+      "ingredients": [],
+      "steps": [
+        "Scolare e sciacquare i noodles; lasciarli 3 minuti in acqua bollente, risciacquare e tenere da parte.",
+        "Cuocere la pasta un minuto meno del tempo indicato.",
+        "Frullare pomodorini, feta e sale con poca acqua di cottura; filtrare e versare in padella.",
+        "Terminare la cottura della pasta nella salsa insieme ai noodles, fino ad addensarla; servire con basilico."
+      ],
+      "notes": "",
+      "author": "alan_valca",
+      "url": "https://www.instagram.com/alan_valca/reel/DbGgUQBsTPF/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-015",
+      "title": "Pasta fredda al tonno vegetale",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "400 g pasta; 400 g pomodorini; 1 cucchiaio capperi; 50 g olive taggiasche; erba cipollina. Tonno vegetale: 500 g ceci cotti; 90 g maionese vegana; 1 cucchiaio abbondante senape; 2 cucchiai capperi; 1 cucchiaino aglio in polvere; 1 cucchiaio lievito alimentare; 3 cucchiai succo di limone; 2 cucchiai salsa di soia; 1 cucchiaio aceto di mele; verde di 2 cipollotti, circa 30 g. Nel procedimento compaiono anche olio, origano e sale.",
+      "ingredients": [],
+      "steps": [
+        "Dimezzare i pomodorini, condirli con olio, origano e sale; cuocere in friggitrice ad aria a 200 °C per 30 minuti e raffreddare.",
+        "Frullare i ceci a impulsi mantenendoli grossolani. Tritare finemente capperi e verde del cipollotto.",
+        "Unire maionese, senape, capperi, cipollotto, aglio, limone, soia e aceto; amalgamare.",
+        "Cuocere la pasta e conservare 2 mestoli d’acqua di cottura.",
+        "Ammorbidire il tonno vegetale con l’acqua della pasta, unire la pasta e completare con pomodorini, erba cipollina e olio."
+      ],
+      "notes": "La lista contiene lievito alimentare, olive e un ulteriore cucchiaio di capperi, ma i passaggi non ne specificano l’aggiunta.",
+      "author": "greengourmetitalia",
+      "url": "https://www.instagram.com/greengourmetitalia/reel/DbXvqk0EdDf/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-062",
+      "title": "Pasta tonnata con ricotta e limone",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 2: pasta “a sentimento”; 100–150 g ricotta; 200 g tonno sott’olio; 3–4 filetti acciughe; 1 cucchiaio capperi; 5–6 foglie basilico; olio EVO e sale; scorza di limone bio.",
+      "ingredients": [],
+      "steps": [
+        "Cuocere la pasta in acqua salata.",
+        "Tritare capperi e acciughe.",
+        "Schiacciare e amalgamare in una ciotola gli ingredienti del condimento, aggiungendo poca acqua di cottura.",
+        "Mantecare la pasta e servire con scorza di limone, basilico e olio."
+      ],
+      "notes": "La fonte la chiama “one pot”, ma descrive pasta in pentola e condimento in ciotola. Peso della pasta non indicato.",
+      "author": "ilmiopiattoacolori",
+      "url": "https://www.instagram.com/ilmiopiattoacolori/reel/DEvHfB6s4gn/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-070",
+      "title": "Pasta tonnata in dieci minuti",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 2: 200 g pasta; 100 g ricotta; 150 g tonno; 4 acciughe sott’olio; 1 cucchiaio capperi; scorza di limone.",
+      "ingredients": [],
+      "steps": [
+        "Lessare la pasta.",
+        "Tritare acciughe e capperi precedentemente lasciati in ammollo.",
+        "Mescolare ricotta, trito, tonno e poca acqua della pasta fino a ottenere una crema.",
+        "Condire la pasta e completare con scorza di limone."
+      ],
+      "notes": "",
+      "author": "ninna_lemon",
+      "url": "https://www.instagram.com/ninna_lemon/reel/C-ufAQ6gsZN/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-041",
+      "title": "Patate al microonde",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "Patate, quantità non indicata.",
+      "ingredients": [],
+      "steps": [
+        "Sciacquare le patate e bucherellarle.",
+        "Metterle in un recipiente da microonde e coprirle con panno o carta da cucina bagnata.",
+        "Cuocere alla potenza massima per 15 minuti."
+      ],
+      "notes": "Tecnica di cottura di un singolo ingrediente, non una ricetta con dosi. Potenza in watt, peso e dimensione delle patate non indicati.",
+      "author": "beardedscara",
+      "url": "https://www.instagram.com/beardedscara/reel/DPvwHt9DEie/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "tecnica",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-061",
+      "title": "Patate tonnate",
+      "category": "Pesce",
+      "kind": "originale",
+      "ingredientText": "3–4 patate; 150 g tonno; 3–4 cucchiai abbondanti maionese; 150 g ricotta o formaggio spalmabile; 10 olive più altre per servire; olio EVO, sale, origano e spezie q.b.",
+      "ingredients": [],
+      "steps": [
+        "Sbucciare e tagliare le patate a cubetti; lessarle partendo da acqua fredda finché morbide, poi raffreddare.",
+        "Amalgamare tonno, maionese, ricotta, olive tritate, olio, sale e origano con una forchetta.",
+        "Condire le patate e completare con olive e olio."
+      ],
+      "notes": "",
+      "author": "ilmiopiattoacolori",
+      "url": "https://www.instagram.com/ilmiopiattoacolori/reel/DFdXRqksX4C/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-033",
+      "title": "Plov con agnello",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "400 g polpa di agnello; 400 g carote; 400 g cipolla; 400 g riso; 1 cucchiaio curcuma; 2 cucchiai cumino; sale e pepe. Nei passaggi: olio e acqua.",
+      "ingredients": [],
+      "steps": [
+        "Rosolare l’agnello in abbondante olio. Affettare cipolla e carota.",
+        "Unire la cipolla e farla caramellare, poi carota e spezie.",
+        "Aggiungere acqua e cuocere finché la carne è morbida.",
+        "Unire il riso e acqua fino a circa 2 cm sopra il riso; cuocere finché si asciuga."
+      ],
+      "notes": "",
+      "author": "alessio.pellizzoni",
+      "url": "https://www.instagram.com/alessio.pellizzoni/reel/DR1wVVQCCUC/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-039",
+      "title": "Pollo al latte, miele e vino rosso",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Fettine di petto di pollo; latte; una noce burro; 1 cipolla; mezzo bicchiere vino rosso; 1 cucchiaio miele; farina.",
+      "ingredients": [],
+      "steps": [
+        "Lasciare il pollo nel latte per 1 ora, poi scolarlo.",
+        "Soffriggere la cipolla affettata nel burro e sfumare con il vino.",
+        "Aggiungere il miele, infarinare il pollo e metterlo in padella.",
+        "Rosolare da entrambi i lati, aggiungere latte e proseguire a fuoco dolce fino ad addensare i liquidi."
+      ],
+      "notes": "Pollo, latte e farina senza dosi. Per la cottura è riportata l’opzione con latte nuovo, già prevista dalla fonte.",
+      "author": "monicamoodefood",
+      "url": "https://www.instagram.com/monicamoodefood/reel/DQjAFvGjSKb/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-055",
+      "title": "Pollo alla pizzaiola",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "250 g petto di pollo; 30 g pangrattato; sale, pepe, aglio e paprika q.b.; passata di pomodoro: 2 cucchiai; parmigiano: 1 cucchiaio; 4 fette di mozzarella; 5 ml olio EVO. Basilico visibile nella presentazione finale.",
+      "ingredients": [],
+      "steps": [
+        "Mescolare pangrattato, sale, pepe, aglio e paprika.",
+        "Passare le fette di petto di pollo nel pangrattato condito, premendo sui due lati.",
+        "Distribuire sopra passata, parmigiano e mozzarella, quindi ripiegare le fette su se stesse.",
+        "Sistemare su carta da forno nel cestello e distribuire l’olio.",
+        "Cuocere in friggitrice ad aria a 180 °C per 20 minuti."
+      ],
+      "notes": "Le quantità di passata e parmigiano sono mostrate come 2 e 1 accanto al simbolo di un cucchiaio. Peso delle quattro fette di mozzarella non indicato. Tempi e temperatura trascritti dal video.",
+      "author": "hasp.original",
+      "url": "https://www.instagram.com/hasp.original/reel/DJZZQ7dt-1B/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "completa",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-052",
+      "title": "Pollo e verdure gratinati",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Per 2: 200 g petto di pollo; 1 peperone; 1 zucchina; 20 pomodorini; 100 g patate; mezza cipolla; 2 carote medie; 30 g parmigiano; 30 g pangrattato; olio, sale, pepe e spezie q.b. Nel procedimento: latte.",
+      "ingredients": [],
+      "steps": [
+        "Mettere il pollo a bagno nel latte.",
+        "Tagliare tutte le verdure e condirle in una ciotola con sale, pepe, spezie, olio, parmigiano e pangrattato.",
+        "Unire il pollo, mescolare e disporre in teglia.",
+        "Cuocere in friggitrice ad aria a 180 °C per 15 minuti oppure in forno a 200 °C per 20–25 minuti."
+      ],
+      "notes": "Latte senza quantità e ammollo senza durata. Stessa ricetta del contenuto 59, pubblicata con un altro link.",
+      "author": "unfilodolio_",
+      "url": "https://www.instagram.com/unfilodolio_/reel/DHrLhX4AA1p/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-059",
+      "title": "Pollo e verdure gratinati, secondo reel",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Come il contenuto 52: per 2, 200 g pollo; 1 peperone; 1 zucchina; 20 pomodorini; 100 g patate; mezza cipolla; 2 carote; 30 g parmigiano; 30 g pangrattato; olio, sale, pepe e spezie; latte per ammollare.",
+      "ingredients": [],
+      "steps": [
+        "Ammollare il pollo nel latte.",
+        "Tagliare e condire le verdure con sale, pepe, spezie, olio, parmigiano e pangrattato; aggiungere il pollo e mescolare.",
+        "Cuocere in teglia: friggitrice ad aria a 180 °C per 15 minuti oppure forno a 200 °C per 20–25 minuti."
+      ],
+      "notes": "Doppione della ricetta 52, ma reel distinto. Latte senza dose e ammollo senza durata. La preparazione compare anche nel primo reel “Pollo e verdure gratinati”.",
+      "author": "unfilodolio_",
+      "url": "https://www.instagram.com/unfilodolio_/reel/DHnxtk8IVn-/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-048",
+      "title": "Polpette di tonno",
+      "category": "Pesce",
+      "kind": "originale",
+      "ingredientText": "Per 2: 100 g tonno sott’olio; 80 g pancarrè; 20 g pangrattato; 1 uovo; 40 g olive; 2 cucchiai olio EVO; basilico. Nei passaggi: acqua e scorza di limone.",
+      "ingredients": [],
+      "steps": [
+        "Ammollare il pancarrè in acqua e sbriciolarlo in una ciotola.",
+        "Unire uovo, basilico, olive e tonno; impastare e aggiungere scorza di limone.",
+        "Riposare almeno 30 minuti in frigorifero e formare le polpette.",
+        "Cuocere con coperchio, oppure in forno ventilato o friggitrice ad aria a 180 °C per circa 20 minuti."
+      ],
+      "notes": "È un post, separato dal conteggio dei reel. Il testo non specifica quando usare il pangrattato e l’olio; la prima opzione di cottura non ha tempi.",
+      "author": "dr.giulio.gaudio",
+      "url": "https://www.instagram.com/dr.giulio.gaudio/p/DLF7Cici8Gg/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-054",
+      "title": "Polpette di tonno e formaggio spalmabile",
+      "category": "Pesce",
+      "kind": "originale",
+      "ingredientText": "250 g formaggio spalmabile; 160 g tonno sgocciolato; circa 50 g pangrattato; olio per l’opzione in padella.",
+      "ingredients": [],
+      "steps": [
+        "Unire gli ingredienti e formare le polpette.",
+        "Cuocere in forno o friggitrice ad aria a 200 °C per 10–12 minuti; in alternativa in padella con poco olio."
+      ],
+      "notes": "",
+      "author": "fit_clear",
+      "url": "https://www.instagram.com/fit_clear/reel/DGLB1XiMU5j/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-075",
+      "title": "Polpettone di patate filante",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "Per 8 fette: 600 g patate lesse; 3 cucchiai parmigiano, 50 g; sale; pepe e prezzemolo facoltativi. Ripieno: 150 g prosciutto cotto o fesa di tacchino; 150 g formaggio filante, qui mozzarella. Pangrattato facoltativo per la superficie.",
+      "ingredients": [],
+      "steps": [
+        "Il procedimento parte da 3 patate grandi o 5 medie: pelarle, tagliarle a cubetti e lessarle in acqua salata circa 5 minuti, finché morbide.",
+        "Schiacciarle e unire parmigiano, sale e spezie.",
+        "Formare un rettangolo su carta forno, farcire con prosciutto e formaggio e arrotolare.",
+        "Spolverare eventualmente con pangrattato; cuocere in forno ventilato preriscaldato a 200 °C per 15 minuti oppure in friggitrice ad aria a 190 °C per 12 minuti."
+      ],
+      "notes": "L’elenco pesa le patate già lesse; la spiegazione fornisce anche un numero indicativo di patate crude.",
+      "author": "giuseppe_healthy",
+      "url": "https://www.instagram.com/giuseppe_healthy/reel/Cng7-dMNJbS/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-073",
+      "title": "Popcorn chicken coreano con riso",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 4. Pollo: 800 g petto; 1 cucchiaio pepe nero; 20 ml salsa di soia; 1 uovo; 40 g amido di mais. Glassa: 60 ml salsa di soia; 80 ml acqua; 2 cucchiai ketchup a ridotto apporto calorico; 3 cucchiai gochujang; 2 cucchiai aceto di riso; 2 cucchiai miele; 30 g stevia brown. Riso: 200 g riso glutinoso crudo; 3 cucchiai aceto di riso; 1 cucchiaio dolcificante; sale. Guarnizione: verde di cipollotto e sesamo.",
+      "ingredients": [],
+      "steps": [
+        "Per il pollo sono riportate queste cotture: friggitrice ad aria a 200 °C per 10–12 minuti oppure forno a 220 °C per 15–18 minuti.",
+        "Cuocere il riso seguendo la confezione, raffreddarlo 10 minuti e condirlo con aceto di riso, dolcificante e sale."
+      ],
+      "notes": "Tradotto dall’inglese. Mancano preparazione e panatura del pollo, preparazione della glassa e unione finale. I tempi del forno sono quelli corretti nella descrizione, che segnala un refuso nel video.",
+      "author": "panaceapalm",
+      "url": "https://www.instagram.com/panaceapalm/reel/C5TivvHtcge/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-036",
+      "title": "Quiche di zucchine e prosciutto",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Ingredienti riconoscibili: zucchine a nastri, prosciutto cotto affettato, uova sbattute, sale. È visibile una base di pasta, di tipo non determinabile con certezza.",
+      "ingredients": [],
+      "steps": [
+        "In uno stampo rotondo già rivestito con la base, disporre i nastri di zucchina e il prosciutto alternandoli in cerchi concentrici, dal bordo verso il centro.",
+        "Versare sopra il composto di uova, aggiungere sale e infornare.",
+        "Il video mostra la quiche cotta e tagliata a fette."
+      ],
+      "notes": "La descrizione indica 8–10 porzioni. Mancano dosi, ricetta della base, composizione completa del composto di uova, temperatura e durata della cottura. Non ci sono sottotitoli di ricetta. Il recupero è una descrizione dei gesti visibili, non una ricetta completa.",
+      "author": "recipesbyvictoria",
+      "url": "https://www.instagram.com/recipesbyvictoria/reel/DPs8ensD9GA/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-002",
+      "title": "Ragù di diaframma al coltello",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Diaframma di manzo; pancetta fresca; sedano; carota; cipolla; olio; vino rosso; doppio concentrato di pomodoro; passata di pomodoro; brodo di manzo; sale e pepe; latte facoltativo. Tagliatelle e formaggio grattugiato nella presentazione finale.",
+      "ingredients": [],
+      "steps": [
+        "Tritare al coltello sedano, carota e cipolla; tagliare finemente la pancetta. Tagliare il diaframma controfibra e poi a piccoli pezzi.",
+        "Rosolare pancetta e verdure in casseruola con olio. Il video mostra poi la carne rosolata separatamente e la successiva riunione con soffritto e pancetta.",
+        "Aggiungere concentrato di pomodoro, vino rosso, sale e pepe, passata e brodo di manzo.",
+        "Lasciare sobbollire lentamente. Il video mostra l’aggiunta finale di latte facoltativo e un riposo di una notte in frigorifero.",
+        "Usare il ragù per condire le tagliatelle."
+      ],
+      "notes": "Quantità non recuperate. Tempi discordanti: la scritta di ricetta nel video dice 2 ore, i sottotitoli parlano di 4 ore e la parte pubblica dell’articolo indica 3–4 ore di sobbollitura. La sezione con la ricetta completa è dietro abbonamento.",
+      "author": "the_cheftara",
+      "url": "https://www.instagram.com/the_cheftara/reel/Dd4IoLkMe8J/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": "https://cheftara.substack.com/p/il-diaframma-e-il-ragu-lincontro",
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-082",
+      "title": "Risotto al radicchio con salsa fredda di caco mela",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 2: 200 g riso; 85 g radicchio; 65 g stracchino. Salsa: 200 g caco mela; zucchero “60”; acqua “60”; limone. Nei passaggi: acqua o brodo vegetale, poco parmigiano e sale.",
+      "ingredients": [],
+      "steps": [
+        "Pelare e tagliare il caco mela, cuocerlo con acqua, zucchero e qualche goccia di limone circa 20 minuti. Frullare, setacciare e refrigerare.",
+        "Tostare il riso a secco e cuocerlo con acqua o brodo.",
+        "A metà cottura aggiungere radicchio a strisce e qualche goccia di limone.",
+        "Fuori dal fuoco mantecare con poco parmigiano e stracchino, regolare sale e consistenza.",
+        "Servire subito con la salsa di caco mela molto fredda."
+      ],
+      "notes": "La fonte omette l’unità di misura per i due valori “60” di zucchero e acqua. Non sono stati convertiti in g o ml.",
+      "author": "fabiohofame",
+      "url": "https://www.instagram.com/fabiohofame/reel/CjpmyaSIHkg/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-035",
+      "title": "Roast chicken speziato",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Per 4: 600 g pollo; un pezzo zenzero; 3–4 spicchi aglio; 1 cipolla piccola; 2 friggitelli o peperoncini rossi secchi; succo di mezzo limone; mezzo cucchiaino ciascuno di cannella, cumino, paprika, coriandolo e pepe nero; 2 baccelli cardamomo; 2 chiodi di garofano; 2 cucchiai colmi ketchup; 1 bicchiere latte; 125 g yogurt; 1 cucchiaino zucchero; 10–15 uvette; 10–15 anacardi; sale, olio EVO e burro q.b.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "Riporta 30 minuti di preparazione e 1 ora e 30 di cottura, ma nessun passaggio.",
+      "author": "chefincamicia",
+      "url": "https://www.instagram.com/chefincamicia/reel/DRKCCjkjEY4/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-044",
+      "title": "Salsa con pomodoro, senape e spezie",
+      "category": "Salse e basi",
+      "kind": "originale",
+      "ingredientText": "Per 2 porzioni indicate come 40 g: 2 cucchiai salsa Develey Light o simile; 1 cucchiaio concentrato di pomodoro; 1 cucchiaino senape; 1 cucchiaino paprika affumicata; mezzo cucchiaino curcuma; coriandolo e prezzemolo q.b.; un pizzico amido di mais.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "Nome della salsa ricavato dagli ingredienti. Nessun procedimento; la descrizione non chiarisce se 40 g si riferisca a ciascuna porzione o al totale.",
+      "author": "_aledge_",
+      "url": "https://www.instagram.com/_aledge_/reel/DOtgC1gghP7/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-003",
+      "title": "Schiscetta bilanciata in tre varianti",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Per 1 porzione: 3 uova. Varianti riportate in ordine: 60 g riso / 250 g patate lesse / 200 g udon precotti; pomodorini e cetrioli / pisellini e porro / cappuccio e carote q.b.; 30 g parmigiano / 30 g maionese light / 20 g mandorle; glassa al balsamico / yogurt magro e sriracha / oyster sauce q.b.",
+      "ingredients": [],
+      "steps": [],
+      "notes": "Suggerisce di preparare i contenitori la sera prima, ma non spiega cotture o assemblaggio delle tre varianti.",
+      "author": "beardedscara",
+      "url": "https://www.instagram.com/beardedscara/reel/DdtP6Cst92K/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "ingredienti",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-031",
+      "title": "Sei pranzi da portare al lavoro",
+      "category": "Pasta e cereali",
+      "kind": "originale",
+      "ingredientText": "Base a scelta: riso, farro o cous cous. Sei condimenti: (1) tonno, pomodori e olive; (2) speck, zucchine e formaggio bianco a cubetti; (3) salmone, Philadelphia e rucola; (4) ceci, carota e zucchina; (5) mozzarella, pomodorini gialli e basilico; (6) tofu, pomodorini e basilico. Olio per completare.",
+      "ingredients": [],
+      "steps": [
+        "Cuocere la base scelta e distribuirla nei contenitori.",
+        "Aggiungere uno dei sei abbinamenti, usando ingredienti crudi adatti al consumo o già pronti, come indicato nel video.",
+        "Completare con un po’ di olio e mescolare."
+      ],
+      "notes": "Recuperate sei combinazioni e il metodo comune di assemblaggio; non vengono date grammature. Il formaggio bianco del secondo abbinamento è visibile in immagine, ma il suo nome non è stato letto con certezza. Non sono state ricavate indicazioni verificate sulla durata di conservazione.",
+      "author": "andrealanzanutrizionista",
+      "url": "https://www.instagram.com/andrealanzanutrizionista/reel/DP0Zx-fCNK3/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-037",
+      "title": "Spinacine di pollo",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Per 3–4 spinacine: 300 g macinato di pollo; 150 g spinacini novelli; 50 g parmigiano; 1 uovo; sale, pepe e pangrattato q.b. Per impanare: altre uova e pangrattato. Olio per saltare gli spinaci e friggere.",
+      "ingredients": [],
+      "steps": [
+        "Saltare gli spinaci con poco olio e sale; tritarli e strizzarli bene.",
+        "Unire gli ingredienti dell’impasto e formare le spinacine con le mani umide.",
+        "Passarle in uovo e pangrattato e friggere. Completare con sale."
+      ],
+      "notes": "Tempo e temperatura di frittura non indicati.",
+      "author": "alessio.pellizzoni",
+      "url": "https://www.instagram.com/alessio.pellizzoni/reel/DQogUy7iGrw/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-005",
+      "title": "Tavë Dheu",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Per 4 persone: 500 g spezzatino di vitello; 1,5 l acqua; 2 cipolle; 1 spicchio aglio; 100 g ricotta; 100 g feta; 2 pomodori maturi; 1 cucchiaino concentrato di pomodoro facoltativo; 1 cucchiaio farina di mais; 1 cucchiaio farina tipo 0; olio EVO; una noce di burro; sale, pepe, origano e paprika.",
+      "ingredients": [],
+      "steps": [
+        "Rosolare cipolla e aglio in olio, aggiungere e dorare la carne.",
+        "Unire pomodori, concentrato e aromi. Versare l’acqua e cuocere dolcemente 30–40 minuti.",
+        "In un’altra padella sciogliere burro e olio, tostare la farina di mais, unire ricotta, feta e un mestolo del brodo della carne. Mescolare fino a ottenere una crema.",
+        "Sciogliere la farina tipo 0 in mezzo bicchiere d’acqua; unirla alla carne insieme alla crema e cuocere altri 5 minuti.",
+        "Scaldare le ciotole di terracotta in forno a 220 °C, riempirle e cuocere altri 15 minuti alla stessa temperatura. Servire caldo, con pane tostato."
+      ],
+      "notes": "",
+      "author": "semplicemente_buono_",
+      "url": "https://www.instagram.com/semplicemente_buono_/reel/DdjpRg7KCHn/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-012",
+      "title": "Toast con uova, fiocchi di latte e miele",
+      "category": "Dolci e colazioni",
+      "kind": "originale",
+      "ingredientText": "2 uova sode; 175 g fiocchi di latte Santa Lucia; un filo olio EVO; sale e pepe; 10 g miele; 2 fette pane.",
+      "ingredients": [],
+      "steps": [
+        "Cuocere le uova circa 12 minuti, raffreddarle, sbucciarle e schiacciarle.",
+        "Mescolare con fiocchi di latte, olio, sale e pepe.",
+        "Tostare il pane e distribuire il composto.",
+        "Completare con il miele e distribuirlo sul topping."
+      ],
+      "notes": "",
+      "author": "alessandrodonofrio_",
+      "url": "https://www.instagram.com/alessandrodonofrio_/reel/DceMCngsZvR/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-072",
+      "title": "Toast di ceci al microonde",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "100 g ceci o altri legumi precotti; 1 uovo; 1 “cc” di lievito per preparazioni salate; sale e spezie; olio per ungere; farcitura a piacere.",
+      "ingredients": [],
+      "steps": [
+        "Frullare tutti gli ingredienti e versare in una pirofila unta.",
+        "Cuocere in microonde alla massima potenza finché il centro è cotto: per l’autrice circa 2 minuti e mezzo.",
+        "Tagliare a metà e farcire."
+      ],
+      "notes": "La fonte usa l’abbreviazione “cc” senza scioglierla. Potenza in watt e farcitura non indicate.",
+      "author": "giulycaggiari",
+      "url": "https://www.instagram.com/giulycaggiari/reel/C9wsUnkNMWi/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-058",
+      "title": "Wrap con pollo marinato e verdure al forno",
+      "category": "Carne",
+      "kind": "originale",
+      "ingredientText": "Riconoscibili: petto di pollo; pepe; scorza di limone; rosmarino; miele; peperone rosso; carota; zucchina; pomodorini; olio; piadina/tortilla; lattuga; salsa bianca con erbe. Compaiono anche condimenti grattugiati e una pasta rossa in tubetto, non identificabili con certezza dalle immagini.",
+      "ingredients": [],
+      "steps": [
+        "Tagliare il pollo a striscioline e mescolarlo in una ciotola con condimenti, scorza di limone, rosmarino e miele.",
+        "Tagliare peperone, carota e zucchina a bastoncini e i pomodorini a metà; distribuirli su una teglia con carta da forno, condire e aggiungere il pollo.",
+        "Cuocere in forno: il video mostra il risultato dorato, senza scritte su tempo e temperatura.",
+        "Spalmare la salsa bianca sulla piadina, aggiungere lattuga e il pollo con le verdure.",
+        "Chiudere il wrap, scaldarlo in padella e tagliarlo a metà."
+      ],
+      "notes": "Mancano quantità, composizione esatta della marinata e della salsa, durata della marinatura e parametri di cottura. Il video non presenta sottotitoli leggibili; l’audio non è stato trascritto.",
+      "author": "cucinagideon",
+      "url": "https://www.instagram.com/cucinagideon/reel/DIPGtHqoBIT/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": null,
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-038",
+      "title": "Würstel di carote",
+      "category": "Vegetali e legumi",
+      "kind": "originale",
+      "ingredientText": "Per 2: 2 carote; 150 ml birra bionda; 3 cucchiai salsa barbecue; 1 cucchiaio salsa di soia; 1 cucchiaino aglio in polvere; 1 cucchiaino paprika; burro vegetale o margarina.",
+      "ingredients": [],
+      "steps": [
+        "Pelare le carote e bollirle in acqua salata 15 minuti; trasferirle in acqua e ghiaccio.",
+        "Dorarle su tutti i lati a fuoco medio-basso con una noce generosa di burro vegetale o margarina.",
+        "Sfumare con la birra. Mescolare barbecue, soia, aglio e paprika.",
+        "Spennellare le carote con la salsa e farle rosolare lentamente. Servire eventualmente in un panino con salse, cipolla croccante ed erbe."
+      ],
+      "notes": "",
+      "author": "rucoolaaa",
+      "url": "https://www.instagram.com/rucoolaaa/reel/DO-vWOHCNk_/",
+      "sourceType": "Descrizione dell’autore",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": null,
+      "kcal": null
+    },
+    {
+      "id": "fonte-009",
+      "title": "Zuppa di orata con patate e risoni",
+      "category": "Pesce",
+      "kind": "originale",
+      "ingredientText": "Orata; patate; carota; risoni; acqua/brodo di cottura del pesce; olio; sale; una foglia aromatica nel brodo (visivamente compatibile con alloro); erbe tritate non identificate; limone. Miscela chiarita dall’autrice: 1 cucchiaino concentrato di pomodoro + 1 cucchiaino farina + poco brodo di pesce.",
+      "ingredients": [],
+      "steps": [
+        "Cuocere l’orata in acqua con sale e una foglia aromatica. Estrarre il pesce, togliere pelle e lische e dividerlo in pezzi; tenere il brodo.",
+        "In un’altra pentola scaldare l’olio, aggiungere carota e patate a cubetti e mescolare.",
+        "Versare il brodo di pesce. Stemperare concentrato di pomodoro e farina con poco brodo fino a ottenere una miscela liscia, quindi unirla.",
+        "Aggiungere erbe tritate e risoni; proseguire la cottura.",
+        "Unire il pesce a pezzi, mescolare e servire. La descrizione suggerisce qualche goccia di limone."
+      ],
+      "notes": "Recuperati i passaggi principali e la composizione della miscela rosa dal commento dell’autrice. Mancano le quantità principali e i tempi di cottura; le erbe non sono identificate con certezza.",
+      "author": "saraamyn2",
+      "url": "https://www.instagram.com/saraamyn2/reel/DdgG2DvscPI/",
+      "sourceType": "Video e testi dell’autore",
+      "extraSource": "https://www.instagram.com/p/DdgG2DvscPI/c/18057148928554067/",
+      "completeness": "parziale",
+      "servings": null,
+      "kcal": null
+    }
+  ]
+}

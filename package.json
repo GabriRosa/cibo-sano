@@ -1,0 +1,11 @@
+{
+  "name": "cibo-sano",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ricettario personale installabile e offline, senza dipendenze runtime.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "prepare-release": "node scripts/version.mjs"
+  }
+}
