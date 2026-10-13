@@ -6,7 +6,7 @@ const data=JSON.parse(readFileSync(new URL('../recipes.json',import.meta.url),'u
 const chicken=data.recipes.find(r=>r.id==='idea-01');
 const close=(a,b)=>assert(Math.abs(a-b)<0.00001,`${a} != ${b}`);
 test('every quantified recipe has complete sourced nutrition and matching card calories',()=>{
-  for(const recipe of data.recipes.filter(r=>r.kind==='porzione')) {
+  for(const recipe of data.recipes) {
     const total=nutritionFor(recipe,data.foods);
     assert(total); assert.equal(recipe.kcal,Math.round(total.kcal));
     for(const ingredient of recipe.ingredients) {
@@ -14,7 +14,8 @@ test('every quantified recipe has complete sourced nutrition and matching card c
       assert.equal(new URL(f.url).protocol,'https:');
     }
   }
-  assert.equal(nutritionFor(data.recipes.find(r=>r.kind==='originale'),data.foods),null);
+  assert.equal(data.recipes.length,135);
+  assert.equal(data.recipes.filter(r=>r.kind==='originale').length,90);
 });
 test('chicken meal sums weighed raw foods; doubling portions doubles every total',()=>{
   const total=nutritionFor(chicken,data.foods);
@@ -44,4 +45,37 @@ test('zero excludes ingredients, comma decimals work, blank and invalid amounts 
   assert.equal(scaleQuantities(grams,1,2)[0],null);
   const damaged=structuredClone(data);delete damaged.foods['Olio EVO'].protein;
   assert.equal(validData(damaged),false);
+});
+
+test('source recipes preserve source text and declare the calculated portion and assumptions',()=>{
+  for(const r of data.recipes.filter(r=>r.kind==='originale')){
+    assert(r.ingredientText.length>0,r.id); assert(r.quantityNote.length>20,r.id);
+    assert(r.portionLabel,r.id); assert.equal(r.servings,1);
+  }
+  for(const [source,count] of [['fonte-003',3],['fonte-007',2],['fonte-031',6],['fonte-053',3]]) {
+    const variants=data.recipes.filter(r=>r.sourceRecipeId===source);
+    assert.equal(variants.length,count);
+    assert.equal(new Set(variants.map(r=>JSON.stringify(r.ingredients))).size,count);
+  }
+});
+test('original recipes recalculate individual ingredients and portions; missing nutrition fails validation',()=>{
+  const recipe=data.recipes.find(r=>r.id==='fonte-056');
+  const grams=recipe.ingredients.map(i=>i.grams),base=nutritionFor(recipe,data.foods);
+  const doubled=nutritionFor(recipe,data.foods,scaleQuantities(grams,1,2));
+  for(const key of nutrientKeys)close(doubled[key],base[key]*2);
+  const oil=recipe.ingredients.findIndex(i=>i.name==='Olio EVO');
+  grams[oil]+=5;
+  const changed=nutritionFor(recipe,data.foods,grams);
+  close(changed.kcal-base.kcal,44.95);close(changed.protein,base.protein);
+  const missing=structuredClone(data);missing.recipes.find(r=>r.id===recipe.id).ingredients=[];
+  assert.equal(validData(missing),false);
+  delete missing.foods; assert.equal(validData(missing),false);
+});
+test('sauces and batch recipes are expressed per portion, not per whole batch',()=>{
+  const sauce=data.recipes.find(r=>r.id==='fonte-023');
+  close(nutritionFor(sauce,data.foods).kcal,26.75);
+  assert.equal(sauce.ingredients.find(i=>i.name==='Uovo intero').grams,20);
+  const burrito=data.recipes.find(r=>r.id==='fonte-065');
+  assert.equal(burrito.ingredients.find(i=>i.name==='Uovo intero').grams,100);
+  assert.equal(burrito.ingredients.find(i=>i.name==='Tortilla di frumento').grams,60);
 });

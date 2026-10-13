@@ -29,12 +29,13 @@ test('category, portion and favorite filters compose; calorie sorting places unk
   assert.equal(filterRecipes(data.recipes,{view:'portions'}).length,data.recipes.filter(r=>r.kind==='porzione').length);
   const sorted=filterRecipes(data.recipes,{sort:'kcal'});
   assert.equal(sorted[0].kcal,Math.min(...data.recipes.filter(r=>r.kcal!==null).map(r=>r.kcal)));
-  assert.equal(sorted.at(-1).kcal,null);
+  assert(sorted.every(r=>Number.isFinite(r.kcal)));
+  assert.equal(sorted.at(-1).kcal,Math.max(...data.recipes.map(r=>r.kcal)));
 });
 test('only structured quantities are scaled and decimal grams remain readable',()=>{
   assert.equal(scaledAmount(160,2),'320 g');
   assert.equal(scaledAmount(2.5,1),'2,5 g');
-  assert(data.recipes.filter(r=>r.kind==='originale').every(r=>r.ingredients.length===0));
+  assert(data.recipes.every(r=>r.ingredients.length>0));
 });
 test('malformed data, script URLs and invalid favorites are rejected',()=>{
   assert.equal(validData({...data,recipes:[data.recipes[0],data.recipes[0]]}),false);

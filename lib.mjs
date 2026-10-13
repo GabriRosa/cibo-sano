@@ -49,7 +49,7 @@ export function validData(data) {
         !Array.isArray(r.ingredients) || !Array.isArray(r.steps) || !r.steps.every(s=>typeof s==='string') ||
         (r.kcal!==null && (typeof r.kcal!=='number' || !Number.isFinite(r.kcal) || r.kcal<=0)) ||
         r.ingredients.some(i=>typeof i.name!=='string' || typeof i.grams!=='number' || !Number.isFinite(i.grams) || i.grams<=0)) return false;
-    if (data.foods && r.kind==='porzione' && !nutritionFor(r,data.foods)) return false;
+    if (!nutritionFor(r,data.foods)) return false;
     ids.add(r.id);
   }
   return true;

@@ -16,7 +16,7 @@ I preferiti si salvano nel browser del dispositivo. Dalla schermata Informazioni
 
 La fonte dei dati dell'app è [recipes.json](recipes.json). Ogni voce ha un identificativo stabile: mantienilo quando correggi una ricetta, così preferiti e link continuano a funzionare. Per una nuova scheda copia una voce dello stesso tipo e assegna un nuovo `id`.
 
-- `kind: "originale"`: ingredienti nel campo `ingredientText`, passaggi in `steps`, quantità come riportate dalla fonte. Queste dosi non vengono moltiplicate automaticamente.
+- `kind: "originale"`: ingredienti nel campo `ingredientText`, passaggi in `steps`, testo originale conservato. Anche queste schede hanno ingredienti strutturati per una porzione e un campo `quantityNote` che descrive dosi stimate, resa e scelte fra alternative. `portionLabel` specifica se la porzione è un piatto, una barretta, una dose di salsa o altro; `batchServings` indica in quante porzioni è stata divisa la preparazione. `sourceRecipeId` collega le varianti alla scheda originale.
 - `kind: "porzione"`: ingredienti strutturati con `name`, `grams`, `added` e `note`; base di una persona. `added: true` indica un ingrediente proposto per completare il pasto. Il comando di preparazione aggiorna `kcal` dalla somma degli ingredienti, per la porzione di base.
 - `notes`, `author`, `url` e `sourceType` mantengono note e attribuzioni. `extraSource` è un link facoltativo. Le categorie ammesse sono definite in [lib.mjs](lib.mjs).
 
@@ -37,13 +37,15 @@ L'app cerca nuove ricette all'apertura online e con il pulsante di aggiornamento
 
 ## Quantità e valori nutrizionali
 
-Le 45 schede con ingredienti pesati mostrano kcal e macro per la dose di base anche nell'elenco. Nel dettaglio, ogni campo in grammi modifica il totale con la formula `valore per 100 g × grammi / 100`. Il numero di persone scala proporzionalmente le quantità correnti, comprese le modifiche manuali. Da due persone in su è visibile anche il totale diviso per il numero di persone.
+Tutte le 135 schede (45 idee e 90 ricette o varianti dalle fonti) mostrano kcal e macro per la dose di base anche nell'elenco. Nel dettaglio, ogni campo in grammi modifica il totale con la formula `valore per 100 g × grammi / 100`. Il numero di porzioni scala proporzionalmente le quantità correnti, comprese le modifiche manuali. Da due porzioni in su è visibile anche il totale diviso per il numero di porzioni.
 
-Zero esclude un ingrediente. Campi vuoti, negativi, non numerici o superiori a 10.000 g sospendono il calcolo finché non sono corretti. I decimali accettano punto o virgola. Il pulsante di ripristino torna a una persona con le dosi proposte. I pesi modificati durano fino alla chiusura della scheda e non vengono pubblicati o salvati nel browser.
+Zero esclude un ingrediente. Campi vuoti, negativi, non numerici o superiori a 10.000 g sospendono il calcolo finché non sono corretti. I decimali accettano punto o virgola. Il pulsante di ripristino torna a una porzione con le dosi proposte. I pesi modificati durano fino alla chiusura della scheda e non vengono pubblicati o salvati nel browser.
 
 I dati provengono da [CoFID 2021](https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid), Crown copyright, con licenza [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), e dalle etichette dei prodotti indicate in ogni voce. Le tracce CoFID sono conteggiate come zero. Alcuni nomi generici usano un alimento rappresentativo dichiarato nella nota. Lo stato crudo/cotto/sgocciolato deve corrispondere al peso utilizzato. Le energie delle fonti possono differire dal solo calcolo 4/4/9 per fibre, acidi organici e fattori di conversione. Le etichette di marca sono riferimenti, non l'identificazione del prodotto usato dall'utente.
 
-Le altre 80 schede conservano le dosi testuali delle fonti: non viene mostrato un totale nutrizionale senza una lista completa di ingredienti pesati.
+Le 80 schede originali sono ora 90 perché schiscette, crêpes, pranzi e gelati con varianti distinte hanno schede separate. Gli identificativi precedenti restano validi. I pesi mancanti, le conversioni da cucchiai/pezzi e gli alimenti non identificati sono stime dichiarate, non dati ricavati dalla fonte. Le farciture o guarnizioni facoltative escluse sono specificate nella scheda. Il procedimento originale non viene riscritto né ridimensionato automaticamente: può descrivere più porzioni o alternative.
+
+`validData` rifiuta qualsiasi scheda senza ingredienti pesati o senza valori nutrizionali per tutti gli ingredienti. I test verificano la copertura di ogni scheda, le varianti, i totali, le porzioni e il ricalcolo degli ingredienti.
 
 ## Anteprima locale
 
