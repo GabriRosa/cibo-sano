@@ -38,9 +38,15 @@ export function validFood(f) {
 export function validEntry(v) {
   return !!v && text(v.id) && validDate(v.date) && Object.hasOwn(MEALS,v.meal) && text(v.name) && ['food','recipe'].includes(v.type) && ['g','ml','porzione'].includes(v.unit) && number(v.quantity) && v.quantity>0 && validNutrients(v.nutrients) && v.basis===(v.type==='recipe'?1:100) && (v.type==='recipe'?v.unit==='porzione':['g','ml'].includes(v.unit)) && validSource(v.source) && typeof v.createdAt==='string' && typeof v.updatedAt==='string' && Number.isFinite(Date.parse(v.createdAt)) && Number.isFinite(Date.parse(v.updatedAt)) && (!v.ingredients || (Array.isArray(v.ingredients)&&v.ingredients.length<=200&&v.ingredients.every(i=>text(i.name)&&number(i.grams))));
 }
-export function emptyDiary() {return {schemaVersion:1,entries:[],foods:[],goal:null};}
+export function validWeight(record) {
+  return !!record && validDate(record.date) && number(record.kg,500) && record.kg>=1 && typeof record.updatedAt==='string' && Number.isFinite(Date.parse(record.updatedAt));
+}
+function validWeights(records) {
+  return Array.isArray(records) && records.length<=30000 && records.every(validWeight) && new Set(records.map(record=>record.date)).size===records.length;
+}
+export function emptyDiary() {return {schemaVersion:1,entries:[],foods:[],goal:null,weights:[]};}
 export function validDiary(data) {
-  return !!data && data.schemaVersion===1 && Array.isArray(data.entries) && data.entries.length<=MAX_ENTRIES && data.entries.every(validEntry) && new Set(data.entries.map(e=>e.id)).size===data.entries.length && Array.isArray(data.foods) && data.foods.length<=5000 && data.foods.every(validFood) && new Set(data.foods.map(f=>f.id)).size===data.foods.length && (data.goal===null || (number(data.goal,10000)&&data.goal>=1));
+  return !!data && data.schemaVersion===1 && (!Object.hasOwn(data,'weights') || validWeights(data.weights)) && Array.isArray(data.entries) && data.entries.length<=MAX_ENTRIES && data.entries.every(validEntry) && new Set(data.entries.map(e=>e.id)).size===data.entries.length && Array.isArray(data.foods) && data.foods.length<=5000 && data.foods.every(validFood) && new Set(data.foods.map(f=>f.id)).size===data.foods.length && (data.goal===null || (number(data.goal,10000)&&data.goal>=1));
 }
 export function nutrientsFor(entry) {
   return Object.fromEntries(NUTRIENTS.map(k=>[k,entry.nutrients[k]*entry.quantity/entry.basis]));
@@ -87,9 +93,11 @@ export function mergeDiary(current,incoming) {
   if(!validDiary(current)||!validDiary(incoming))throw new Error('Dati del diario non validi.');
   const existing=new Set(current.entries.map(e=>e.id)),foodIds=new Set(current.foods.map(f=>f.id));
   const added=incoming.entries.filter(e=>!existing.has(e.id));
-  const result={...current,entries:[...current.entries,...added],foods:[...current.foods,...incoming.foods.filter(f=>!foodIds.has(f.id))],goal:current.goal??incoming.goal};
+  const weightDates=new Set((current.weights||[]).map(record=>record.date));
+  const weightsAdded=(incoming.weights||[]).filter(record=>!weightDates.has(record.date));
+  const result={...current,weights:[...(current.weights||[]),...weightsAdded],entries:[...current.entries,...added],foods:[...current.foods,...incoming.foods.filter(f=>!foodIds.has(f.id))],goal:current.goal??incoming.goal};
   if(!validDiary(result))throw new Error('Il diario risultante supera i limiti di memoria previsti.');
-  return {data:result,added:added.length};
+  return {data:result,added:added.length+weightsAdded.length,entriesAdded:added.length,weightsAdded:weightsAdded.length};
 }
 export class DiaryStore {
   constructor(storage) {this.storage=storage;}
@@ -105,6 +113,7 @@ export class DiaryStore {
     if(!validDiary(next))throw new Error('Dati non validi: nessuna modifica salvata.');
     try {this.storage.setItem(DIARY_KEY,JSON.stringify(next));}
     catch{throw new Error('Salvataggio non riuscito: memoria piena o non disponibile. Esporta il diario e libera spazio prima di riprovare.');}
+    if(typeof globalThis.dispatchEvent==='function')queueMicrotask(()=>globalThis.dispatchEvent(new Event('cibo-sano:diary-change')));
     return next;
   }
   add(entry,food=null) {
@@ -114,6 +123,32 @@ export class DiaryStore {
     return this.update(data=>{if(!data.entries.some(e=>e.id===entryId))throw new Error('Questa voce è stata rimossa in un’altra finestra.');return {...data,entries:data.entries.map(e=>e.id===entryId?{...e,...patch,id:e.id,updatedAt:new Date().toISOString()}:e)};});
   }
   remove(entryId) {return this.update(data=>({...data,entries:data.entries.filter(e=>e.id!==entryId)}));}
+  saveWeight(date,kg,options={}) {
+    if(!validDate(date)||date>localDate())throw new Error('Scegli una data valida, non successiva a oggi.');
+    if(!number(kg,500)||kg<1)throw new Error('Inserisci un peso da 1 a 500 kg.');
+    return this.update(data=>{
+      const records=data.weights||[],previous=records.find(record=>record.date===date);
+      if(Object.hasOwn(options,'expectedUpdatedAt')&&(previous?.updatedAt??null)!==options.expectedUpdatedAt)throw new Error('La pesata è cambiata in un’altra finestra. Seleziona di nuovo la data prima di salvarla.');
+      const updatedAt=new Date(Math.max(Date.now(),previous?Date.parse(previous.updatedAt)+1:0)).toISOString();
+      const record={date,kg:Math.round(kg*100)/100,updatedAt};
+      return {...data,weights:previous?records.map(item=>item.date===date?record:item):[...records,record]};
+    });
+  }
+  removeWeight(date,options={}) {
+    return this.update(data=>{
+      const records=data.weights||[],previous=records.find(record=>record.date===date);
+      if(!previous)throw new Error('Questa pesata è già stata rimossa.');
+      if(Object.hasOwn(options,'expectedUpdatedAt')&&previous.updatedAt!==options.expectedUpdatedAt)throw new Error('La pesata è cambiata in un’altra finestra. Controlla il valore aggiornato prima di rimuoverla.');
+      return {...data,weights:records.filter(record=>record.date!==date)};
+    });
+  }
+  restoreWeight(record) {
+    if(!validWeight(record))throw new Error('Pesata non valida.');
+    return this.update(data=>{
+      if((data.weights||[]).some(item=>item.date===record.date))throw new Error('Quella data ha già una pesata. Il valore attuale è stato conservato.');
+      return {...data,weights:[...(data.weights||[]),{...record}]};
+    });
+  }
   setGoal(goal) {return this.update(data=>({...data,goal}));}
   export() {return JSON.stringify({format:BACKUP_FORMAT,exportedAt:new Date().toISOString(),data:this.read()},null,2);}
   import(raw) {const incoming=parseBackup(raw);let count=0;this.update(data=>{const merged=mergeDiary(data,incoming);count=merged.added;return merged.data;});return count;}

@@ -165,7 +165,8 @@ export function initDiary({toast,onSaved=()=>{}}) {
   $('diary-pdf-month').addEventListener('click',()=>savePDF('monthly'));
   $('diary-export').addEventListener('click',()=>{try{download(store.export(),`cibo-sano-diario-${localDate()}.json`);toast('Backup esportato. Conservalo in un luogo privato.');}catch(err){toast(err.message);}});
   $('diary-recovery').addEventListener('click',()=>{try{const raw=storage.getItem(DIARY_KEY);if(!raw)throw new Error('Nessun dato recuperabile.');download(raw,'cibo-sano-diario-recupero.json');}catch(err){toast(err.message);}});
-  $('diary-import').addEventListener('change',async ev=>{const file=ev.target.files?.[0];if(!file)return;try{if(file.size>15000000)throw new Error('Backup troppo grande.');const raw=await file.text();const count=await withDiaryLock(()=>store.import(raw));render();toast(`${count} voci aggiunte. Le voci già presenti sono state conservate.`);}catch(err){toast(err.message);}finally{ev.target.value='';}});
+  $('diary-import').addEventListener('change',async ev=>{const file=ev.target.files?.[0];if(!file)return;try{if(file.size>15000000)throw new Error('Backup troppo grande.');const raw=await file.text();const count=await withDiaryLock(()=>store.import(raw));render();toast(`${count} registrazioni aggiunte tra pasti e peso. I dati già presenti sono stati conservati.`);}catch(err){toast(err.message);}finally{ev.target.value='';}});
+  addEventListener('cibo-sano:diary-change',render);
   addEventListener('storage',ev=>{if(ev.key===DIARY_KEY||ev.key===null)render();});
   function checkToday(){const now=localDate();if(now!==seenToday&&!dialog.open){if(day===seenToday)day=now;seenToday=now;render();}}
   setInterval(()=>{if(!document.hidden)checkToday();},60000);

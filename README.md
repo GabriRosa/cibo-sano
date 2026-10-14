@@ -1,6 +1,6 @@
 # Cibo sano
 
-Diario alimentare in italiano con una sezione di 195 ricette, installabile su Android e consultabile offline. La home registra colazione, spuntino, pranzo e cena con kcal, proteine, carboidrati e grassi. Le ricette provengono da fonti Instagram, recuperi dai video e proposte con ingredienti pesati.
+Diario alimentare in italiano con una sezione di 195 ricette, installabile su Android e consultabile offline. La home registra colazione, spuntino, pranzo e cena con kcal, proteine, carboidrati e grassi. La sezione Peso conserva le pesate e ne mostra l’andamento nel tempo. Le ricette provengono da fonti Instagram, recuperi dai video e proposte con ingredienti pesati.
 
 L'app usa HTML, CSS e JavaScript, senza server applicativo, account o strumenti di analisi. Lo scanner usa l'API nativa del browser quando disponibile, altrimenti una copia locale di ZXing. GitHub Pages distribuisce i file della cartella principale. Non serve acquistare un dominio. La gratuità dipende dalle condizioni e dai limiti del piano GitHub utilizzato.
 
@@ -18,9 +18,17 @@ Dalla home scegli il giorno e **Aggiungi** nel pasto. Puoi selezionare un alimen
 
 Dalla scheda di una ricetta, **+ Diario** trasferisce una porzione delle dosi correnti. Se la scheda mostra più porzioni, prima divide il totale per quel numero; il modulo del diario permette poi di registrare quante ne sono state mangiate, anche frazioni. Ogni voce conserva una copia di nutrienti, fonte e ingredienti per porzione: gli aggiornamenti successivi del ricettario non modificano i giorni già registrati. Tocca una voce per cambiarne quantità, giorno o pasto, oppure rimuoverla. Dopo una rimozione puoi annullare l'ultima operazione.
 
-In **Obiettivo e backup del diario** puoi impostare un obiettivo calorico facoltativo, esportare tutti i giorni o importarli su un altro dispositivo. Il file contiene dati personali e va conservato privatamente. L'importazione aggiunge gli ID mancanti; non sovrascrive le voci esistenti e non ripristina versioni precedenti di una voce modificata. Conserva l'obiettivo locale se già presente. Un file non valido viene rifiutato prima di qualsiasi scrittura.
+In **Obiettivo e backup del diario** puoi impostare un obiettivo calorico facoltativo, esportare tutti i giorni o importarli su un altro dispositivo. Il file contiene dati personali e va conservato privatamente. Il backup comprende anche tutte le pesate. L'importazione aggiunge gli ID mancanti dei pasti e le date mancanti del peso; conserva le registrazioni già presenti, anche quando il backup contiene un valore diverso per la stessa data. Conserva l'obiettivo locale se già presente. Un file non valido viene rifiutato prima di qualsiasi scrittura.
 
-Il diario usa `localStorage` con chiave `cibo-sano:diary:v1`. Lo schema contiene `entries`, `foods` personali e `goal` facoltativo. Le scritture sono serializzate con Web Locks nei browser che lo supportano (incluso Chrome Android); in altri browser il ciclo lettura/scrittura non garantisce l'assenza di conflitti fra finestre contemporanee. Errori di quota o accesso non chiudono il modulo né mostrano un salvataggio riuscito. Un archivio corrotto resta conservato ed è esportabile come copia di recupero. Non viene caricato automaticamente nel repository, non è incluso nel link pubblico e non è sincronizzato. Cancellare i dati del browser può eliminarlo.
+Il diario usa `localStorage` con chiave `cibo-sano:diary:v1`. Lo schema contiene `entries`, `foods` personali, `goal` facoltativo e `weights`. Il campo `weights` è facoltativo nei dati precedenti: vecchi diari e backup restano leggibili senza cancellare pasti o preferenze. Le scritture sono serializzate con Web Locks nei browser che lo supportano (incluso Chrome Android); in altri browser il ciclo lettura/scrittura non garantisce l'assenza di conflitti fra finestre contemporanee. Errori di quota o accesso non chiudono il modulo né mostrano un salvataggio riuscito. Un archivio corrotto resta conservato ed è esportabile come copia di recupero. Non viene caricato automaticamente nel repository, non è incluso nel link pubblico e non è sincronizzato. Cancellare i dati del browser può eliminarlo.
+
+## Peso nel tempo
+
+La sezione **Peso** registra una pesata per giorno con data e chilogrammi. Accetta la virgola decimale, valori da 1 a 500 kg e date fino a oggi; salva al massimo due decimali. Se una data ha già un valore, il modulo lo mostra per aggiornarlo. Dallo storico puoi modificare o rimuovere una pesata e annullare l'ultima rimozione.
+
+I filtri **1 mese**, **3 mesi**, **6 mesi** e **1 anno** selezionano un intervallo che termina oggi e inizia lo stesso giorno del mese iniziale, adattato all'ultimo giorno disponibile quando necessario. Le date ai due estremi sono incluse. Il grafico colloca le misure in base alla distanza tra le date e mostra la scala in kg. La variazione del periodo è la differenza fra l'ultima e la prima pesata disponibili in quell'intervallo; con meno di due misure non viene calcolata. I giorni senza misure restano senza dati. Lo storico consente di leggere i valori anche senza usare il grafico.
+
+Ogni elemento di `weights` contiene `date`, `kg` e `updatedAt`. Le modifiche rilevano se un'altra finestra ha cambiato la stessa pesata dopo l'apertura del modulo. L'annullamento di una rimozione conserva un eventuale nuovo valore già presente per quella data. Salvataggio, backup e funzionamento offline usano lo stesso archivio locale del diario; le pesate non sono pubblicate con l'app. I PDF alimentari continuano a riepilogare pasti e nutrienti.
 
 ## Riepiloghi PDF
 
@@ -105,6 +113,7 @@ Apri `http://127.0.0.1:8765`. Usa un server HTTP; l'apertura diretta di `index.h
 | [app.js](app.js), [lib.mjs](lib.mjs) | Ricerca, filtri, dettagli, dosi e preferiti |
 | [diary.mjs](diary.mjs), [diary-ui.js](diary-ui.js), [diary.css](diary.css) | Diario locale, backup, conti e interfaccia dei pasti |
 | [reports.mjs](reports.mjs), [report-export.js](report-export.js) | Aggregazione giornaliera/mensile e download PDF locale |
+| [weight.mjs](weight.mjs), [weight-ui.js](weight-ui.js), [weight.css](weight.css) | Intervalli del peso, grafico e storico delle pesate |
 | [foods.mjs](foods.mjs), [scanner.js](scanner.js), [vendor/](vendor/) | Ricerca prodotti e scanner |
 | [recipes.json](recipes.json) | Ricette pubbliche, senza dati del profilo personale |
 | [manifest.webmanifest](manifest.webmanifest), [icons/](icons/) | Installazione e icone Android |

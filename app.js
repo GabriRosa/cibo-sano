@@ -1,6 +1,7 @@
 import {categories, categoryIcons, escapeHTML as e, filterRecipes, nutritionFor, nutrientKeys, parseGrams, scaleQuantities, validData, sourceURL, parseFavorites} from './lib.mjs';
 
 import {initDiary} from './diary-ui.js';
+import {initWeight} from './weight-ui.js';
 
 const $ = id => document.getElementById(id);
 const heart = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 4.6a5.5 5.5 0 0 0-7.8 0l-.6.6-.6-.6a5.5 5.5 0 0 0-7.8 7.8L12 21l8.4-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>';
@@ -19,11 +20,16 @@ function toast(message) {
   toastTimer = setTimeout(() => { $('toast').hidden = true; }, 4000);
 }
 const diaryUI=initDiary({toast,onSaved:()=>{location.hash='diario';showPage('diario');}});
+const weightUI=initWeight({toast});
 function showPage(page) {
-  const recipes=page==='ricette';
-  $('diary-page').hidden=recipes;$('recipes-page').hidden=!recipes;
-  $('nav-diary').toggleAttribute('aria-current',!recipes);$('nav-recipes').toggleAttribute('aria-current',recipes);
-  $('nav-diary').setAttribute('aria-current',recipes?'false':'page');$('nav-recipes').setAttribute('aria-current',recipes?'page':'false');
+  for(const [route,id] of [['diario','diary'],['ricette','recipes'],['peso','weight']]){
+    const active=page===route;
+    $(id+'-page').hidden=!active;
+    if(active)$('nav-'+id).setAttribute('aria-current','page');
+    else $('nav-'+id).removeAttribute('aria-current');
+  }
+  if(page==='peso')weightUI.render();
+  if(page==='diario')diaryUI.render();
 }
 function connectionStatus() {
   $('connection').textContent = !navigator.onLine ? 'Offline' : dataFromCache ? 'Copia salvata' : offlineReady ? 'Pronto anche offline' : 'Online';
@@ -124,7 +130,7 @@ function openRecipe(id) {
 }
 function applyHash() {
   const id = new URLSearchParams(location.hash.slice(1)).get('ricetta');
-  showPage(id||location.hash==='#ricette'?'ricette':'diario');
+  showPage(id||location.hash==='#ricette'?'ricette':location.hash==='#peso'?'peso':'diario');
   if (!data) return;
   if (id) openRecipe(id);
   else if ($('recipe-dialog').open) $('recipe-dialog').close();

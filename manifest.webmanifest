@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Cibo sano · Diario e ricette",
   "short_name": "Cibo sano",
-  "description": "Diario alimentare, calorie, macronutrienti e ricette, anche offline.",
+  "description": "Diario alimentare, peso nel tempo, calorie, macronutrienti e ricette, anche offline.",
   "lang": "it",
   "start_url": "./",
   "scope": "./",
