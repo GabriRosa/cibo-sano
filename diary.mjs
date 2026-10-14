@@ -1,7 +1,13 @@
+import {validInsightFields,mergeInsightFields} from './targets.mjs';
+import {validKitchenFields,mergeKitchenFields} from './kitchen.mjs';
+import {validPersonalFields,mergePersonalFields,validFavorites,FAVORITES_KEY} from './personal-recipes.mjs';
+import {validPortions} from './portions.mjs';
+
 export const MEALS = {breakfast:'Colazione', snack:'Spuntino', lunch:'Pranzo', dinner:'Cena'};
 export const NUTRIENTS = ['kcal','protein','carbs','fat'];
 export const DIARY_KEY = 'cibo-sano:diary:v1';
 export const BACKUP_FORMAT = 'cibo-sano-diary-v1';
+export const FULL_BACKUP_FORMAT = 'cibo-sano-full-v1';
 export async function withDiaryLock(operation, locks=globalThis.navigator?.locks) {
   return locks ? locks.request(DIARY_KEY,{mode:'exclusive'},operation) : operation();
 }
@@ -33,7 +39,7 @@ export function safeLink(value) {
 }
 function validSource(s) {return !!s && typeof s.label==='string' && s.label.length<=300 && typeof s.url==='string' && s.url.length<=2000 && (!s.url||!!safeLink(s.url));}
 export function validFood(f) {
-  return !!f && text(f.id) && text(f.name) && ['g','ml'].includes(f.unit) && validNutrients(f.nutrients,1000) && ['catalog','custom','off'].includes(f.origin) && validSource(f.source) && (!f.barcode||/^\d{8,14}$/.test(f.barcode));
+  return !!f && text(f.id) && text(f.name) && ['g','ml'].includes(f.unit) && validNutrients(f.nutrients,1000) && ['catalog','custom','off'].includes(f.origin) && validSource(f.source) && (!f.barcode||/^\d{8,14}$/.test(f.barcode)) && (!Object.hasOwn(f,'portions')||validPortions(f.portions)) && (!Object.hasOwn(f,'updatedAt')||(typeof f.updatedAt==='string'&&Number.isFinite(Date.parse(f.updatedAt))));
 }
 export function validEntry(v) {
   return !!v && text(v.id) && validDate(v.date) && Object.hasOwn(MEALS,v.meal) && text(v.name) && ['food','recipe'].includes(v.type) && ['g','ml','porzione'].includes(v.unit) && number(v.quantity) && v.quantity>0 && validNutrients(v.nutrients) && v.basis===(v.type==='recipe'?1:100) && (v.type==='recipe'?v.unit==='porzione':['g','ml'].includes(v.unit)) && validSource(v.source) && typeof v.createdAt==='string' && typeof v.updatedAt==='string' && Number.isFinite(Date.parse(v.createdAt)) && Number.isFinite(Date.parse(v.updatedAt)) && (!v.ingredients || (Array.isArray(v.ingredients)&&v.ingredients.length<=200&&v.ingredients.every(i=>text(i.name)&&number(i.grams))));
@@ -46,7 +52,7 @@ function validWeights(records) {
 }
 export function emptyDiary() {return {schemaVersion:1,entries:[],foods:[],goal:null,weights:[]};}
 export function validDiary(data) {
-  return !!data && data.schemaVersion===1 && (!Object.hasOwn(data,'weights') || validWeights(data.weights)) && Array.isArray(data.entries) && data.entries.length<=MAX_ENTRIES && data.entries.every(validEntry) && new Set(data.entries.map(e=>e.id)).size===data.entries.length && Array.isArray(data.foods) && data.foods.length<=5000 && data.foods.every(validFood) && new Set(data.foods.map(f=>f.id)).size===data.foods.length && (data.goal===null || (number(data.goal,10000)&&data.goal>=1));
+  return !!data && data.schemaVersion===1 && validInsightFields(data) && validKitchenFields(data) && validPersonalFields(data) && (!Object.hasOwn(data,'weights') || validWeights(data.weights)) && Array.isArray(data.entries) && data.entries.length<=MAX_ENTRIES && data.entries.every(validEntry) && new Set(data.entries.map(e=>e.id)).size===data.entries.length && Array.isArray(data.foods) && data.foods.length<=5000 && data.foods.every(validFood) && new Set(data.foods.map(f=>f.id)).size===data.foods.length && (data.goal===null || (number(data.goal,10000)&&data.goal>=1));
 }
 export function nutrientsFor(entry) {
   return Object.fromEntries(NUTRIENTS.map(k=>[k,entry.nutrients[k]*entry.quantity/entry.basis]));
@@ -69,24 +75,26 @@ export function recipeItem(recipe,foods,quantities=recipe.ingredients.map(i=>i.g
   if(!number(servings,100)||servings<=0||quantities.length!==recipe.ingredients.length||quantities.some(q=>!number(q)))throw new Error('Controlla i grammi della ricetta.');
   const nutrients=Object.fromEntries(NUTRIENTS.map(k=>[k,0]));
   recipe.ingredients.forEach((i,index)=>{
-    if(!validNutrients(foods[i.name]))throw new Error('Valori nutrizionali non disponibili.');
-    for(const key of NUTRIENTS)nutrients[key]+=foods[i.name][key]*quantities[index]/100/servings;
+    const food=i.food||foods[i.name];
+    if(!validNutrients(food))throw new Error('Valori nutrizionali non disponibili.');
+    for(const key of NUTRIENTS)nutrients[key]+=food[key]*quantities[index]/100/servings;
   });
   return {name:recipe.title,type:'recipe',recipeId:recipe.id,unit:'porzione',basis:1,nutrients,ingredients:recipe.ingredients.map((i,index)=>({name:i.name,grams:quantities[index]/servings})),source:{label:'Ricetta · '+(recipe.author||'Cibo sano'),url:safeLink(recipe.url)}};
 }
 export function catalogFoods(foods={}) {
   return Object.entries(foods).map(([name,f])=>({id:'catalog:'+name,name,unit:'g',origin:'catalog',nutrients:Object.fromEntries(NUTRIENTS.map(k=>[k,f[k]])),source:{label:f.source||'Ricettario',url:safeLink(f.url)},note:f.note||''})).filter(validFood).sort((a,b)=>a.name.localeCompare(b.name,'it'));
 }
-export function makeFood({name,unit,nutrients,source,origin='custom',barcode}) {
-  const food={id:origin==='off'&&barcode?'off:'+barcode:id(),name:name.trim(),unit,nutrients:{...nutrients},source:source||{label:'Etichetta inserita da te',url:''},origin};
+export function makeFood({id:foodId,name,unit,nutrients,source,origin='custom',barcode,portions}) {
+  const food={id:foodId||(origin==='off'&&barcode?'off:'+barcode:id()),name:name.trim(),unit,nutrients:{...nutrients},source:source||{label:'Etichetta inserita da te',url:''},origin};
   if(barcode)food.barcode=barcode;
+  if(portions!==undefined)food.portions=portions.map(p=>({...p}));
   if(!validFood(food))throw new Error('Completa il nome e tutti i valori per 100 g o 100 ml.');
   return food;
 }
 export function parseBackup(raw) {
   if(typeof raw!=='string'||raw.length>15000000)throw new Error('File troppo grande.');
   let value;try {value=JSON.parse(raw);}catch{throw new Error('Il file non è un backup JSON valido.');}
-  if(value.format!==BACKUP_FORMAT||!validDiary(value.data))throw new Error('Backup del diario non valido o versione non supportata.');
+  if(!value||typeof value!=='object'||Array.isArray(value)||![BACKUP_FORMAT,FULL_BACKUP_FORMAT].includes(value.format)||!validDiary(value.data))throw new Error('Backup del diario non valido o versione non supportata.');
   return value.data;
 }
 export function mergeDiary(current,incoming) {
@@ -95,7 +103,7 @@ export function mergeDiary(current,incoming) {
   const added=incoming.entries.filter(e=>!existing.has(e.id));
   const weightDates=new Set((current.weights||[]).map(record=>record.date));
   const weightsAdded=(incoming.weights||[]).filter(record=>!weightDates.has(record.date));
-  const result={...current,weights:[...(current.weights||[]),...weightsAdded],entries:[...current.entries,...added],foods:[...current.foods,...incoming.foods.filter(f=>!foodIds.has(f.id))],goal:current.goal??incoming.goal};
+  const result={...current,...mergeInsightFields(current,incoming),...mergeKitchenFields(current,incoming),...mergePersonalFields(current,incoming),weights:[...(current.weights||[]),...weightsAdded],entries:[...current.entries,...added],foods:[...current.foods,...incoming.foods.filter(f=>!foodIds.has(f.id))],goal:current.goal??incoming.goal};
   if(!validDiary(result))throw new Error('Il diario risultante supera i limiti di memoria previsti.');
   return {data:result,added:added.length+weightsAdded.length,entriesAdded:added.length,weightsAdded:weightsAdded.length};
 }
@@ -103,9 +111,11 @@ export class DiaryStore {
   constructor(storage) {this.storage=storage;}
   read() {
     let raw;try {raw=this.storage.getItem(DIARY_KEY);}catch{throw new Error('Memoria del browser non accessibile. Il diario non può essere salvato.');}
-    if(raw===null)return emptyDiary();
-    let data;try{data=JSON.parse(raw);}catch{}
+    let data;try{data=raw===null?emptyDiary():JSON.parse(raw);}catch{}
     if(!validDiary(data))throw new Error('Il diario salvato non è leggibile. I dati originali sono conservati: esporta una copia di recupero prima di intervenire.');
+    if(!Object.hasOwn(data,'favorites')){
+      try{const legacy=JSON.parse(this.storage.getItem(FAVORITES_KEY)||'null');if(validFavorites(legacy))data={...data,favorites:legacy};}catch{}
+    }
     return data;
   }
   update(change) {
@@ -118,6 +128,23 @@ export class DiaryStore {
   }
   add(entry,food=null) {
     return this.update(data=>({...data,entries:[...data.entries,entry],foods:food?(data.foods.some(f=>f.id===food.id)?data.foods.map(f=>f.id===food.id?food:f):[...data.foods,food]):data.foods}));
+  }
+  saveFood(food,options={}) {
+    if(!validFood(food))throw new Error('Prodotto non valido. Controlla tutti i valori.');
+    return this.update(data=>{
+      const previous=data.foods.find(f=>f.id===food.id);
+      if(Object.hasOwn(options,'expectedUpdatedAt')&&(previous?.updatedAt??null)!==options.expectedUpdatedAt)throw new Error('Il prodotto è cambiato in un’altra finestra. Riaprilo prima di salvare.');
+      const updatedAt=new Date(Math.max(Date.now(),previous?.updatedAt?Date.parse(previous.updatedAt)+1:0)).toISOString();
+      const saved={...food,updatedAt};
+      return {...data,foods:previous?data.foods.map(f=>f.id===food.id?saved:f):[...data.foods,saved]};
+    });
+  }
+  removeFood(foodId,options={}) {
+    return this.update(data=>{
+      const previous=data.foods.find(f=>f.id===foodId);if(!previous)throw new Error('Prodotto già rimosso.');
+      if(Object.hasOwn(options,'expectedUpdatedAt')&&(previous.updatedAt??null)!==options.expectedUpdatedAt)throw new Error('Il prodotto è cambiato in un’altra finestra. Riaprilo prima di rimuoverlo.');
+      return {...data,foods:data.foods.filter(f=>f.id!==foodId)};
+    });
   }
   edit(entryId,patch,options={}) {
     return this.update(data=>{
@@ -165,6 +192,6 @@ export class DiaryStore {
     });
   }
   setGoal(goal) {return this.update(data=>({...data,goal}));}
-  export() {return JSON.stringify({format:BACKUP_FORMAT,exportedAt:new Date().toISOString(),data:this.read()},null,2);}
+  export() {return JSON.stringify({format:FULL_BACKUP_FORMAT,exportedAt:new Date().toISOString(),data:this.read()},null,2);}
   import(raw) {const incoming=parseBackup(raw);let count=0;this.update(data=>{const merged=mergeDiary(data,incoming);count=merged.added;return merged.data;});return count;}
 }

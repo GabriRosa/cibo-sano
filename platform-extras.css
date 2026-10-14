@@ -1,0 +1,6 @@
+.platform-nav{overflow-x:auto;justify-content:flex-start;scrollbar-width:thin}.platform-nav a{flex:1;white-space:nowrap;min-width:90px}
+.version-ingredient{display:grid;grid-template-columns:minmax(0,2fr) minmax(100px,1fr) auto;align-items:end;gap:12px;margin:18px 0;padding-bottom:18px;border-bottom:1px solid var(--line,#e0e5df)}
+.field textarea{font:inherit;color:inherit;border:1px solid #ccd6cd;border-radius:10px;padding:12px;resize:vertical;max-width:100%;width:100%;background:white}
+.recipe-personal-actions{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.recipe-personal-actions button{font-size:14px}
+.backup-status{margin-top:12px}.backup-reminder{color:#775820;font-weight:600}
+@media(max-width:600px){.platform-nav{gap:0}.platform-nav a{font-size:13px;min-width:74px;padding:12px 8px}.version-ingredient{grid-template-columns:1fr 110px}.version-ingredient .text-button{grid-column:1/-1;justify-self:start}.dialog-toolbar{flex-wrap:wrap;gap:10px}}

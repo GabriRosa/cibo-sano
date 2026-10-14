@@ -1,4 +1,4 @@
-import {readFileSync, writeFileSync} from 'node:fs';
+import {readFileSync, writeFileSync,readdirSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {nutritionFor} from '../lib.mjs';
 const root=new URL('../',import.meta.url);
@@ -15,6 +15,10 @@ if(dataVersion!==data.version){
   writeFileSync(recipeURL,JSON.stringify(data,null,2)+'\n');
 }
 const files=['index.html','style.css','app.js','lib.mjs','diary.mjs','diary-ui.js','foods.mjs','scanner.js','diary.css','weight.mjs','weight-ui.js','weight.css','vendor/zxing-browser.min.js','reports.mjs','report-export.js','vendor/jspdf.umd.min.js','manifest.webmanifest','icons/icon.svg','icons/icon-192.png','icons/icon-512.png','icons/icon-maskable-512.png'];
+files.push('targets.mjs','insights-ui.js','insights.css','kitchen.mjs','kitchen-ui.js','kitchen.css','portions.mjs','label-ocr.mjs','food-extras.css','personal-recipes.mjs','recipe-versions-ui.js','backup-ui.js','platform-extras.css');
+for(const name of readdirSync(new URL('vendor/tesseract/',root),{recursive:true})){
+  if(/\.(?:js|traineddata)$/.test(name))files.push('vendor/tesseract/'+name);
+}
 const hash=createHash('sha256');
 for(const file of files)hash.update(readFileSync(new URL(file,root)));
 const sw=new URL('sw.js',root);

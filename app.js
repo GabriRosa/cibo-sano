@@ -2,16 +2,23 @@ import {categories, categoryIcons, escapeHTML as e, filterRecipes, nutritionFor,
 
 import {initDiary} from './diary-ui.js';
 import {initWeight} from './weight-ui.js';
+import {initInsights} from './insights-ui.js';
+import {initKitchen} from './kitchen-ui.js';
+import {initRecipeVersions} from './recipe-versions-ui.js';
+import {initBackup} from './backup-ui.js';
+import {DiaryStore,DIARY_KEY,withDiaryLock,recipeItem} from './diary.mjs';
 
 const $ = id => document.getElementById(id);
 const heart = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 4.6a5.5 5.5 0 0 0-7.8 0l-.6.6-.6-.6a5.5 5.5 0 0 0-7.8 7.8L12 21l8.4-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>';
 const favoriteKey = 'cibo-sano:favorites:v1';
-let data = null, recipeMap = new Map(), favorites = new Set(), storageWarning = false;
+let data = null, baseData = null, recipeMap = new Map(), favorites = new Set(), storageWarning = false;
 let state = {query:'',category:'Tutte',view:'all',sort:'default'}, visibleLimit = 24;
 let quantities = [], checkedIngredients = new Set();
 let currentRecipe = null, servings = 1, toastTimer, installPrompt = null, registration = null;
 let offlineReady = false, dataFromCache = false, initialController = !!navigator.serviceWorker?.controller;
-try { favorites = parseFavorites(localStorage.getItem(favoriteKey) || '[]'); } catch { storageWarning = true; }
+let personalStorage=null;try{personalStorage=window.localStorage;}catch{}
+const personalStore=new DiaryStore(personalStorage);
+try { favorites = new Set(personalStore.read().favorites||[]); } catch { storageWarning = true; }
 
 function toast(message) {
   $('toast').textContent = message;
@@ -21,8 +28,25 @@ function toast(message) {
 }
 const diaryUI=initDiary({toast,onSaved:()=>{location.hash='diario';showPage('diario');}});
 const weightUI=initWeight({toast});
+const insightsUI=initInsights({toast,storage:personalStorage,getDay:()=>diaryUI.getDay()});
+const kitchenUI=initKitchen({toast,onOpenRecipe:id=>{location.hash='ricetta='+encodeURIComponent(id);},onLogRecipe:(item,options)=>diaryUI.addItem(item,options)});
+const versionsUI=initRecipeVersions({toast,storage:personalStorage,onSaved:recipe=>{
+  $('recipe-dialog').close();syncPersonalData();location.hash='ricetta='+encodeURIComponent(recipe.id);
+}});
+initBackup({toast,storage:personalStorage});
+function syncPersonalData() {
+  let personal;
+  try{personal=personalStore.read();favorites=new Set(personal.favorites||[]);}catch{return;}
+  if(!baseData)return;
+  data={...baseData,recipes:[...(personal.personalRecipes||[]),...baseData.recipes]};
+  recipeMap=new Map(data.recipes.map(r=>[r.id,r]));
+  $('collection-count').textContent=`${baseData.recipes.length} ricette${personal.personalRecipes?.length?` e ${personal.personalRecipes.length} ${personal.personalRecipes.length===1?'versione personale':'versioni personali'}`:''}`;
+  diaryUI.setData(data);kitchenUI.setData(data);render();updateDetailFavorite();
+}
+addEventListener('cibo-sano:diary-change',syncPersonalData);
+addEventListener('storage',event=>{if(event.key===DIARY_KEY||event.key===null)syncPersonalData();});
 function showPage(page) {
-  for(const [route,id] of [['diario','diary'],['ricette','recipes'],['peso','weight']]){
+  for(const [route,id] of [['diario','diary'],['ricette','recipes'],['peso','weight'],['menu','kitchen'],['dispensa','pantry']]){
     const active=page===route;
     $(id+'-page').hidden=!active;
     if(active)$('nav-'+id).setAttribute('aria-current','page');
@@ -30,17 +54,17 @@ function showPage(page) {
   }
   if(page==='peso')weightUI.render();
   if(page==='diario')diaryUI.render();
+  if(page==='menu'||page==='dispensa')kitchenUI.render(page);
 }
 function connectionStatus() {
   $('connection').textContent = !navigator.onLine ? 'Offline' : dataFromCache ? 'Copia salvata' : offlineReady ? 'Pronto anche offline' : 'Online';
   $('offline-status').textContent = offlineReady ? 'Copia offline pronta su questo dispositivo.' : 'La copia offline sarà pronta dopo il primo caricamento online completo.';
 }
-function setFavorite(id) {
-  favorites.has(id) ? favorites.delete(id) : favorites.add(id);
-  try { localStorage.setItem(favoriteKey, JSON.stringify([...favorites])); }
-  catch { toast('Memoria del browser non disponibile: i preferiti dureranno fino alla chiusura.'); }
-  render();
-  updateDetailFavorite();
+async function setFavorite(id) {
+  try {await withDiaryLock(()=>personalStore.update(current=>{
+    const ids=new Set(current.favorites||[]);ids.has(id)?ids.delete(id):ids.add(id);return {...current,favorites:[...ids]};
+  }));syncPersonalData();}
+  catch(error){toast(error.message);}
 }
 function updateDetailFavorite() {
   if (!currentRecipe) return;
@@ -50,6 +74,7 @@ function updateDetailFavorite() {
   $('recipe-favorite').setAttribute('aria-label', active ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti');
 }
 function typeLabel(recipe) {
+  if(recipe.personal)return 'La tua versione';
   if (recipe.kind==='porzione') return 'Dosi proposte';
   if (recipe.completeness==='parziale') return 'Passaggi parziali';
   if (recipe.completeness==='tecnica') return 'Tecnica di cottura';
@@ -70,7 +95,7 @@ function render() {
   $('recipes').innerHTML = filtered.slice(0, visibleLimit).map(card).join('');
   $('favorite-count').textContent = data.recipes.filter(r=>favorites.has(r.id)).length;
   $('result-count').textContent = `${filtered.length} ${filtered.length===1?'scheda':'schede'}`;
-  $('results-title').textContent = state.query ? 'Risultati della ricerca' : state.view==='breakfast' ? 'Le tue colazioni' : state.view==='favorites' ? 'Le tue preferite' : state.view==='portions' ? 'Una porzione, già pensata' : state.category!=='Tutte' ? state.category : 'Trova la tua prossima idea';
+  $('results-title').textContent = state.query ? 'Risultati della ricerca' : state.view==='personal' ? 'Le tue versioni' : state.view==='breakfast' ? 'Le tue colazioni' : state.view==='favorites' ? 'Le tue preferite' : state.view==='portions' ? 'Una porzione, già pensata' : state.category!=='Tutte' ? state.category : 'Trova la tua prossima idea';
   const collection = data.collectionNotes?.Colazioni;
   $('collection-notes').hidden = state.view!=='breakfast' || !collection;
   if (collection && state.view==='breakfast') {
@@ -97,7 +122,7 @@ function nutritionSummary(recipe) {
 }
 function nutritionSources(recipe) {
   return `<details class="nutrition-sources"><summary>Come sono calcolati kcal e macro</summary><p>Somma dei valori per 100 g moltiplicati per i grammi scelti. Sono stime: marca, varietà e cottura possono cambiare i valori. Le fonti si riferiscono agli alimenti crudi, salvo le indicazioni di cottura o sgocciolamento. Le calorie includono i fattori della fonte, perciò possono differire dal solo calcolo 4/4/9 dei macro.</p><p>Gli eventuali polioli sono inclusi nei carboidrati dell’etichetta, ma possono apportare meno energia dello zucchero. Sale e acqua non apportano calorie. Fonti e valori per 100 g (P: proteine, C: carboidrati, G: grassi):</p><ul>${recipe.ingredients.map(i=>{
-    const f=data.foods?.[i.name]; if(!f)return `<li>${e(i.name)}: dati non disponibili.</li>`;
+    const f=i.food||data.foods?.[i.name]; if(!f)return `<li>${e(i.name)}: dati non disponibili.</li>`;
     let href=''; try {const u=new URL(f.url);if(u.protocol==='https:')href=u.href;} catch {}
     return `<li><b>${e(i.name)}</b>: ${fmt(f.kcal,0)} kcal · P ${fmt(f.protein)} g · C ${fmt(f.carbs)} g · G ${fmt(f.fat)} g.<br>${href?`<a href="${e(href)}" target="_blank" rel="noopener noreferrer">${e(f.source)}${f.code?' '+e(f.code):''}</a>`:e(f.source)} · ${e(f.reference)}${f.note?`<br>${e(f.note)}`:''}</li>`;
   }).join('')}</ul><p>Dati CoFID: Crown copyright, <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel="noopener noreferrer">Open Government Licence v3.0</a>. Tracce conteggiate come zero. I prodotti di marca sono esempi di riferimento.</p></details>`;
@@ -117,6 +142,8 @@ function detail(recipe) {
 function renderDetail() {
   if (!currentRecipe) return;
   $('recipe-detail').innerHTML = detail(currentRecipe);
+  $('recipe-detail').querySelector('#reset-quantities').insertAdjacentHTML('afterend',`<div class="recipe-personal-actions"><button type="button" id="recipe-save-version" class="secondary-button">Salva nuova versione</button><button type="button" id="recipe-plan" class="secondary-button">Aggiungi al menu</button>${currentRecipe.personal?'<button type="button" id="recipe-delete-version" class="text-button">Elimina questa versione</button>':''}</div>`);
+  $('recipe-share').hidden=!!currentRecipe.personal;
   updateDetailFavorite();
 }
 function openRecipe(id) {
@@ -130,7 +157,7 @@ function openRecipe(id) {
 }
 function applyHash() {
   const id = new URLSearchParams(location.hash.slice(1)).get('ricetta');
-  showPage(id||location.hash==='#ricette'?'ricette':location.hash==='#peso'?'peso':'diario');
+  showPage(id||location.hash==='#ricette'?'ricette':location.hash==='#peso'?'peso':location.hash==='#menu'?'menu':location.hash==='#dispensa'?'dispensa':'diario');
   if (!data) return;
   if (id) openRecipe(id);
   else if ($('recipe-dialog').open) $('recipe-dialog').close();
@@ -151,11 +178,11 @@ async function loadData(manual=false) {
     if (!validData(incoming)) throw new Error('Dati non validi');
     const previousVersion = data?.version;
     dataFromCache = response.headers.get('X-Cibo-Sano-Cache')==='fallback';
-    data = incoming; recipeMap = new Map(data.recipes.map(r=>[r.id,r]));
+    baseData = incoming;data=incoming;recipeMap=new Map(data.recipes.map(r=>[r.id,r]));
     $('load-error').hidden = true;
     $('collection-count').textContent = `${data.recipes.length} schede da esplorare`;
     $('version-info').textContent = `Ricettario aggiornato al ${new Date(data.updatedAt+'T12:00:00').toLocaleDateString('it-IT')} · Versione ${data.version}`;
-    diaryUI.setData(data);render(); applyHash();
+    syncPersonalData();diaryUI.setData(data);kitchenUI.setData(data);render(); applyHash();
     if (manual) toast(!navigator.onLine||dataFromCache?'Connessione non disponibile: stai usando la copia salvata.':previousVersion===data.version?'Il ricettario è già aggiornato.':'Ricettario aggiornato.');
   } catch {
     if (!data) {
@@ -206,10 +233,28 @@ $('load-more').addEventListener('click',()=>{const oldLimit=visibleLimit;visible
 $('reset-filters').addEventListener('click',resetFilters);
 document.querySelector('.brand').addEventListener('click',()=>{resetFilters();});
 $('recipe-close').addEventListener('click',()=>$('recipe-dialog').close());
-$('recipe-dialog').addEventListener('close',()=>{clearRecipeHash();currentRecipe=null;});
+$('recipe-dialog').addEventListener('close',()=>{
+  if($('recipe-dialog').open)return;
+  const linkedId=new URLSearchParams(location.hash.slice(1)).get('ricetta');
+  if(linkedId===currentRecipe?.id)clearRecipeHash();
+  currentRecipe=null;
+});
 $('recipe-dialog').addEventListener('click', event=>{if(event.target===$('recipe-dialog')){$('recipe-dialog').close();}});
 $('recipe-favorite').addEventListener('click',()=>{if(currentRecipe)setFavorite(currentRecipe.id);});
 $('recipe-detail').addEventListener('click', event=>{
+  if(event.target.closest('#recipe-save-version')){
+    if(!nutritionFor(currentRecipe,data.foods,quantities)){toast('Completa tutti i grammi prima di salvare la versione.');return;}
+    try{versionsUI.open(currentRecipe,data.foods,quantities,servings);}catch(error){toast(error.message);}return;
+  }
+  if(event.target.closest('#recipe-plan')){
+    try{const item=recipeItem(currentRecipe,data.foods,quantities,servings);$('recipe-dialog').close();location.hash='menu';kitchenUI.planRecipe(item);}catch(error){toast(error.message);}return;
+  }
+  if(event.target.closest('#recipe-delete-version')){
+    const id=currentRecipe.id;
+    if(confirm('Eliminare questa versione dal tuo ricettario? Le voci già registrate nel diario e i pasti pianificati restano conservati.')){
+      withDiaryLock(()=>personalStore.update(current=>({...current,personalRecipes:(current.personalRecipes||[]).filter(r=>r.id!==id),favorites:(current.favorites||[]).filter(value=>value!==id)}))).then(()=>{$('recipe-dialog').close();syncPersonalData();toast('Versione eliminata dal ricettario.');}).catch(error=>toast(error.message));
+    }return;
+  }
   const plus=event.target.closest('#portion-plus'),minus=event.target.closest('#portion-minus');
   if(plus||minus){const next=Math.max(1,Math.min(8,servings+(plus?1:-1)));quantities=scaleQuantities(quantities,servings,next);servings=next;renderDetail();$(plus?'portion-plus':'portion-minus')?.focus();}
   if(event.target.closest('#reset-quantities')){servings=1;quantities=currentRecipe.ingredients.map(i=>i.grams);renderDetail();$('reset-quantities')?.focus();}
@@ -258,8 +303,8 @@ $('import-favorites').addEventListener('change',async event=>{
   try {
     if(file.size>1000000||!data)throw new Error();
     const imported=parseFavorites(await file.text(),new Set(recipeMap.keys()));
-    for(const id of imported)favorites.add(id);
-    localStorage.setItem(favoriteKey,JSON.stringify([...favorites]));render();toast(`${imported.size} preferiti importati.`);
+    await withDiaryLock(()=>personalStore.update(current=>({...current,favorites:[...new Set([...(current.favorites||[]),...imported])]})));
+    syncPersonalData();toast(`${imported.size} preferiti importati.`);
   } catch {toast('Non riesco a importare il file. Usa un’esportazione dei preferiti di Cibo sano.');}
   event.target.value='';
 });

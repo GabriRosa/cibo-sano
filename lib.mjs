@@ -9,7 +9,7 @@ export function filterRecipes(recipes, {query='', category='Tutte', view='all', 
   const terms = normalize(query).split(/\s+/).filter(Boolean);
   const rows = recipes.filter(r => (category==='Tutte' || r.category===category) &&
     (view!=='favorites' || favorites.has(r.id)) && (view!=='portions' || r.kind==='porzione') &&
-    (view!=='breakfast' || r.collection==='Colazioni') &&
+    (view!=='breakfast' || r.collection==='Colazioni') && (view!=='personal' || r.personal===true) &&
     terms.every(term => searchableText(r).split(/[^\p{L}\p{N}]+/u).some(word => word.startsWith(term))));
   const byTitle = (a,b) => a.title.localeCompare(b.title, 'it');
   if (sort==='az') rows.sort(byTitle);
@@ -30,7 +30,7 @@ export function nutritionFor(recipe, foods, quantities=recipe.ingredients.map(i=
   if (!recipe.ingredients.length || quantities.length!==recipe.ingredients.length) return null;
   const total = Object.fromEntries(nutrientKeys.map(key=>[key,0]));
   for (let index=0; index<recipe.ingredients.length; index++) {
-    const grams=quantities[index], food=foods?.[recipe.ingredients[index].name];
+    const grams=quantities[index], food=recipe.ingredients[index].food||foods?.[recipe.ingredients[index].name];
     if (typeof grams!=='number' || !Number.isFinite(grams) || grams<0 || grams>10000 ||
         !food || nutrientKeys.some(key=>typeof food[key]!=='number' || !Number.isFinite(food[key]) || food[key]<0)) return null;
     for (const key of nutrientKeys) total[key]+=food[key]*grams/100;

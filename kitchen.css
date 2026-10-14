@@ -1,0 +1,124 @@
+.kitchen-page{padding-top:34px;padding-bottom:24px}
+.kitchen-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:28px}
+.kitchen-heading .eyebrow{margin:0 0 8px;color:#71825c;font-size:10px;letter-spacing:1.5px}
+.kitchen-heading h1{font-family:var(--serif);font-size:43px;font-weight:400;line-height:1.12;letter-spacing:-1.3px;margin:0 0 12px}
+.kitchen-heading>div>p:last-child{font-size:13px;line-height:1.7;color:var(--muted);margin:0;max-width:520px}
+.kitchen-heading>.primary-button{flex-shrink:0}
+.kitchen-weekbar{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:18px 20px;background:#eef1e7;border:1px solid #dce3cf;border-radius:14px}
+.kitchen-week-nav{display:flex;align-items:center;gap:16px}
+.kitchen-week-nav>.secondary-button{padding:8px 14px;min-width:44px;font-size:18px}
+.kitchen-week-nav strong{display:block;font-size:14px;font-weight:600;line-height:1.6}
+.kitchen-week-caption{margin:0 0 2px;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#6a7c55}
+.kitchen-week-controls{display:flex;align-items:flex-end;gap:14px}
+.kitchen-page .field{display:flex;flex-direction:column;gap:6px;font-size:12px;color:#4f6447}
+.kitchen-page .field input,.kitchen-page .field select{min-height:42px;border:1px solid #cbd6bf;background:var(--white);border-radius:8px;padding:9px 12px;font:inherit;color:var(--ink);min-width:0;width:100%;box-sizing:border-box}
+.kitchen-plan-note{display:flex;flex-direction:column;gap:5px;font-size:12px;line-height:1.6;padding:18px 2px 16px;margin:0}
+.kitchen-plan-note strong{font-weight:600;color:#3e5736}
+.kitchen-plan-note>span{color:var(--muted);font-size:11px}
+.kitchen-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(275px,1fr);gap:22px;align-items:start}
+.kitchen-calendar{min-width:0;display:flex;flex-direction:column;gap:13px}
+.kitchen-day{background:var(--white);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.kitchen-day.is-today{border-color:#9aac83;box-shadow:0 0 0 1px #9aac8333}
+.kitchen-day-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 18px;background:#f2f3eb}
+.kitchen-day.is-today .kitchen-day-heading{background:#e9efde}
+.kitchen-day-heading h2{font-family:var(--serif);font-size:22px;font-weight:400;line-height:1.25;letter-spacing:-.3px;margin:0;text-transform:capitalize}
+.kitchen-day-heading h2 span{display:block;font-family:var(--sans,inherit);font-size:10px;letter-spacing:0;font-weight:400;line-height:1.7;margin-top:3px;text-transform:none;color:#718066}
+.kitchen-day-heading .text-button{font-size:11px;white-space:nowrap}
+.kitchen-empty-day{color:#87917f;font-size:12px;margin:0;padding:17px 18px 20px}
+.kitchen-plan-list{list-style:none;margin:0;padding:0 18px}
+.kitchen-plan{padding:15px 0;border-bottom:1px solid #e7ebdf;display:flex;gap:15px;align-items:flex-start;justify-content:space-between}
+.kitchen-plan:last-child{border-bottom:0}
+.kitchen-plan-copy{min-width:0;flex:1}
+.kitchen-meal-label{font-size:9px!important;letter-spacing:1px;text-transform:uppercase;font-weight:650;color:#7b8e61!important;margin:0 0 5px!important}
+.kitchen-plan-copy h3{font-family:var(--serif);font-size:21px;line-height:1.22;font-weight:400;letter-spacing:-.3px;margin:0 0 7px;overflow-wrap:anywhere}
+.kitchen-plan-copy h3 button,.kitchen-suggestion h3 button{font:inherit;color:inherit;line-height:inherit;text-align:left;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:3px}
+.kitchen-plan-copy h3 button:hover,.kitchen-suggestion h3 button:hover{text-decoration-color:currentColor}
+.kitchen-plan-copy>p:last-child{font-size:10px;line-height:1.65;color:#7b876f;margin:0}
+.kitchen-plan-actions{display:flex;flex-direction:column;align-items:flex-end;gap:2px;flex-shrink:0}
+.kitchen-plan-actions .text-button{min-height:32px;padding:4px 0;font-size:10px}
+.kitchen-plan-actions .secondary-button{font-size:10px;padding:7px 9px;min-height:36px;max-width:145px}
+.kitchen-shopping,.pantry-inventory,.pantry-suggestions{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:23px;min-width:0}
+.kitchen-shopping{position:sticky;top:18px}
+.kitchen-section-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.kitchen-section-top .eyebrow{font-size:8px;letter-spacing:1.1px;color:#7a8b61;margin:0 0 8px}
+.kitchen-section-top h2{font-family:var(--serif);font-size:29px;font-weight:400;letter-spacing:-.7px;line-height:1.13;margin:0}
+.kitchen-count{display:flex;align-items:center;justify-content:center;border:1px solid #dce3cf;border-radius:50%;width:34px;height:34px;flex-shrink:0;font-size:12px;color:#67804a;background:#f2f5e9}
+.kitchen-help{font-size:11px;color:#79866c;line-height:1.8;margin:14px 0}
+.kitchen-help a{color:#47663b;text-decoration:underline;text-underline-offset:2px}
+.kitchen-small{font-size:10px;margin-bottom:0}
+.kitchen-shopping-progress{font-size:10px;color:#61784d;letter-spacing:.2px;margin:20px 0 7px}
+.kitchen-shopping-list{list-style:none;margin:0;padding:0}
+.kitchen-shopping-list li{border-bottom:1px solid #e8ecdf;padding:13px 0}
+.kitchen-shopping-list li:last-child{border-bottom:0}
+.kitchen-shopping-list label{display:flex;align-items:flex-start;gap:11px;cursor:pointer}
+.kitchen-shopping-list input,.kitchen-checkbox input{width:19px;height:19px;flex-shrink:0;margin:1px 0 0;accent-color:var(--green)}
+.kitchen-shopping-list label>span{flex:1;display:grid;grid-template-columns:1fr auto;align-items:start;gap:4px 12px;min-width:0}
+.kitchen-shopping-list b{font-size:12px;font-weight:500;line-height:1.5;overflow-wrap:anywhere}
+.kitchen-shopping-list strong{font-size:11px;font-weight:600;line-height:1.6;white-space:nowrap;color:#3f6337;font-variant-numeric:tabular-nums}
+.kitchen-shopping-list small{font-size:9px;line-height:1.65;color:#7d866f;grid-column:1/-1}
+.kitchen-shopping-list small:empty{display:none}
+.kitchen-shopping-list .is-checked b,.kitchen-shopping-list .is-checked strong{text-decoration:line-through;color:#89927f}
+.kitchen-covered{border-top:1px solid #e1e7d8;margin-top:16px;padding-top:15px}
+.kitchen-covered summary{cursor:pointer;color:#5b744b;font-size:11px;font-weight:600;min-height:25px}
+.kitchen-covered ul{list-style:none;margin:10px 0 0;padding:0}
+.kitchen-covered li{font-size:10px;display:flex;gap:12px;justify-content:space-between;color:#78866c;padding:7px 0}
+.kitchen-covered li b{white-space:nowrap;font-weight:500}
+.kitchen-shopping-empty{padding:25px 10px 34px;text-align:center;color:#899778}
+.kitchen-shopping-empty>span{font-family:var(--serif);font-size:38px;line-height:1;color:#8ba06c}
+.kitchen-shopping-empty>p{font-size:12px;line-height:1.7;max-width:230px;margin:14px auto 0}
+.kitchen-available-message{font-size:13px;color:#4f723b;background:#edf3e5;border-radius:9px;padding:15px;line-height:1.7;margin:20px 0}
+.pantry-layout{display:grid;grid-template-columns:minmax(250px,1fr) minmax(0,1.5fr);gap:22px;align-items:start}
+.pantry-inventory{position:sticky;top:18px}
+.pantry-search-field{margin:18px 0 10px}
+.pantry-stock-list{list-style:none;margin:0;padding:0}
+.pantry-stock-list>li{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #e6ebdd;padding:15px 0}
+.pantry-stock-list>li:last-child{border-bottom:0}
+.pantry-stock-list h3{font-size:13px;font-weight:500;line-height:1.55;margin:0;overflow-wrap:anywhere}
+.pantry-stock-list p{font-size:11px;color:#71825d;margin:4px 0 0}
+.pantry-stock-list .text-button{font-size:10px;flex-shrink:0}
+.kitchen-empty-panel{padding:20px 0;font-size:12px;color:#829071;line-height:1.8}
+.kitchen-empty-panel p{margin:0 0 20px}
+.kitchen-empty-panel p:last-child{margin-bottom:0}
+.kitchen-suggestion-grid{display:flex;flex-direction:column;gap:14px}
+.kitchen-suggestion{border:1px solid #e0e6d5;background:#fbfcf5;border-radius:11px;padding:17px}
+.kitchen-match{display:inline-block;border-radius:5px;background:#f0eee2;color:#8a7851;font-size:9px;line-height:1.6;padding:4px 7px}
+.kitchen-match.is-complete{background:#e6eedb;color:#507238}
+.kitchen-suggestion h3{font-family:var(--serif);font-size:24px;font-weight:400;letter-spacing:-.5px;line-height:1.2;margin:12px 0 10px;overflow-wrap:anywhere}
+.kitchen-suggestion>p{font-size:10px;line-height:1.8;color:#829070;margin:0 0 14px}
+.kitchen-suggestion details{margin:0 0 13px;font-size:10px;color:#687b56}
+.kitchen-suggestion summary{cursor:pointer;padding:5px 0;min-height:30px;box-sizing:border-box}
+.kitchen-suggestion details ul{list-style:none;padding:0;margin:5px 0 10px}
+.kitchen-suggestion details li{display:flex;flex-direction:column;gap:3px;padding:8px 0;border-bottom:1px solid #e5eadc;line-height:1.65}
+.kitchen-suggestion details b{font-weight:550}
+.kitchen-suggestion details span{font-size:9px;color:#89947d}
+.kitchen-suggestion>.secondary-button{font-size:10px;min-height:38px;padding:8px 14px}
+.kitchen-dialog .dialog-toolbar h2{font-size:14px;line-height:1.4;margin:0;font-weight:600}
+.kitchen-dialog-body{padding:25px 28px 32px}
+.kitchen-dialog .field{display:flex;flex-direction:column;gap:7px;font-size:12px;color:#506348;margin:0 0 18px}
+.kitchen-dialog .field input,.kitchen-dialog .field select{border:1px solid #cdd7c1;background:var(--white);color:var(--ink);min-height:46px;padding:10px 12px;border-radius:8px;font:inherit;width:100%;box-sizing:border-box}
+.kitchen-dialog .field input:disabled{opacity:.5}
+.kitchen-dialog .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.kitchen-selected-name{font-family:var(--serif);font-size:29px;line-height:1.15;letter-spacing:-.5px;margin:0 0 10px}
+.kitchen-selected-name+.kitchen-help{margin-top:0;margin-bottom:23px}
+.kitchen-dialog .kitchen-help{font-size:11px}
+.kitchen-dialog .kitchen-small{font-size:10px}
+.kitchen-plan-preview{padding:15px 17px;background:#eaf1df;border:1px solid #d9e2cb;border-radius:10px;font-size:12px;font-weight:600;line-height:1.7;color:#47673a}
+.kitchen-plan-ingredients{font-size:12px;color:#688054;margin:22px 0}
+.kitchen-plan-ingredients summary{cursor:pointer;min-height:32px}
+.kitchen-plan-ingredients ul{list-style:none;margin:5px 0;padding:0}
+.kitchen-plan-ingredients li{display:flex;justify-content:space-between;gap:20px;padding:8px 0;font-size:11px;border-bottom:1px solid #e0e6d6;line-height:1.6}
+.kitchen-plan-ingredients li>b{white-space:nowrap;font-weight:500}
+.kitchen-form-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px;margin-top:22px}
+.kitchen-form-actions .danger-button{color:#9b5648}
+.kitchen-checkbox{display:flex;align-items:center;gap:12px;font-size:12px;line-height:1.5;cursor:pointer}
+.kitchen-picker{display:flex;flex-direction:column;margin-top:18px}
+.kitchen-picker>button{display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left;border:0;border-bottom:1px solid #e2e8d9;background:none;padding:15px 2px;color:var(--ink);font:inherit;min-height:64px}
+.kitchen-picker>button:hover{background:#edf2e5}
+.kitchen-picker b{display:block;font-size:13px;font-weight:500;line-height:1.6}
+.kitchen-picker small{display:block;font-size:10px;color:#839371;margin-top:4px}
+.kitchen-picker>button>span:last-child{font-size:23px;color:#72885a}
+.kitchen-dialog .form-error{font-size:12px;line-height:1.7;padding:12px 15px;border-radius:8px;background:#f7e9e1;color:#964b39}
+@media(max-width:1000px){.kitchen-layout{grid-template-columns:minmax(0,1.35fr) minmax(265px,1fr);gap:16px}.kitchen-plan{flex-direction:column;gap:5px}.kitchen-plan-actions{flex-direction:row;align-self:stretch;align-items:center;justify-content:flex-end;gap:14px}.pantry-layout{grid-template-columns:minmax(240px,1fr) minmax(0,1.3fr);gap:16px}.kitchen-shopping,.pantry-inventory,.pantry-suggestions{padding:19px}.kitchen-heading h1{font-size:38px}.kitchen-weekbar{align-items:flex-start;gap:15px}.kitchen-week-controls{flex-direction:column;align-items:flex-start;gap:0}.kitchen-week-controls .text-button{min-height:34px;padding:6px 0}}
+@media(max-width:750px){.kitchen-heading{align-items:flex-start;flex-direction:column;gap:18px}.kitchen-heading>.primary-button{width:100%}.kitchen-layout,.pantry-layout{grid-template-columns:minmax(0,1fr)}.kitchen-shopping,.pantry-inventory{position:static}.kitchen-shopping{order:-1}.kitchen-shopping-list{max-height:340px;overflow:auto;padding-right:4px}.kitchen-weekbar{flex-direction:column;align-items:stretch;gap:16px}.kitchen-week-nav{justify-content:space-between}.kitchen-week-nav>div{flex:1;text-align:center}.kitchen-week-controls{flex-direction:row;align-items:flex-end;justify-content:space-between;gap:15px}.kitchen-week-controls .field{flex:1}.kitchen-week-controls .text-button{white-space:nowrap;min-height:42px}.kitchen-plan{flex-direction:row;gap:14px}.kitchen-plan-actions{flex-direction:column;align-self:auto;align-items:flex-end;gap:2px}.pantry-layout{gap:18px}.kitchen-suggestion-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.kitchen-suggestion{padding:15px}.kitchen-suggestion h3{font-size:22px}.kitchen-suggestion>.secondary-button{width:100%}}
+@media(max-width:500px){.kitchen-page{padding-top:24px}.kitchen-heading{margin-bottom:22px}.kitchen-heading h1{font-size:35px;max-width:320px}.kitchen-heading>div>p:last-child{font-size:12px;max-width:310px}.kitchen-heading .eyebrow{font-size:8px}.kitchen-weekbar{padding:16px 13px}.kitchen-week-nav{gap:10px}.kitchen-week-nav strong{font-size:12px}.kitchen-week-nav>.secondary-button{padding:8px 10px}.kitchen-week-controls{gap:10px}.kitchen-week-controls .text-button{font-size:10px}.kitchen-week-controls .field{font-size:10px}.kitchen-week-controls .field input{font-size:12px}.kitchen-plan-note{padding:15px 0;font-size:11px}.kitchen-plan-note>span{font-size:10px}.kitchen-shopping,.pantry-inventory,.pantry-suggestions{padding:19px 17px}.kitchen-section-top h2{font-size:27px}.kitchen-day-heading{padding:12px 15px}.kitchen-plan-list{padding:0 15px}.kitchen-plan{flex-direction:column;gap:8px}.kitchen-plan-copy h3{font-size:23px}.kitchen-plan-copy>p:last-child{font-size:11px}.kitchen-plan-actions{flex-direction:row;align-self:stretch;align-items:center;gap:15px}.kitchen-plan-actions .text-button{font-size:11px}.kitchen-plan-actions .secondary-button{min-height:40px;font-size:11px;max-width:none}.kitchen-shopping-list b{font-size:12px}.kitchen-shopping-list label>span{gap:4px 9px}.kitchen-suggestion-grid{grid-template-columns:1fr}.kitchen-suggestion{padding:18px}.kitchen-suggestion h3{font-size:25px}.kitchen-suggestion>p{font-size:11px}.kitchen-suggestion details{font-size:11px}.kitchen-suggestion details span{font-size:10px}.kitchen-suggestion>.secondary-button{font-size:12px;min-height:42px}.kitchen-dialog-body{padding:23px 20px 36px;padding-bottom:max(36px,env(safe-area-inset-bottom))}.kitchen-selected-name{font-size:30px}.kitchen-dialog .form-grid{gap:12px}.kitchen-form-actions{align-items:stretch;flex-direction:column;gap:8px}.kitchen-form-actions>.text-button{text-align:left}.kitchen-help{font-size:11px}.kitchen-shopping-empty{padding:18px 10px 23px}}
+@media print{.kitchen-heading>.primary-button,.kitchen-weekbar button,.kitchen-week-controls,.kitchen-day-heading button,.kitchen-plan-actions,.kitchen-help a,.pantry-stock-list button{display:none!important}.kitchen-layout,.pantry-layout{display:block}.kitchen-shopping,.pantry-inventory{position:static}.kitchen-day,.kitchen-suggestion{break-inside:avoid}.kitchen-shopping-list{max-height:none;overflow:visible}}

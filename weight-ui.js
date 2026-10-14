@@ -37,7 +37,7 @@ export function initWeight({toast=()=>{}}={}) {
       </section>
       <div class="undo-notice weight-undo" id="weight-undo" role="status" hidden><span id="weight-undo-label"></span><button type="button" class="text-button" id="weight-undo-button">Annulla rimozione</button></div>
       <section class="weight-card weight-history-card" aria-labelledby="weight-history-heading"><div class="weight-section-heading"><h2 id="weight-history-heading" tabindex="-1">Storico</h2><span id="weight-history-count" class="weight-help"></span></div><p id="weight-action-error" class="form-error" role="alert" hidden></p><div id="weight-history"></div><div class="weight-pagination" id="weight-pagination" hidden><button type="button" class="secondary-button" id="weight-history-prev">← Precedenti</button><span id="weight-history-page"></span><button type="button" class="secondary-button" id="weight-history-next">Successive →</button></div></section>
-      <p class="weight-backup-note">Le pesate restano in questo browser e sono incluse nel backup. Per conservarne una copia o trasferirle, apri <a href="#diario">Diario</a> → “Obiettivo e backup del diario”.</p>
+      <p class="weight-backup-note">Le pesate restano in questo browser e sono incluse nel backup. Per conservarne una copia o trasferirle, apri <a href="#diario">Diario</a> → “Obiettivi e backup completo”.</p>
     </div>`;
   const $=id=>section.querySelector('#'+id);
   $('weight-date').value=selectedDate;
