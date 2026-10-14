@@ -119,10 +119,25 @@ export class DiaryStore {
   add(entry,food=null) {
     return this.update(data=>({...data,entries:[...data.entries,entry],foods:food?(data.foods.some(f=>f.id===food.id)?data.foods.map(f=>f.id===food.id?food:f):[...data.foods,food]):data.foods}));
   }
-  edit(entryId,patch) {
-    return this.update(data=>{if(!data.entries.some(e=>e.id===entryId))throw new Error('Questa voce è stata rimossa in un’altra finestra.');return {...data,entries:data.entries.map(e=>e.id===entryId?{...e,...patch,id:e.id,updatedAt:new Date().toISOString()}:e)};});
+  edit(entryId,patch,options={}) {
+    return this.update(data=>{
+      const previous=data.entries.find(entry=>entry.id===entryId);
+      if(!previous)throw new Error('Questa voce è stata rimossa in un’altra finestra.');
+      if(Object.hasOwn(options,'expectedUpdatedAt')&&previous.updatedAt!==options.expectedUpdatedAt)throw new Error('La voce è cambiata in un’altra finestra. Chiudi e riapri la voce prima di modificarla.');
+      const updatedAt=new Date(Math.max(Date.now(),Date.parse(previous.updatedAt)+1)).toISOString();
+      return {...data,entries:data.entries.map(entry=>entry.id===entryId?{...entry,...patch,id:entry.id,updatedAt}:entry)};
+    });
   }
-  remove(entryId) {return this.update(data=>({...data,entries:data.entries.filter(e=>e.id!==entryId)}));}
+  remove(entryId,options={}) {
+    return this.update(data=>{
+      if(Object.hasOwn(options,'expectedUpdatedAt')){
+        const previous=data.entries.find(entry=>entry.id===entryId);
+        if(!previous)throw new Error('Questa voce è già stata rimossa in un’altra finestra.');
+        if(previous.updatedAt!==options.expectedUpdatedAt)throw new Error('La voce è cambiata in un’altra finestra. Chiudi e riapri la voce prima di rimuoverla.');
+      }
+      return {...data,entries:data.entries.filter(entry=>entry.id!==entryId)};
+    });
+  }
   saveWeight(date,kg,options={}) {
     if(!validDate(date)||date>localDate())throw new Error('Scegli una data valida, non successiva a oggi.');
     if(!number(kg,500)||kg<1)throw new Error('Inserisci un peso da 1 a 500 kg.');

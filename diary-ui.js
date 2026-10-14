@@ -118,7 +118,7 @@ export function initDiary({toast,onSaved=()=>{}}) {
       try{
         const quantity=decimal($('entry-quantity').value),date=$('entry-date').value,meal=$('entry-meal').value;
         if(quantity===null||quantity<=0||!validDate(date))throw new Error('Inserisci una data valida e una quantità maggiore di zero, fino a 10.000.');
-        if(existing){const entryId=editing;await withDiaryLock(()=>store.edit(entryId,{quantity,date,meal}));}
+        if(existing){await withDiaryLock(()=>store.edit(item.id,{quantity,date,meal},{expectedUpdatedAt:item.updatedAt}));}
         else {
           let food=null,entryItem=item;
           if(editNutrition){food=makeFood({name:$('entry-name').value,unit:$('entry-unit').value,nutrients:Object.fromEntries(NUTRIENTS.map(k=>[k,decimal($('entry-'+k).value,1000)])),origin:item.origin,source:item.source,barcode:item.barcode});entryItem=foodItem(food);}
@@ -128,9 +128,9 @@ export function initDiary({toast,onSaved=()=>{}}) {
       }catch(err){error(err.message);}finally{if(submit)submit.disabled=false;}
     });
     $('entry-delete')?.addEventListener('click',async()=>{
-      // Keep the original snapshot for an explicit undo after removing it.
-      const original={...selected};
-      try{const entryId=editing;await withDiaryLock(()=>store.remove(entryId));close();render();$('diary-undo').hidden=false;$('diary-undo-label').textContent=`Rimosso: ${original.name}`;$('diary-undo-button').onclick=async()=>{try{await withDiaryLock(()=>store.add(original));$('diary-undo').hidden=true;render();}catch(err){toast(err.message);}};}catch(err){error(err.message);}
+      // The version check ensures this is the snapshot actually removed.
+      const original={...item};
+      try{await withDiaryLock(()=>store.remove(original.id,{expectedUpdatedAt:original.updatedAt}));close();render();$('diary-undo').hidden=false;$('diary-undo-label').textContent=`Rimosso: ${original.name}`;$('diary-undo-button').onclick=async()=>{try{await withDiaryLock(()=>store.add(original));$('diary-undo').hidden=true;render();}catch(err){toast(err.message);}};}catch(err){error(err.message);}
     });
   }
   function openAdd(meal){if(!read())return;activeMeal=meal;mode='foods';picker();}
