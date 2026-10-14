@@ -2,6 +2,7 @@ import {escapeHTML as e, normalize} from './lib.mjs';
 import {MEALS,NUTRIENTS,DIARY_KEY,DiaryStore,withDiaryLock,localDate,shiftDate,validDate,decimal,nutrientsFor,sumEntries,createEntry,foodItem,recipeItem,catalogFoods,makeFood,safeLink} from './diary.mjs';
 import {lookupBarcode,normalizeBarcode} from './foods.mjs';
 import {startScanner} from './scanner.js';
+import {exportReport} from './report-export.js';
 
 const $=id=>document.getElementById(id);
 const fmt=(n,d=1)=>new Intl.NumberFormat('it-IT',{maximumFractionDigits:d}).format(n);
@@ -19,6 +20,7 @@ export function initDiary({toast,onSaved=()=>{}}) {
   const store=new DiaryStore(storage);
   let data=null,catalog=[],day=localDate(),seenToday=day,diary=null,activeMeal='breakfast',mode='foods',selected=null,editing=null;
   const productCache=new Map();
+  let reportDay=null,exportingPDF=false;
   let stopScanner=null,scannerSequence=0,lookupController=null,requestSequence=0;
   const dialog=document.createElement('dialog');dialog.id='diary-dialog';dialog.setAttribute('aria-labelledby','diary-dialog-title');
   document.body.append(dialog);
@@ -27,6 +29,8 @@ export function initDiary({toast,onSaved=()=>{}}) {
   function read(){try{diary=store.read();$('diary-storage-error').hidden=true;return true;}catch(err){$('diary-storage-error').hidden=false;$('diary-storage-message').textContent=err.message;diary=null;return false;}}
   function render() {
     const ok=read();$('diary-date').value=day;
+    if(reportDay!==day){$('diary-report-month').value=day.slice(0,7);reportDay=day;}
+    $('diary-report-date').textContent=new Date(day+'T12:00:00').toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'});
     $('diary-date-label').textContent=new Date(day+'T12:00:00').toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long'});
     if(!ok){$('diary-totals').innerHTML='<p>Il diario non è disponibile. Le ricette restano consultabili.</p>';$('diary-meals').innerHTML='';return;}
     const entries=diary.entries.filter(v=>v.date===day),n=sumEntries(entries),goal=diary.goal;
@@ -147,6 +151,18 @@ export function initDiary({toast,onSaved=()=>{}}) {
   $('diary-next').addEventListener('click',()=>{const next=shiftDate(day,1);if(validDate(next)){day=next;render();}});
   $('diary-today').addEventListener('click',()=>{day=localDate();render();});
   $('diary-goal-form').addEventListener('submit',async ev=>{ev.preventDefault();const input=$('diary-goal').value.trim(),goal=input===''?null:decimal(input);try{if(input!==''&&(goal===null||goal<1))throw new Error('Inserisci un obiettivo valido, oppure lascia il campo vuoto.');await withDiaryLock(()=>store.setGoal(goal));render();toast('Obiettivo aggiornato su questo dispositivo.');}catch(err){toast(err.message);}});
+  async function savePDF(kind){
+    if(exportingPDF)return;
+    const status=$('diary-report-status');exportingPDF=true;
+    $('diary-pdf-day').disabled=true;$('diary-pdf-month').disabled=true;
+    status.textContent='Preparazione del PDF…';
+    try{const snapshot=store.read(),period=kind==='daily'?day:$('diary-report-month').value;
+      const filename=await exportReport(snapshot,kind,period);status.textContent=`PDF pronto: ${filename}. Controlla i download del dispositivo.`;
+    }catch(err){status.textContent=err.message;}
+    finally{exportingPDF=false;$('diary-pdf-day').disabled=false;$('diary-pdf-month').disabled=false;}
+  }
+  $('diary-pdf-day').addEventListener('click',()=>savePDF('daily'));
+  $('diary-pdf-month').addEventListener('click',()=>savePDF('monthly'));
   $('diary-export').addEventListener('click',()=>{try{download(store.export(),`cibo-sano-diario-${localDate()}.json`);toast('Backup esportato. Conservalo in un luogo privato.');}catch(err){toast(err.message);}});
   $('diary-recovery').addEventListener('click',()=>{try{const raw=storage.getItem(DIARY_KEY);if(!raw)throw new Error('Nessun dato recuperabile.');download(raw,'cibo-sano-diario-recupero.json');}catch(err){toast(err.message);}});
   $('diary-import').addEventListener('change',async ev=>{const file=ev.target.files?.[0];if(!file)return;try{if(file.size>15000000)throw new Error('Backup troppo grande.');const raw=await file.text();const count=await withDiaryLock(()=>store.import(raw));render();toast(`${count} voci aggiunte. Le voci già presenti sono state conservate.`);}catch(err){toast(err.message);}finally{ev.target.value='';}});

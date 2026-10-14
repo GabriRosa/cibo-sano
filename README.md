@@ -22,6 +22,12 @@ In **Obiettivo e backup del diario** puoi impostare un obiettivo calorico facolt
 
 Il diario usa `localStorage` con chiave `cibo-sano:diary:v1`. Lo schema contiene `entries`, `foods` personali e `goal` facoltativo. Le scritture sono serializzate con Web Locks nei browser che lo supportano (incluso Chrome Android); in altri browser il ciclo lettura/scrittura non garantisce l'assenza di conflitti fra finestre contemporanee. Errori di quota o accesso non chiudono il modulo né mostrano un salvataggio riuscito. Un archivio corrotto resta conservato ed è esportabile come copia di recupero. Non viene caricato automaticamente nel repository, non è incluso nel link pubblico e non è sincronizzato. Cancellare i dati del browser può eliminarlo.
 
+## Riepiloghi PDF
+
+In **Esporta riepiloghi PDF**, **Scarica PDF del giorno** usa il giorno selezionato nel diario e include voci, quantità, kcal e macro, subtotali dei quattro pasti e totale giornaliero. Per **Scarica PDF del mese** scegli il mese nel campo dedicato: il documento mostra il totale mensile, la media dei giorni con almeno una voce e una riga per ogni giorno del mese. I giorni senza voci hanno un trattino e non entrano nella media; un giorno parzialmente compilato invece entra nella media. Non vengono ricostruiti obiettivi storici.
+
+I numeri provengono dalle copie salvate nelle voci del diario, non dal catalogo corrente. Il calcolo precede l'arrotondamento (kcal intere, macro con un decimale). Il PDF è creato e scaricato nel browser con la copia locale di jsPDF, anche offline una volta completata la cache. Non viene inviato al repository o a un servizio esterno. Per importare i dati in un altro dispositivo serve il backup JSON: il PDF è un riepilogo da leggere o condividere. I font standard conservano le lettere italiane; emoji e caratteri fuori dall'alfabeto Latin-1 sono omessi.
+
 ## Codici a barre
 
 Lo scanner legge EAN-13, EAN-8 e UPC-A. Chiede la fotocamera solo dopo **Apri fotocamera**, preferisce la posteriore e arresta lo stream alla lettura, alla chiusura o quando l'app passa in background. Foto e video restano sul dispositivo. Rimane sempre disponibile l'inserimento manuale. Su Android serve un browser compatibile e l'indirizzo HTTPS pubblico.
@@ -98,6 +104,7 @@ Apri `http://127.0.0.1:8765`. Usa un server HTTP; l'apertura diretta di `index.h
 | [index.html](index.html), [style.css](style.css) | Interfaccia adattata al telefono |
 | [app.js](app.js), [lib.mjs](lib.mjs) | Ricerca, filtri, dettagli, dosi e preferiti |
 | [diary.mjs](diary.mjs), [diary-ui.js](diary-ui.js), [diary.css](diary.css) | Diario locale, backup, conti e interfaccia dei pasti |
+| [reports.mjs](reports.mjs), [report-export.js](report-export.js) | Aggregazione giornaliera/mensile e download PDF locale |
 | [foods.mjs](foods.mjs), [scanner.js](scanner.js), [vendor/](vendor/) | Ricerca prodotti e scanner |
 | [recipes.json](recipes.json) | Ricette pubbliche, senza dati del profilo personale |
 | [manifest.webmanifest](manifest.webmanifest), [icons/](icons/) | Installazione e icone Android |

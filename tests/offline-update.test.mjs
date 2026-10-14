@@ -17,6 +17,6 @@ test('a new offline version bypasses stale HTTP cache for every precached asset'
   assert.equal(claimed,true);
   assert(requests.some(r=>r.url===scope+'app.js'));
   assert(requests.some(r=>r.url===scope+'recipes.json'));
-  for(const asset of ['diary-ui.js','diary.mjs','foods.mjs','scanner.js','diary.css','vendor/zxing-browser.min.js'])assert(requests.some(r=>r.url===scope+asset));
+  for(const asset of ['diary-ui.js','diary.mjs','foods.mjs','scanner.js','diary.css','vendor/zxing-browser.min.js','reports.mjs','report-export.js','vendor/jspdf.umd.min.js'])assert(requests.some(r=>r.url===scope+asset));
   assert(requests.every(r=>r.cache==='reload'&&r.url.startsWith(scope)));
 });

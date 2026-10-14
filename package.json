@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Ricettario personale installabile e offline, senza dipendenze runtime.",
+  "description": "Diario alimentare e ricettario installabile e offline, con librerie distribuite localmente.",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "prepare-release": "node scripts/version.mjs"

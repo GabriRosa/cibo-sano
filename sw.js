@@ -1,5 +1,5 @@
-const CACHE = 'cibo-sano-a9fb96a31501';
-const FILES = ['./','./index.html','./style.css','./app.js','./lib.mjs','./diary.mjs','./diary-ui.js','./foods.mjs','./scanner.js','./diary.css','./vendor/zxing-browser.min.js','./recipes.json','./manifest.webmanifest','./icons/icon.svg','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png'];
+const CACHE = 'cibo-sano-6bd35a5de6c5';
+const FILES = ['./','./index.html','./style.css','./app.js','./lib.mjs','./diary.mjs','./diary-ui.js','./foods.mjs','./scanner.js','./diary.css','./vendor/zxing-browser.min.js','./reports.mjs','./report-export.js','./vendor/jspdf.umd.min.js','./recipes.json','./manifest.webmanifest','./icons/icon.svg','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png'];
 const base = self.registration.scope;
 const dataURL = new URL('recipes.json',base).href;
 self.addEventListener('install',event=>{

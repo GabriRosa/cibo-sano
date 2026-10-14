@@ -14,7 +14,7 @@ if(dataVersion!==data.version){
   data.updatedAt=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Rome'}).format(new Date());
   writeFileSync(recipeURL,JSON.stringify(data,null,2)+'\n');
 }
-const files=['index.html','style.css','app.js','lib.mjs','diary.mjs','diary-ui.js','foods.mjs','scanner.js','diary.css','vendor/zxing-browser.min.js','manifest.webmanifest','icons/icon.svg','icons/icon-192.png','icons/icon-512.png','icons/icon-maskable-512.png'];
+const files=['index.html','style.css','app.js','lib.mjs','diary.mjs','diary-ui.js','foods.mjs','scanner.js','diary.css','vendor/zxing-browser.min.js','reports.mjs','report-export.js','vendor/jspdf.umd.min.js','manifest.webmanifest','icons/icon.svg','icons/icon-192.png','icons/icon-512.png','icons/icon-maskable-512.png'];
 const hash=createHash('sha256');
 for(const file of files)hash.update(readFileSync(new URL(file,root)));
 const sw=new URL('sw.js',root);
