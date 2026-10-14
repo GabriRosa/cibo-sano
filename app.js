@@ -1,5 +1,7 @@
 import {categories, categoryIcons, escapeHTML as e, filterRecipes, nutritionFor, nutrientKeys, parseGrams, scaleQuantities, validData, sourceURL, parseFavorites} from './lib.mjs';
 
+import {initDiary} from './diary-ui.js';
+
 const $ = id => document.getElementById(id);
 const heart = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 4.6a5.5 5.5 0 0 0-7.8 0l-.6.6-.6-.6a5.5 5.5 0 0 0-7.8 7.8L12 21l8.4-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>';
 const favoriteKey = 'cibo-sano:favorites:v1';
@@ -15,6 +17,13 @@ function toast(message) {
   $('toast').hidden = false;
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => { $('toast').hidden = true; }, 4000);
+}
+const diaryUI=initDiary({toast,onSaved:()=>{location.hash='diario';showPage('diario');}});
+function showPage(page) {
+  const recipes=page==='ricette';
+  $('diary-page').hidden=recipes;$('recipes-page').hidden=!recipes;
+  $('nav-diary').toggleAttribute('aria-current',!recipes);$('nav-recipes').toggleAttribute('aria-current',recipes);
+  $('nav-diary').setAttribute('aria-current',recipes?'false':'page');$('nav-recipes').setAttribute('aria-current',recipes?'page':'false');
 }
 function connectionStatus() {
   $('connection').textContent = !navigator.onLine ? 'Offline' : dataFromCache ? 'Copia salvata' : offlineReady ? 'Pronto anche offline' : 'Online';
@@ -114,13 +123,14 @@ function openRecipe(id) {
   $('recipe-dialog').scrollTop = 0;
 }
 function applyHash() {
-  if (!data) return;
   const id = new URLSearchParams(location.hash.slice(1)).get('ricetta');
+  showPage(id||location.hash==='#ricette'?'ricette':'diario');
+  if (!data) return;
   if (id) openRecipe(id);
   else if ($('recipe-dialog').open) $('recipe-dialog').close();
 }
 function clearRecipeHash() {
-  if (location.hash.startsWith('#ricetta=')) history.replaceState(null,'',location.pathname+location.search);
+  if (location.hash.startsWith('#ricetta=')) history.replaceState(null,'',location.pathname+location.search+'#ricette');
 }
 function resetFilters() {
   state = {query:'',category:'Tutte',view:'all',sort:'default'};
@@ -139,7 +149,7 @@ async function loadData(manual=false) {
     $('load-error').hidden = true;
     $('collection-count').textContent = `${data.recipes.length} schede da esplorare`;
     $('version-info').textContent = `Ricettario aggiornato al ${new Date(data.updatedAt+'T12:00:00').toLocaleDateString('it-IT')} · Versione ${data.version}`;
-    render(); applyHash();
+    diaryUI.setData(data);render(); applyHash();
     if (manual) toast(!navigator.onLine||dataFromCache?'Connessione non disponibile: stai usando la copia salvata.':previousVersion===data.version?'Il ricettario è già aggiornato.':'Ricettario aggiornato.');
   } catch {
     if (!data) {
@@ -208,6 +218,12 @@ $('recipe-detail').addEventListener('change',event=>{
   const field=event.target.closest('[data-check]');if(!field)return;
   const index=Number(field.dataset.check);field.checked?checkedIngredients.add(index):checkedIngredients.delete(index);
 });
+$('recipe-log').addEventListener('click',()=>{
+  if(!currentRecipe)return;
+  if(!nutritionFor(currentRecipe,data.foods,quantities)){toast('Completa tutti i grammi prima di aggiungere la ricetta.');return;}
+  const recipe=currentRecipe,weights=[...quantities],portions=servings;
+  $('recipe-dialog').close();diaryUI.addRecipe(recipe,data.foods,weights,portions);
+});
 $('recipe-share').addEventListener('click',async()=>{
   if(!currentRecipe)return;
   const url=location.href;
@@ -223,7 +239,7 @@ $('about-dialog').addEventListener('click', event=>{if(event.target===$('about-d
 $('refresh').addEventListener('click',refresh);$('retry').addEventListener('click',()=>loadData(true));
 addEventListener('hashchange',applyHash);
 addEventListener('online',()=>{connectionStatus();loadData();});addEventListener('offline',connectionStatus);
-document.addEventListener('keydown',event=>{if(event.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!document.querySelector('dialog[open]')){event.preventDefault();$('search').focus();}});
+document.addEventListener('keydown',event=>{if(event.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!document.querySelector('dialog[open]')){event.preventDefault();location.hash='ricette';showPage('ricette');$('search').focus();}});
 addEventListener('beforeinstallprompt',event=>{event.preventDefault();installPrompt=event;$('install').hidden=false;});
 $('install').addEventListener('click',async()=>{if(installPrompt){await installPrompt.prompt();installPrompt=null;$('install').hidden=true;}});
 addEventListener('appinstalled',()=>{$('install').hidden=true;toast('Cibo sano è stato installato.');});
@@ -245,5 +261,5 @@ if('serviceWorker' in navigator)navigator.serviceWorker.addEventListener('contro
   if(initialController)location.reload();
   initialController=true;offlineReady=true;connectionStatus();
 });
-connectionStatus();loadData();setupOffline();
+applyHash();connectionStatus();loadData();setupOffline();
 if(storageWarning)setTimeout(()=>toast('I preferiti non sono disponibili in questa modalità del browser.'),1000);

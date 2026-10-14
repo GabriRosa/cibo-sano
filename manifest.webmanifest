@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "Cibo sano · Il ricettario",
+  "name": "Cibo sano · Diario e ricette",
   "short_name": "Cibo sano",
-  "description": "Ingredienti, ricette e idee da portare in cucina, anche offline.",
+  "description": "Diario alimentare, calorie, macronutrienti e ricette, anche offline.",
   "lang": "it",
   "start_url": "./",
   "scope": "./",
