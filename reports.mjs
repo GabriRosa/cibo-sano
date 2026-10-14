@@ -1,13 +1,17 @@
 import {MEALS,NUTRIENTS,validDate,sumEntries,nutrientsFor} from './diary.mjs';
 
+function mealDetails(entries) {
+  return Object.entries(MEALS).map(([id,label])=>{
+    const items=entries.filter(entry=>entry.meal===id);
+    return {label,total:sumEntries(items),entries:items.map(entry=>({name:entry.name,quantity:entry.quantity,unit:entry.unit,total:nutrientsFor(entry)}))};
+  });
+}
+
 export function dailyReport(diary,date) {
   if(!validDate(date))throw new Error('Scegli un giorno valido.');
   const entries=diary.entries.filter(entry=>entry.date===date);
   return {kind:'daily',period:date,total:sumEntries(entries),entryCount:entries.length,
-    meals:Object.entries(MEALS).map(([id,label])=>{
-      const items=entries.filter(entry=>entry.meal===id);
-      return {label,total:sumEntries(items),entries:items.map(entry=>({name:entry.name,quantity:entry.quantity,unit:entry.unit,total:nutrientsFor(entry)}))};
-    })};
+    meals:mealDetails(entries)};
 }
 
 export function monthlyReport(diary,month) {
@@ -20,7 +24,7 @@ export function monthlyReport(diary,month) {
   }
   const days=Array.from({length:count},(_,i)=>{
     const date=`${month}-${String(i+1).padStart(2,'0')}`,entries=buckets.get(date)||[];
-    return {date,entryCount:entries.length,total:entries.length?sumEntries(entries):null};
+    return {date,entryCount:entries.length,total:entries.length?sumEntries(entries):null,meals:mealDetails(entries)};
   });
   const recorded=days.filter(day=>day.entryCount>0),total=Object.fromEntries(NUTRIENTS.map(k=>[k,recorded.reduce((sum,day)=>sum+day.total[k],0)]));
   return {kind:'monthly',period:month,days,recordedDays:recorded.length,
@@ -41,6 +45,7 @@ export function createReportPDF(report,JsPDF) {
   const doc=new JsPDF({unit:'mm',format:'a4',compress:true});
   const title=report.kind==='daily'?'Riepilogo giornaliero':'Riepilogo mensile';
   const period=report.kind==='daily'?dateLabel(report.period):monthLabel(report.period);
+  let pageTitle=title,pagePeriod=period;
   const ink=[32,60,43],muted=[91,108,96],line=[220,227,215];
   const left=16,right=194,width=178,bottom=274;
   let y=0;
@@ -51,7 +56,7 @@ export function createReportPDF(report,JsPDF) {
   }
   function header(){
     text('CIBO SANO / DIARIO ALIMENTARE',left,16,{size:9,bold:true,color:muted});
-    text(title,left,28,{size:22,bold:true});text(period,left,36,{size:12});
+    text(pageTitle,left,28,{size:22,bold:true});text(pagePeriod,left,36,{size:12});
     doc.setDrawColor(...line);doc.line(left,41,right,41);y=49;
   }
   function space(height,onNewPage){if(y+height>bottom){doc.addPage();header();onNewPage?.();}}
@@ -85,11 +90,10 @@ export function createReportPDF(report,JsPDF) {
   }
   function head(first,second){row([first,second,'kcal','P (g)','C (g)','G (g)'],{bold:true,fill:true,size:8});}
   function values(n){return NUTRIENTS.map(k=>n?number(n[k],k==='kcal'?0:1):'-');}
-  header();
-  if(report.kind==='daily'){
-    metrics(report.total,'TOTALE DEL GIORNO');
-    paragraph(`${report.entryCount} ${report.entryCount===1?'voce registrata':'voci registrate'}. I totali descrivono soltanto ciò che hai inserito nel diario.`);
-    for(const meal of report.meals){
+  function dailyDetails(day){
+    metrics(day.total,'TOTALE DEL GIORNO');
+    paragraph(`${day.entryCount} ${day.entryCount===1?'voce registrata':'voci registrate'}. I totali descrivono soltanto ciò che hai inserito nel diario.`);
+    for(const meal of day.meals){
       space(31);
       const mealHeader=(continued=false)=>{
         text(meal.label+(continued?' (continua)':''),left,y,{size:13,bold:true});y+=5;head('Alimento / ricetta','Quantità');
@@ -105,6 +109,12 @@ export function createReportPDF(report,JsPDF) {
       }
       row(['Totale '+meal.label.toLowerCase(),'',...values(meal.total)],{bold:true,fill:true});y+=8;
     }
+  }
+  const legend=()=>paragraph('P = proteine; C = carboidrati; G = grassi. Valori nutrizionali stimati. Totali calcolati prima dell’arrotondamento.',{size:8,after:0});
+  header();
+  if(report.kind==='daily'){
+    dailyDetails(report);
+    legend();
   }else{
     head('Riepilogo','Giorni');
     row(['Totale del mese',String(report.recordedDays),...values(report.total)],{bold:true,fill:true});
@@ -118,8 +128,14 @@ export function createReportPDF(report,JsPDF) {
       row([label,day.entryCount?String(day.entryCount):'-',...values(day.total)],{height:5,size:8,fill:day.entryCount>0});
     }
     y+=4;
+    legend();
+    for(const day of report.days.filter(day=>day.entryCount>0)){
+      pageTitle='Dettaglio dei pasti';pagePeriod=dateLabel(day.date);
+      doc.addPage();header();
+      dailyDetails(day);
+      legend();
+    }
   }
-  paragraph('P = proteine; C = carboidrati; G = grassi. Valori nutrizionali stimati. Totali calcolati prima dell’arrotondamento.',{size:8,after:0});
   const pages=doc.getNumberOfPages();
   for(let page=1;page<=pages;page++){
     doc.setPage(page);doc.setDrawColor(...line);doc.line(left,281,right,281);
