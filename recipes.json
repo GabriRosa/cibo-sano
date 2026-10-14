@@ -1,8 +1,414 @@
 {
   "schemaVersion": 1,
-  "version": "95f8078ac27b",
+  "version": "fc5a99ada768",
   "updatedAt": "2026-10-14",
   "recipes": [
+    {
+      "id": "zucca-scelta-01",
+      "title": "Chili di tacchino e zucca",
+      "category": "Carne",
+      "collection": "Ricette scelte",
+      "kind": "originale",
+      "author": "Gina Homolka · Skinnytaste, da Joy Bauer",
+      "url": "https://www.skinnytaste.com/turkey-pumpkin-chili/",
+      "sourceType": "Ricetta web · dosi adattate",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "batchServings": 1,
+      "portionLabel": "1 pasto per persona",
+      "quantityBasis": "adattamento",
+      "quantityNote": "Adattamento per una persona con petto di tacchino magro, zucca fresca e legumi pesati sgocciolati. Olio pesato al posto dello spray; paprika e peperoncino al posto della miscela chili. Il calcolo parte dalla zucca cruda, non da 200 g di purea concentrata.",
+      "ingredientText": "Fonte per 6: circa 605 g macinato di tacchino o pollo, 425 g fagioli bianchi in scatola da scolare, 794 g pomodori, 397 g purea di zucca, cipolla, peperone, aglio, concentrato, brodo, spinaci, chili, cacao, cannella, cumino, sale e pepe; guarnizioni facoltative.",
+      "ingredients": [
+        {
+          "name": "Petto di tacchino",
+          "grams": 150,
+          "added": false,
+          "note": "Crudo, da macinare."
+        },
+        {
+          "name": "Zucca",
+          "grams": 200,
+          "added": false,
+          "note": "Polpa cruda pulita, da cuocere e frullare. Riferimento nutrizionale generico."
+        },
+        {
+          "name": "Cannellini cotti, sgocciolati",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pomodori pelati",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoni",
+          "grams": 80,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cipolla",
+          "grams": 40,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Spinaci",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Concentrato di pomodoro",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 8,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Aglio",
+          "grams": 4,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cacao amaro",
+          "grams": 2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cumino in semi",
+          "grams": 0.8,
+          "added": false,
+          "note": "Pestare prima dell’uso."
+        },
+        {
+          "name": "Paprika dolce affumicata",
+          "grams": 1,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoncino secco",
+          "grams": 0.2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cannella",
+          "grams": 0.3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Brodo vegetale in polvere",
+          "grams": 1.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Cuoci a vapore la polpa di zucca per circa 15 minuti, finché tenera, e schiacciala. Pesa i 200 g prima della cottura.",
+        "Nel frattempo scalda l’olio in una casseruola. Ammorbidisci cipolla e peperone tritati per 6–7 minuti, unisci l’aglio e poi il tacchino macinato. Sgranalo e cuocilo completamente.",
+        "Aggiungi cannellini, pomodori, concentrato, purea, acqua, brodo in polvere, cacao e spezie. Fai sobbollire per 20–30 minuti, mescolando e aggiungendo acqua se si asciuga.",
+        "Unisci gli spinaci e cuoci finché appassiscono. Servi caldo."
+      ],
+      "notes": "Avocado, yogurt, pane e altre guarnizioni non sono compresi. Per una zucca di varietà diversa i valori possono cambiare.",
+      "kcal": 512
+    },
+    {
+      "id": "zucca-scelta-03",
+      "title": "Pasta cremosa con zucca Delica e ceci",
+      "category": "Pasta e cereali",
+      "collection": "Ricette scelte",
+      "kind": "originale",
+      "author": "Cucina Botanica",
+      "url": "https://www.cucinabotanica.com/ricette/pasta-cremosa-ceci-e-zucca/",
+      "sourceType": "Ricetta web · dosi adattate",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "batchServings": 1,
+      "portionLabel": "1 pasto per persona",
+      "quantityBasis": "adattamento",
+      "quantityNote": "Dosi adattate per una persona, con pasta integrale e una quota maggiore di ceci rispetto alla fonte. Pasta pesata secca, ceci sgocciolati e Delica pesata cruda. Tutti i 6 g di olio sono inclusi; rosmarino secco al posto di quello fresco.",
+      "ingredientText": "Fonte: 200 g pasta a scelta, 200 g ceci cotti, un quarto di zucca Delica o mantovana, mezza cipolla, rosmarino, olio, sale e pepe. La zucca è già cotta in forno; una parte dei ceci può essere arrostita per guarnire.",
+      "ingredients": [
+        {
+          "name": "Pasta integrale",
+          "grams": 60,
+          "added": false,
+          "note": "Peso secco."
+        },
+        {
+          "name": "Zucca Delica cruda",
+          "grams": 200,
+          "added": false,
+          "note": "Polpa cruda, senza semi e buccia."
+        },
+        {
+          "name": "Ceci cotti, sgocciolati",
+          "grams": 180,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cipolla",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 6,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Rosmarino secco",
+          "grams": 0.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 300,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sale",
+          "grams": 0.5,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Taglia la Delica a cubetti e cuocila su carta forno, senza olio aggiuntivo, a 200 °C statico per circa 25–30 minuti, finché morbida. Questi tempi di precottura sono proposti per l’adattamento.",
+        "Ammorbidisci la cipolla tritata con 4 g di olio e poca acqua. Aggiungi ceci, zucca e rosmarino e lascia insaporire.",
+        "Versa parte dell’acqua e frulla solo una parte del condimento. Unisci la pasta e il sale, poi cuoci mescolando per il tempo indicato sulla confezione, aggiungendo l’acqua restante gradualmente e altra se serve.",
+        "Spegni quando la pasta è cotta e cremosa. Completa con i 2 g di olio rimasti."
+      ],
+      "notes": "I valori della Delica sono una stima dalla scheda di un prodotto di riferimento. La densità nutrizionale del frutto usato può variare. Tempo complessivo indicativo: 45–50 minuti partendo dalla zucca cruda.",
+      "kcal": 548
+    },
+    {
+      "id": "zucca-scelta-05",
+      "title": "Zucca Hokkaido ripiena di lenticchie e pomodori",
+      "category": "Vegetali e legumi",
+      "collection": "Ricette scelte",
+      "kind": "originale",
+      "author": "Inke Weissenborn · Fondazione Salute e Nutrizione",
+      "url": "https://www.diet-health.info/en/recipes/re/kvpac846-vegan-stuffed-hokkaido-pumpkin-with-lentils-and-tomatoes",
+      "sourceType": "Ricetta web · dosi adattate",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "batchServings": 1,
+      "portionLabel": "1 pasto per persona",
+      "quantityBasis": "adattamento",
+      "quantityNote": "Porzione adattata: 300 g di Hokkaido cruda edibile e 80 g di lenticchie secche. Gli 8 g di olio sono un’aggiunta rispetto alla fonte e sono conteggiati. Il riferimento per Hokkaido è specifico per questa varietà; i macro non usano quelli della zucca generica.",
+      "ingredientText": "Fonte per 2 pasti abbondanti: 1 kg Hokkaido, circa 163 g lenticchie secche, 4 scalogni, 3 pomodori, pepe, sale e peperoncino. La preparazione originale è senza olio.",
+      "ingredients": [
+        {
+          "name": "Zucca Hokkaido cruda",
+          "grams": 300,
+          "added": false,
+          "note": "Peso edibile senza semi; buccia ben lavata compresa."
+        },
+        {
+          "name": "Lenticchie secche",
+          "grams": 80,
+          "added": false,
+          "note": "Verdi o brune, pesate prima della cottura."
+        },
+        {
+          "name": "Pomodori",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Scalogno",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoncino secco",
+          "grams": 0.2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sale",
+          "grams": 0.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 300,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 8,
+          "added": true,
+          "note": "Aggiunta proposta, inclusa nei macro."
+        }
+      ],
+      "steps": [
+        "Lava la Hokkaido e togli semi e filamenti. Ricava una piccola metà o un ampio spicchio concavo da 300 g edibili. Cuoci su carta forno a 180 °C per circa 25–35 minuti, girando a metà cottura e verificando che la polpa sia tenera.",
+        "Sciacqua le lenticchie e lessale in acqua per circa 25–30 minuti o secondo la confezione. Mantienile intere; aggiungi acqua durante la cottura se necessario e scola quella in eccesso.",
+        "Trita lo scalogno e ammorbidiscilo in padella con poco pomodoro e il suo succo per 3–5 minuti. Unisci il resto dei pomodori a cubetti e cuoci altri 5 minuti. Mescola con lenticchie, sale e peperoncino.",
+        "Riempi la zucca con le lenticchie, disponendo accanto il ripieno che non entra. Distribuisci gli 8 g di olio a crudo su zucca e ripieno."
+      ],
+      "notes": "Circa 45–50 minuti, cuocendo lenticchie e zucca in parallelo. La dimensione della cavità varia: l’eventuale ripieno servito accanto fa parte della stessa porzione.",
+      "kcal": 538
+    },
+    {
+      "id": "zucca-scelta-08",
+      "title": "Tajine di zucca butternut e ceci con cous cous",
+      "category": "Vegetali e legumi",
+      "collection": "Ricette scelte",
+      "kind": "originale",
+      "author": "Caroline Hire · Good Food",
+      "url": "https://www.bbcgoodfoodme.com/recipes/butternut-squash-chickpea-tagine/",
+      "sourceType": "Ricetta web · dosi adattate",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "batchServings": 1,
+      "portionLabel": "1 pasto per persona",
+      "quantityBasis": "adattamento",
+      "quantityNote": "Adattamento per una persona con butternut fresca e una quota maggiore di ceci. Il cous cous suggerito dalla fonte è quantificato in 30 g secchi e incluso nei macro. Verdure crude, ceci pesati sgocciolati e tutto l’olio misurato.",
+      "ingredientText": "Fonte: 500 g butternut surgelata, 800 g pomodori in scatola, una scatola da 400 g di ceci da scolare, 2 carote, zucchina, cipolla rossa, aglio, olio, zenzero, cumino, coriandolo, cannella e chili. Cous cous o riso cotto per accompagnare, senza quantità.",
+      "ingredients": [
+        {
+          "name": "Zucca butternut cruda",
+          "grams": 200,
+          "added": false,
+          "note": "Polpa cruda, sbucciata e senza semi."
+        },
+        {
+          "name": "Ceci cotti, sgocciolati",
+          "grams": 180,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cous cous secco",
+          "grams": 30,
+          "added": false,
+          "note": "Accompagnamento scelto fra quelli della fonte, pesato secco."
+        },
+        {
+          "name": "Carote",
+          "grams": 75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zucchine",
+          "grams": 75,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pomodori pelati",
+          "grams": 150,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cipolla",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Aglio",
+          "grams": 3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Zenzero fresco",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cumino in semi",
+          "grams": 0.5,
+          "added": false,
+          "note": "Pestare prima dell’uso."
+        },
+        {
+          "name": "Coriandolo macinato",
+          "grams": 0.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cannella",
+          "grams": 0.3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoncino secco",
+          "grams": 0.2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 6,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sale",
+          "grams": 0.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Taglia zucca e carote a cubetti piccoli e la zucchina a pezzetti. Ammorbidisci la cipolla nell’olio per 8–10 minuti, aggiungendo poca acqua per non farla bruciare.",
+        "Unisci aglio, zenzero e spezie e mescola per un minuto. Aggiungi zucca, carote, zucchine, pomodori, sale e circa 50 g di acqua. Copri e cuoci dolcemente per 15–20 minuti, finché la zucca è tenera.",
+        "Aggiungi i ceci sgocciolati e scalda per altri 3–5 minuti. Regola la densità con acqua se necessario.",
+        "Reidrata il cous cous con acqua bollente secondo la confezione, usando indicativamente i 50 g rimasti e senza altro olio. Sgranalo e servi con la tajine."
+      ],
+      "notes": "Circa 35–40 minuti con la zucca fresca. Il riferimento nutrizionale della butternut è distinto da quelli di Delica e Hokkaido.",
+      "kcal": 554
+    },
     {
       "id": "scelta-fit-02",
       "title": "Jambalaya di gamberi",
@@ -14812,12 +15218,82 @@
       "reference": "Smoked Paprika",
       "url": "https://www.brake.co.uk/dry-store/cooking-ingredients/herbs-spices-seasonings/herbs/sysco-classic-smoked-paprika-450g/p/134289",
       "note": "Prodotto di riferimento: controllare l’etichetta della marca usata."
+    },
+    "Zucca butternut cruda": {
+      "kcal": 36,
+      "protein": 1.1,
+      "carbs": 8.3,
+      "fat": 0.1,
+      "source": "CoFID 2021",
+      "code": "13-355",
+      "reference": "Squash, butternut, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Lenticchie secche": {
+      "kcal": 297,
+      "protein": 24.3,
+      "carbs": 48.8,
+      "fat": 1.9,
+      "source": "CoFID 2021",
+      "code": "13-089",
+      "reference": "Lentils, green and brown, whole, dried, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Cous cous secco": {
+      "kcal": 364,
+      "protein": 12,
+      "carbs": 79.2,
+      "fat": 2.1,
+      "source": "CoFID 2021",
+      "code": "11-901",
+      "reference": "Couscous, plain, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Scalogno": {
+      "kcal": 20,
+      "protein": 1.5,
+      "carbs": 3.3,
+      "fat": 0.2,
+      "source": "CoFID 2021",
+      "code": "13-342",
+      "reference": "Shallots, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Rosmarino secco": {
+      "kcal": 331,
+      "protein": 4.9,
+      "carbs": 46.4,
+      "fat": 15.2,
+      "source": "CoFID 2021",
+      "code": "13-882",
+      "reference": "Rosemary, dried",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Zucca Delica cruda": {
+      "kcal": 26,
+      "protein": 1.01,
+      "carbs": 6.65,
+      "fat": 0.12,
+      "source": "Blife · scheda prodotto",
+      "reference": "Zucca Delica bio, fresca",
+      "url": "https://www.blifesrl.it/zucca-delica-bio/",
+      "note": "Valori della scheda commerciale usati come stima per la polpa cruda. Non sono un’analisi della zucca impiegata: maturazione e contenuto d’acqua possono modificarli sensibilmente. Energia e macro sono riportati come dichiarati dalla fonte."
+    },
+    "Zucca Hokkaido cruda": {
+      "kcal": 67,
+      "protein": 1.69,
+      "carbs": 13.62,
+      "fat": 0.48,
+      "source": "A. Bognar · Ernährungs-Umschau 53 (2006)",
+      "reference": "Roter Hokkaido, parte edibile cruda; tabella 2, pagina 307",
+      "url": "https://www.ernaehrungs-umschau.de/fileadmin/Ernaehrungs-Umschau/pdfs/pdf_2006/08_06/EU08_305_308.pdf",
+      "note": "Media dei campioni analizzati, con o senza buccia; carboidrati disponibili. Riferimento per la varietà Hokkaido, non un’analisi del frutto impiegato."
     }
   },
   "nutritionInfo": {
     "basis": "per 100 g di parte edibile, nello stato indicato dalla voce di riferimento",
-    "retrievedAt": "2026-10-13",
-    "notice": "Stime da CoFID 2021 e da etichette di prodotti di riferimento. I valori del prodotto effettivamente usato possono differire. Tracce CoFID conteggiate come zero.",
+    "retrievedAt": "2026-10-14",
+    "notice": "Stime da CoFID 2021, schede di prodotti e dati analitici pubblicati, con riferimenti per ogni ingrediente. I valori del prodotto effettivamente usato possono differire. Tracce CoFID conteggiate come zero.",
     "license": "Dati CoFID: Crown copyright, Open Government Licence v3.0.",
     "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
   },

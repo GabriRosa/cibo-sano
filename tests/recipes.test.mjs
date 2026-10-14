@@ -55,6 +55,11 @@ test('selected web recipes retain working source links without widening the URL 
   }
   assert.equal(sourceURL('https://www.bbcgoodfood.com.evil.example/recipes/test'),null);
   assert.equal(sourceURL('http://www.skinnytaste.com/recipe/'),null);
+  for(const domain of ['www.cucinabotanica.com','www.diet-health.info']) {
+    assert.equal(sourceURL(`https://${domain}/recipes/example`),`https://${domain}/recipes/example`);
+    assert.equal(sourceURL(`https://${domain}.evil.example/recipes/example`),null);
+    assert.equal(sourceURL(`http://${domain}/recipes/example`),null);
+  }
 });
 test('install manifest and offline asset paths work below a GitHub Pages project path',()=>{
   const manifest=JSON.parse(readFileSync(new URL('manifest.webmanifest',root),'utf8'));

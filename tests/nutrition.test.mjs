@@ -14,8 +14,8 @@ test('every quantified recipe has complete sourced nutrition and matching card c
       assert.equal(new URL(f.url).protocol,'https:');
     }
   }
-  assert.equal(data.recipes.length,191);
-  assert.equal(data.recipes.filter(r=>r.kind==='originale').length,146);
+  assert.equal(data.recipes.length,195);
+  assert.equal(data.recipes.filter(r=>r.kind==='originale').length,150);
 });
 test('chicken meal sums weighed raw foods; doubling portions doubles every total',()=>{
   const total=nutritionFor(chicken,data.foods);

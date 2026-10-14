@@ -45,11 +45,13 @@ Le dosi iniziali distinguono ciotole, fette, biscotti e creme. Una porzione di d
 
 ## Ricette web scelte
 
-Le quattro proposte selezionate (jambalaya, chili di tacchino, shakshuka e salmone con broccoli) hanno ID `scelta-fit-02`, `scelta-fit-03`, `scelta-fit-04` e `scelta-fit-06`. Usano `quantityBasis: "adattamento"`: ingredienti pesati e procedimento si riferiscono alla porzione proposta, con accompagnamenti aggiunti dichiarati e compresi nei macro. Il riepilogo della fonte resta in `ingredientText`. I link portano a Good Food o Skinnytaste, con attribuzione senza prefisso Instagram.
+Le prime quattro proposte selezionate (jambalaya, chili di tacchino, shakshuka e salmone con broccoli) hanno ID `scelta-fit-02`, `scelta-fit-03`, `scelta-fit-04` e `scelta-fit-06`. Usano `quantityBasis: "adattamento"`: ingredienti pesati e procedimento si riferiscono alla porzione proposta, con accompagnamenti aggiunti dichiarati e compresi nei macro. Il riepilogo della fonte resta in `ingredientText`. I link portano a Good Food o Skinnytaste, con attribuzione senza prefisso Instagram.
+
+Le quattro ricette con zucca hanno ID `zucca-scelta-01`, `zucca-scelta-03`, `zucca-scelta-05` e `zucca-scelta-08`: chili di tacchino, pasta con Delica e ceci, Hokkaido ripiena di lenticchie e tajine di butternut con cous cous. Seguono lo stesso formato di adattamento. Delica, Hokkaido e butternut hanno voci nutrizionali distinte, rispettivamente dalla scheda prodotto Blife, dalla tabella 2 di Bognar (2006) e da CoFID 2021; i link e i limiti dei riferimenti sono in `foods`. I pesi delle zucche sono crudi e al netto degli scarti. L'olio aggiunto alla Hokkaido e il cous cous scelto come accompagnamento della tajine sono compresi nei totali.
 
 ## Quantità e valori nutrizionali
 
-Tutte le 191 schede (45 idee, 90 ricette o varianti della prima raccolta, 52 colazioni e 4 ricette web scelte) mostrano kcal e macro per la dose di base anche nell'elenco. Nel dettaglio, ogni campo in grammi modifica il totale con la formula `valore per 100 g × grammi / 100`. Il numero di porzioni scala proporzionalmente le quantità correnti, comprese le modifiche manuali. Da due porzioni in su è visibile anche il totale diviso per il numero di porzioni.
+Tutte le 195 schede (45 idee, 90 ricette o varianti della prima raccolta, 52 colazioni e 8 ricette web scelte) mostrano kcal e macro per la dose di base anche nell'elenco. Nel dettaglio, ogni campo in grammi modifica il totale con la formula `valore per 100 g × grammi / 100`. Il numero di porzioni scala proporzionalmente le quantità correnti, comprese le modifiche manuali. Da due porzioni in su è visibile anche il totale diviso per il numero di porzioni.
 
 Zero esclude un ingrediente. Campi vuoti, negativi, non numerici o superiori a 10.000 g sospendono il calcolo finché non sono corretti. I decimali accettano punto o virgola. Il pulsante di ripristino torna a una porzione con le dosi proposte. I pesi modificati durano fino alla chiusura della scheda e non vengono pubblicati o salvati nel browser.
 
