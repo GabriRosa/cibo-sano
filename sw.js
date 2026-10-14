@@ -1,4 +1,4 @@
-const CACHE = 'cibo-sano-18e97c87c3ad';
+const CACHE = 'cibo-sano-36782c883352';
 const FILES = ['./','./index.html','./style.css','./app.js','./lib.mjs','./recipes.json','./manifest.webmanifest','./icons/icon.svg','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png'];
 const base = self.registration.scope;
 const dataURL = new URL('recipes.json',base).href;

@@ -1,8 +1,410 @@
 {
   "schemaVersion": 1,
-  "version": "652463430df3",
-  "updatedAt": "2026-10-13",
+  "version": "95f8078ac27b",
+  "updatedAt": "2026-10-14",
   "recipes": [
+    {
+      "id": "scelta-fit-02",
+      "title": "Jambalaya di gamberi",
+      "category": "Pesce",
+      "collection": "Ricette scelte",
+      "kind": "originale",
+      "author": "Sara Buenfeld · Good Food",
+      "url": "https://www.bbcgoodfoodme.com/recipes/prawn-jambalaya/",
+      "sourceType": "Ricetta web · dosi adattate",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "batchServings": 1,
+      "portionLabel": "1 pasto per persona",
+      "quantityBasis": "adattamento",
+      "quantityNote": "Dosi adattate per una persona: aumentati riso e gamberi rispetto alla quota della fonte; usato olio EVO. Verdure, aromi e acqua sono pesati in quantità proposte. I gamberi sono conteggiati crudi e quindi richiedono cottura, non solo riscaldamento.",
+      "ingredientText": "Fonte per 2: 100 g riso integrale, 150 g gamberi, 400 g pomodori, cipolla, 3 coste di sedano, peperone giallo, 2 spicchi d’aglio, 1 cucchiaio olio di colza, coriandolo macinato, semi di finocchio, peperoncino, timo, prezzemolo e brodo vegetale.",
+      "ingredients": [
+        {
+          "name": "Riso basmati integrale",
+          "grams": 65,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Gamberi sgusciati",
+          "grams": 180,
+          "added": false,
+          "note": "Crudi, peso netto."
+        },
+        {
+          "name": "Cipolla",
+          "grams": 70,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Sedano",
+          "grams": 60,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pomodori pelati",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoni",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 8,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Aglio",
+          "grams": 4,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Coriandolo macinato",
+          "grams": 1.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Semi di finocchio",
+          "grams": 0.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoncino secco",
+          "grams": 0.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Timo fresco",
+          "grams": 1,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Prezzemolo",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Brodo vegetale in polvere",
+          "grams": 2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 220,
+          "added": false,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Trita cipolla e sedano e falli ammorbidire nell’olio per circa 5 minuti in una padella profonda.",
+        "Unisci riso e spezie, poi pomodori, acqua, brodo, peperone a pezzetti, aglio e timo. Copri e cuoci a fuoco basso per circa 30 minuti, aggiungendo acqua se serve e verificando i tempi del riso.",
+        "Quando il riso è quasi pronto, unisci i gamberi crudi e cuoci finché sono completamente opachi e ben cotti. Completa con il prezzemolo."
+      ],
+      "notes": "",
+      "kcal": 549
+    },
+    {
+      "id": "scelta-fit-03",
+      "title": "Chili cremoso di tacchino e cannellini",
+      "category": "Carne",
+      "collection": "Ricette scelte",
+      "kind": "originale",
+      "author": "Gina Homolka · Skinnytaste",
+      "url": "https://www.skinnytaste.com/white-bean-turkey-chili-4-pts/",
+      "sourceType": "Ricetta web · dosi adattate",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "batchServings": 1,
+      "portionLabel": "1 pasto per persona",
+      "quantityBasis": "adattamento",
+      "quantityNote": "Adattamento per una persona con petto di tacchino macinato, cannellini pesati sgocciolati e yogurt 0%. Olio pesato al posto dello spray, peperoncino fresco al posto di quello conservato; alloro omesso. Il pane è un accompagnamento proposto e incluso nei macro.",
+      "ingredientText": "Fonte per 12: circa 1,36 kg tacchino macinato al 7% di grassi, 4 lattine da circa 439 g di cannellini da scolare, 2 cipolle, 5 spicchi d’aglio, 128 g peperoncini verdi conservati, 2 tazze brodo, ½ tazza panna acida light oppure yogurt greco, olio spray, cumino, origano, peperoncino e alloro.",
+      "ingredients": [
+        {
+          "name": "Petto di tacchino",
+          "grams": 150,
+          "added": false,
+          "note": "Da macinare: riferimento magro, diverso dal macinato al 7% di grassi della fonte."
+        },
+        {
+          "name": "Cannellini cotti, sgocciolati",
+          "grams": 180,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cipolla",
+          "grams": 40,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Aglio",
+          "grams": 4,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoncino fresco",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cumino in semi",
+          "grams": 0.8,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Origano secco",
+          "grams": 0.4,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoncino secco",
+          "grams": 0.3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Brodo pronto",
+          "grams": 100,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Yogurt greco bianco 0%",
+          "grams": 30,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 35,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Trita cipolla e aglio, ammorbidiscili nell’olio per 4–5 minuti. Aggiungi il petto macinato e sgranalo fino a completa cottura.",
+        "Unisci peperoncino e spezie e mescola per 2 minuti. Frulla un quarto dei cannellini con parte del brodo, poi aggiungi crema, fagioli interi e brodo restante.",
+        "Lascia sobbollire coperto per 30–35 minuti, mescolando e regolando la densità con acqua. Servi con yogurt aggiunto a fuoco spento e pane a parte."
+      ],
+      "notes": "Lo yogurt si aggiunge dopo la cottura per evitare che si separi. Formaggio, avocado e altre guarnizioni facoltative della fonte non sono inclusi.",
+      "kcal": 520
+    },
+    {
+      "id": "scelta-fit-04",
+      "title": "Shakshuka con spinaci",
+      "category": "Vegetali e legumi",
+      "collection": "Ricette scelte",
+      "kind": "originale",
+      "author": "Esther Clark · Good Food",
+      "url": "https://www.bbcgoodfoodme.com/recipes/healthy-shakshuka/",
+      "sourceType": "Ricetta web · dosi adattate",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "batchServings": 1,
+      "portionLabel": "1 pasto per persona",
+      "quantityBasis": "adattamento",
+      "quantityNote": "Dosi per una persona, con 2 uova stimate in 100 g edibili. Aggiunti 100 g di albumi e 60 g di pane per completare il pasto: entrambi inclusi nei macro. Usati olio EVO e pomodori pelati; pesi delle verdure e degli aromi proposti.",
+      "ingredientText": "Fonte per 2: 4 uova medie, 400 g pomodorini in conserva, 115 g spinacini, cipolla rossa, peperone rosso e giallo, 3 spicchi d’aglio, 1 cucchiaio olio di colza, 1 cucchiaino cumino, 1 coriandolo e 1 abbondante paprika affumicata; coriandolo e aneto freschi.",
+      "ingredients": [
+        {
+          "name": "Uovo intero",
+          "grams": 100,
+          "added": false,
+          "note": "Circa 2 uova medie senza guscio."
+        },
+        {
+          "name": "Pomodori pelati",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Peperoni",
+          "grams": 160,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cipolla",
+          "grams": 60,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Spinaci",
+          "grams": 60,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Aglio",
+          "grams": 5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 8,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cumino in semi",
+          "grams": 1,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Coriandolo macinato",
+          "grams": 1,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Paprika dolce affumicata",
+          "grams": 1.5,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Coriandolo fresco",
+          "grams": 3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Aneto fresco",
+          "grams": 2,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Acqua",
+          "grams": 50,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Albumi",
+          "grams": 100,
+          "added": true,
+          "note": ""
+        },
+        {
+          "name": "Pane integrale",
+          "grams": 60,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Taglia cipolla e peperoni e cuocili nell’olio per 8–10 minuti. Aggiungi aglio e spezie e mescola per un minuto.",
+        "Unisci pomodori, spinaci e acqua. Fai appassire gli spinaci e lascia sobbollire scoperto per circa 10 minuti.",
+        "Forma due incavi, distribuisci gli albumi aggiuntivi e adagia le uova. Copri e cuoci a fuoco dolce per circa 8–10 minuti, finché gli albumi sono ben rappresi. Completa con erbe fresche e pane."
+      ],
+      "notes": "",
+      "kcal": 502
+    },
+    {
+      "id": "scelta-fit-06",
+      "title": "Salmone e broccoli al forno, soia e limone",
+      "category": "Pesce",
+      "collection": "Ricette scelte",
+      "kind": "originale",
+      "author": "Good Food team",
+      "url": "https://www.bbcgoodfood.com/recipes/2410638/oriental-salmon-and-broccoli-traybake",
+      "sourceType": "Ricetta web · dosi adattate",
+      "extraSource": null,
+      "completeness": "entrambi",
+      "servings": 1,
+      "batchServings": 1,
+      "portionLabel": "1 pasto per persona",
+      "quantityBasis": "adattamento",
+      "quantityNote": "Dosi proposte per una persona: filetto pesato senza scarti, olio quantificato in 3 g e solo succo di limone. I 40 g di riso sono pesati a crudo: accompagnamento aggiunto e incluso nei macro.",
+      "ingredientText": "Fonte per 4: 4 filetti di salmone con pelle, 1 testa di broccoli, 1 limone (metà spremuto e metà a spicchi), un mazzetto di cipollotti, 2 cucchiai salsa di soia. L’olio d’oliva compare nel procedimento senza quantità.",
+      "ingredients": [
+        {
+          "name": "Salmone, filetto",
+          "grams": 150,
+          "added": false,
+          "note": "Peso edibile crudo, al netto della pelle e delle lische."
+        },
+        {
+          "name": "Broccoli",
+          "grams": 200,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Cipollotto",
+          "grams": 20,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Succo di limone",
+          "grams": 15,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Salsa di soia",
+          "grams": 10,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Olio EVO",
+          "grams": 3,
+          "added": false,
+          "note": ""
+        },
+        {
+          "name": "Riso basmati",
+          "grams": 40,
+          "added": true,
+          "note": ""
+        }
+      ],
+      "steps": [
+        "Porta il forno a 180 °C statico o 160 °C ventilato. Disponi salmone e cimette di broccoli ancora leggermente umide in una teglia.",
+        "Distribuisci succo di limone, metà cipollotto e olio. Cuoci per 14 minuti, aggiungi la salsa di soia e prosegui per circa 4 minuti, finché il salmone è cotto al centro.",
+        "Nel frattempo lessa il riso seguendo la confezione. Servilo con pesce e verdure e completa con il cipollotto rimasto."
+      ],
+      "notes": "I tempi del forno vanno verificati in base allo spessore del filetto.",
+      "kcal": 574
+    },
     {
       "id": "idea-14",
       "title": "Bresaola, rucola e grana",
@@ -14320,6 +14722,96 @@
       "reference": "70% Farina d'avena; 30% Proteine whey in polvere",
       "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid",
       "note": "Stima 70% avena e 30% whey. Il preparato Prozis citato nel reel non ha etichetta verificata: i valori possono differire."
+    },
+    "Riso basmati integrale": {
+      "kcal": 355,
+      "protein": 8.9,
+      "carbs": 77.6,
+      "fat": 3.1,
+      "source": "CoFID 2021",
+      "code": "11-866",
+      "reference": "Rice, brown, basmati, raw",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Timo fresco": {
+      "kcal": 95,
+      "protein": 3,
+      "carbs": 15.1,
+      "fat": 2.5,
+      "source": "CoFID 2021",
+      "code": "13-893",
+      "reference": "Thyme, fresh",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Coriandolo fresco": {
+      "kcal": 18,
+      "protein": 2.1,
+      "carbs": 1.2,
+      "fat": 0.5,
+      "source": "CoFID 2021",
+      "code": "13-888",
+      "reference": "Coriander leaves, fresh",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Aneto fresco": {
+      "kcal": 25,
+      "protein": 3.7,
+      "carbs": 0.9,
+      "fat": 0.8,
+      "source": "CoFID 2021",
+      "code": "13-824",
+      "reference": "Dill, fresh",
+      "url": "https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid"
+    },
+    "Cumino in semi": {
+      "kcal": 422,
+      "protein": 17,
+      "carbs": 4.8,
+      "fat": 30,
+      "source": "Kotányi · etichetta su Austrian Supermarket",
+      "reference": "Cumin whole",
+      "url": "https://www.austriansupermarket.com/asm_int/kotanyi-cumin-cumin-whole-400ccm-140g",
+      "note": "Prodotto di riferimento: controllare l’etichetta della marca usata."
+    },
+    "Coriandolo macinato": {
+      "kcal": 298,
+      "protein": 12.37,
+      "carbs": 13.1,
+      "fat": 17.77,
+      "source": "The Spice Cupboard",
+      "reference": "Ground Coriander",
+      "url": "https://www.thespicecupboard.co.uk/product/ground-coriander/",
+      "note": "Prodotto di riferimento: controllare l’etichetta della marca usata."
+    },
+    "Semi di finocchio": {
+      "kcal": 345,
+      "protein": 15.8,
+      "carbs": 12.490000000000002,
+      "fat": 14.87,
+      "source": "Ganesha Wholefoods",
+      "reference": "Fennel Seeds",
+      "url": "https://www.ganeshawholefoods.co.uk/products/fennel-seeds",
+      "note": "Carboidrati disponibili stimati sottraendo 39,8 g di fibra dai 52,29 g di carboidrati totali dichiarati per 100 g."
+    },
+    "Origano secco": {
+      "kcal": 252,
+      "protein": 8.6,
+      "carbs": 24,
+      "fat": 3.4,
+      "source": "Kotányi · etichetta su Austrian Shop",
+      "reference": "Oregano gerebelt",
+      "url": "https://www.austrianshop.de/kotanyi/kotanyi-oregano-gerebelt-1200ccm-dose",
+      "note": "Prodotto di riferimento: controllare l’etichetta della marca usata."
+    },
+    "Paprika dolce affumicata": {
+      "kcal": 319,
+      "protein": 14,
+      "carbs": 19,
+      "fat": 13,
+      "source": "Sysco Classic · Brakes",
+      "reference": "Smoked Paprika",
+      "url": "https://www.brake.co.uk/dry-store/cooking-ingredients/herbs-spices-seasonings/herbs/sysco-classic-smoked-paprika-450g/p/134289",
+      "note": "Prodotto di riferimento: controllare l’etichetta della marca usata."
     }
   },
   "nutritionInfo": {

@@ -43,9 +43,13 @@ Il quarto reel senza ingredienti, “Torta proteica” di `emanuela_malavisi`, r
 
 Le dosi iniziali distinguono ciotole, fette, biscotti e creme. Una porzione di dolce può essere soltanto una parte della colazione. Le quantità mancanti sono stime dichiarate; i prodotti non identificati usano riferimenti nutrizionali espliciti. Le due mousse chia/cacao equivalenti mantengono i rispettivi autori e link.
 
+## Ricette web scelte
+
+Le quattro proposte selezionate (jambalaya, chili di tacchino, shakshuka e salmone con broccoli) hanno ID `scelta-fit-02`, `scelta-fit-03`, `scelta-fit-04` e `scelta-fit-06`. Usano `quantityBasis: "adattamento"`: ingredienti pesati e procedimento si riferiscono alla porzione proposta, con accompagnamenti aggiunti dichiarati e compresi nei macro. Il riepilogo della fonte resta in `ingredientText`. I link portano a Good Food o Skinnytaste, con attribuzione senza prefisso Instagram.
+
 ## Quantità e valori nutrizionali
 
-Tutte le 187 schede (45 idee, 90 ricette o varianti della prima raccolta e 52 colazioni) mostrano kcal e macro per la dose di base anche nell'elenco. Nel dettaglio, ogni campo in grammi modifica il totale con la formula `valore per 100 g × grammi / 100`. Il numero di porzioni scala proporzionalmente le quantità correnti, comprese le modifiche manuali. Da due porzioni in su è visibile anche il totale diviso per il numero di porzioni.
+Tutte le 191 schede (45 idee, 90 ricette o varianti della prima raccolta, 52 colazioni e 4 ricette web scelte) mostrano kcal e macro per la dose di base anche nell'elenco. Nel dettaglio, ogni campo in grammi modifica il totale con la formula `valore per 100 g × grammi / 100`. Il numero di porzioni scala proporzionalmente le quantità correnti, comprese le modifiche manuali. Da due porzioni in su è visibile anche il totale diviso per il numero di porzioni.
 
 Zero esclude un ingrediente. Campi vuoti, negativi, non numerici o superiori a 10.000 g sospendono il calcolo finché non sono corretti. I decimali accettano punto o virgola. Il pulsante di ripristino torna a una porzione con le dosi proposte. I pesi modificati durano fino alla chiusura della scheda e non vengono pubblicati o salvati nel browser.
 

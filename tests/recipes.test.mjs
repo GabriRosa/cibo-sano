@@ -45,6 +45,17 @@ test('malformed data, script URLs and invalid favorites are rejected',()=>{
   assert.throws(()=>parseFavorites('{"favorites":[1]}'));
   assert.deepEqual([...parseFavorites('{"favorites":["idea-01","gone-01"]}',new Set(['idea-01']))],['idea-01']);
 });
+test('selected web recipes retain working source links without widening the URL allowlist',()=>{
+  const selected=data.recipes.filter(r=>r.id.startsWith('scelta-fit-'));
+  assert.deepEqual(selected.map(r=>r.id).sort(),['scelta-fit-02','scelta-fit-03','scelta-fit-04','scelta-fit-06']);
+  for(const r of selected){
+    assert.equal(sourceURL(r.url),r.url);
+    assert.equal(r.quantityBasis,'adattamento');
+    assert(r.steps.length>0);
+  }
+  assert.equal(sourceURL('https://www.bbcgoodfood.com.evil.example/recipes/test'),null);
+  assert.equal(sourceURL('http://www.skinnytaste.com/recipe/'),null);
+});
 test('install manifest and offline asset paths work below a GitHub Pages project path',()=>{
   const manifest=JSON.parse(readFileSync(new URL('manifest.webmanifest',root),'utf8'));
   assert.equal(manifest.start_url,'./');assert.equal(manifest.scope,'./');

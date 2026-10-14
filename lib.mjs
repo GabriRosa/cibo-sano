@@ -58,7 +58,7 @@ export function validData(data) {
 export function sourceURL(value) {
   try {
     const url = new URL(value);
-    return url.protocol==='https:' && ['www.instagram.com','instagram.com','cheftara.substack.com'].includes(url.hostname) ? url.href : null;
+    return url.protocol==='https:' && ['www.instagram.com','instagram.com','cheftara.substack.com','www.bbcgoodfoodme.com','www.bbcgoodfood.com','www.skinnytaste.com'].includes(url.hostname) ? url.href : null;
   } catch { return null; }
 }
 export function parseFavorites(text, knownIDs=null) {
