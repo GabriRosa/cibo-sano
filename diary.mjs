@@ -2,6 +2,7 @@ import {validInsightFields,mergeInsightFields} from './targets.mjs';
 import {validKitchenFields,mergeKitchenFields} from './kitchen.mjs';
 import {validPersonalFields,mergePersonalFields,validFavorites,FAVORITES_KEY} from './personal-recipes.mjs';
 import {validPortions} from './portions.mjs';
+import {validWaterEntry,validWaterFields,mergeWaterFields} from './water.mjs';
 
 export const MEALS = {breakfast:'Colazione', snack:'Spuntino', lunch:'Pranzo', dinner:'Cena'};
 export const NUTRIENTS = ['kcal','protein','carbs','fat'];
@@ -52,7 +53,7 @@ function validWeights(records) {
 }
 export function emptyDiary() {return {schemaVersion:1,entries:[],foods:[],goal:null,weights:[]};}
 export function validDiary(data) {
-  return !!data && data.schemaVersion===1 && validInsightFields(data) && validKitchenFields(data) && validPersonalFields(data) && (!Object.hasOwn(data,'weights') || validWeights(data.weights)) && Array.isArray(data.entries) && data.entries.length<=MAX_ENTRIES && data.entries.every(validEntry) && new Set(data.entries.map(e=>e.id)).size===data.entries.length && Array.isArray(data.foods) && data.foods.length<=5000 && data.foods.every(validFood) && new Set(data.foods.map(f=>f.id)).size===data.foods.length && (data.goal===null || (number(data.goal,10000)&&data.goal>=1));
+  return !!data && data.schemaVersion===1 && validInsightFields(data) && validKitchenFields(data) && validPersonalFields(data) && validWaterFields(data) && (!Object.hasOwn(data,'weights') || validWeights(data.weights)) && Array.isArray(data.entries) && data.entries.length<=MAX_ENTRIES && data.entries.every(validEntry) && new Set(data.entries.map(e=>e.id)).size===data.entries.length && Array.isArray(data.foods) && data.foods.length<=5000 && data.foods.every(validFood) && new Set(data.foods.map(f=>f.id)).size===data.foods.length && (data.goal===null || (number(data.goal,10000)&&data.goal>=1));
 }
 export function nutrientsFor(entry) {
   return Object.fromEntries(NUTRIENTS.map(k=>[k,entry.nutrients[k]*entry.quantity/entry.basis]));
@@ -103,9 +104,11 @@ export function mergeDiary(current,incoming) {
   const added=incoming.entries.filter(e=>!existing.has(e.id));
   const weightDates=new Set((current.weights||[]).map(record=>record.date));
   const weightsAdded=(incoming.weights||[]).filter(record=>!weightDates.has(record.date));
-  const result={...current,...mergeInsightFields(current,incoming),...mergeKitchenFields(current,incoming),...mergePersonalFields(current,incoming),weights:[...(current.weights||[]),...weightsAdded],entries:[...current.entries,...added],foods:[...current.foods,...incoming.foods.filter(f=>!foodIds.has(f.id))],goal:current.goal??incoming.goal};
+  const waterIds=new Set((current.waterEntries||[]).map(entry=>entry.id));
+  const waterAdded=(incoming.waterEntries||[]).filter(entry=>!waterIds.has(entry.id)).length;
+  const result={...current,...mergeInsightFields(current,incoming),...mergeKitchenFields(current,incoming),...mergePersonalFields(current,incoming),...mergeWaterFields(current,incoming),weights:[...(current.weights||[]),...weightsAdded],entries:[...current.entries,...added],foods:[...current.foods,...incoming.foods.filter(f=>!foodIds.has(f.id))],goal:current.goal??incoming.goal};
   if(!validDiary(result))throw new Error('Il diario risultante supera i limiti di memoria previsti.');
-  return {data:result,added:added.length+weightsAdded.length,entriesAdded:added.length,weightsAdded:weightsAdded.length};
+  return {data:result,added:added.length+weightsAdded.length+waterAdded,entriesAdded:added.length,weightsAdded:weightsAdded.length,waterAdded};
 }
 export class DiaryStore {
   constructor(storage) {this.storage=storage;}
@@ -189,6 +192,36 @@ export class DiaryStore {
     return this.update(data=>{
       if((data.weights||[]).some(item=>item.date===record.date))throw new Error('Quella data ha già una pesata. Il valore attuale è stato conservato.');
       return {...data,weights:[...(data.weights||[]),{...record}]};
+    });
+  }
+  addWater(entry) {
+    if(!validWaterEntry(entry))throw new Error('Registrazione dell’acqua non valida.');
+    return this.update(data=>({...data,waterEntries:[...(data.waterEntries||[]),{...entry}]}));
+  }
+  editWater(entryId,patch,options={}) {
+    if(!patch||typeof patch!=='object'||Array.isArray(patch))throw new Error('Registrazione dell’acqua non valida.');
+    return this.update(data=>{
+      const entries=data.waterEntries||[],previous=entries.find(entry=>entry.id===entryId);
+      if(!previous)throw new Error('Questa registrazione dell’acqua è stata rimossa in un’altra finestra.');
+      if(Object.hasOwn(options,'expectedUpdatedAt')&&previous.updatedAt!==options.expectedUpdatedAt)throw new Error('La registrazione dell’acqua è cambiata in un’altra finestra. Chiudi e riaprila prima di modificarla.');
+      const updated={...previous,date:Object.hasOwn(patch,'date')?patch.date:previous.date,ml:Object.hasOwn(patch,'ml')?patch.ml:previous.ml,updatedAt:new Date(Math.max(Date.now(),Date.parse(previous.updatedAt)+1)).toISOString()};
+      if(!validWaterEntry(updated))throw new Error('Inserisci una data valida e una quantità d’acqua da 1 a 10.000 ml.');
+      return {...data,waterEntries:entries.map(entry=>entry.id===entryId?updated:entry)};
+    });
+  }
+  removeWater(entryId,options={}) {
+    return this.update(data=>{
+      const entries=data.waterEntries||[],previous=entries.find(entry=>entry.id===entryId);
+      if(!previous)throw new Error('Questa registrazione dell’acqua è già stata rimossa.');
+      if(Object.hasOwn(options,'expectedUpdatedAt')&&previous.updatedAt!==options.expectedUpdatedAt)throw new Error('La registrazione dell’acqua è cambiata in un’altra finestra. Chiudi e riaprila prima di rimuoverla.');
+      return {...data,waterEntries:entries.filter(entry=>entry.id!==entryId)};
+    });
+  }
+  restoreWater(entry) {
+    if(!validWaterEntry(entry))throw new Error('Registrazione dell’acqua non valida.');
+    return this.update(data=>{
+      if((data.waterEntries||[]).some(item=>item.id===entry.id))throw new Error('Questa registrazione dell’acqua è già presente. I dati attuali sono stati conservati.');
+      return {...data,waterEntries:[...(data.waterEntries||[]),{...entry}]};
     });
   }
   setGoal(goal) {return this.update(data=>({...data,goal}));}

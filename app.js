@@ -3,6 +3,7 @@ import {categories, categoryIcons, escapeHTML as e, filterRecipes, nutritionFor,
 import {initDiary} from './diary-ui.js';
 import {initWeight} from './weight-ui.js';
 import {initInsights} from './insights-ui.js';
+import {initWater} from './water-ui.js';
 import {initKitchen} from './kitchen-ui.js';
 import {initRecipeVersions} from './recipe-versions-ui.js';
 import {initBackup} from './backup-ui.js';
@@ -28,6 +29,7 @@ function toast(message) {
 }
 const diaryUI=initDiary({toast,onSaved:()=>{location.hash='diario';showPage('diario');}});
 const weightUI=initWeight({toast});
+const waterUI=initWater({toast,storage:personalStorage,getDay:()=>diaryUI.getDay()});
 const insightsUI=initInsights({toast,storage:personalStorage,getDay:()=>diaryUI.getDay()});
 const kitchenUI=initKitchen({toast,onOpenRecipe:id=>{location.hash='ricetta='+encodeURIComponent(id);},onLogRecipe:(item,options)=>diaryUI.addItem(item,options)});
 const versionsUI=initRecipeVersions({toast,storage:personalStorage,onSaved:recipe=>{
@@ -53,7 +55,7 @@ function showPage(page) {
     else $('nav-'+id).removeAttribute('aria-current');
   }
   if(page==='peso')weightUI.render();
-  if(page==='diario')diaryUI.render();
+  if(page==='diario'){diaryUI.render();waterUI.render();}
   if(page==='menu'||page==='dispensa')kitchenUI.render(page);
 }
 function connectionStatus() {

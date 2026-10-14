@@ -1,6 +1,6 @@
 # Cibo sano
 
-Diario alimentare in italiano con 195 ricette pubbliche, installabile su Android e consultabile offline. Registra colazione, spuntino, pranzo e cena con kcal, proteine, carboidrati e grassi. Puoi impostare obiettivi con una data di decorrenza, salvare prodotti e versioni personali delle ricette, pianificare il menu settimanale e preparare la spesa dalla dispensa. La sezione Peso conserva le pesate e ne mostra l’andamento nel tempo. Le ricette provengono da fonti Instagram, recuperi dai video e proposte con ingredienti pesati.
+Diario alimentare in italiano con 195 ricette pubbliche, installabile su Android e consultabile offline. Registra colazione, spuntino, pranzo e cena con kcal, proteine, carboidrati e grassi, e tiene separata l'acqua bevuta. Puoi impostare obiettivi con una data di decorrenza, salvare prodotti e versioni personali delle ricette, pianificare il menu settimanale e preparare la spesa dalla dispensa. La sezione Peso conserva le pesate e ne mostra l’andamento nel tempo. Le ricette provengono da fonti Instagram, recuperi dai video e proposte con ingredienti pesati.
 
 L'app usa HTML, CSS e JavaScript, senza server applicativo, account o strumenti di analisi. Lo scanner dei codici a barre usa l'API nativa del browser quando disponibile, altrimenti una copia locale di ZXing. Il lettore delle foto delle etichette usa Tesseract sul dispositivo, dopo il download iniziale. GitHub Pages distribuisce i file della cartella principale. Non serve acquistare un dominio. La gratuità dipende dalle condizioni e dai limiti del piano GitHub utilizzato.
 
@@ -23,6 +23,14 @@ Dalla scheda di una ricetta, **+ Diario** trasferisce una porzione delle dosi co
 Dal selettore **Alimenti**, apri **I tuoi alimenti e le tue porzioni**. Puoi salvare un prodotto da etichetta senza aggiungerlo a un pasto, modificarlo o rimuoverlo. Nome, unità, kcal e tre macronutrienti descrivono sempre 100 g o 100 ml. Le modifiche valgono per le prossime aggiunte; le voci già registrate conservano i propri valori anche se il prodotto viene rimosso.
 
 Ogni prodotto può avere fino a 20 porzioni con un nome e una quantità, per esempio un vasetto da 125 g. Quando lo aggiungi al diario, scegli una porzione e il numero consumato, anche frazionario: la voce registra la quantità risultante in g o ml. La porzione usa sempre l'unità del prodotto. Se cambi unità nell'editor, devi reinserire le quantità delle porzioni; l'app non converte g in ml.
+
+## Acqua
+
+Nel giorno selezionato del **Diario**, la sezione **Acqua** permette di aggiungere 250 ml, 500 ml o una quantità personalizzata. Il modulo accetta ml e litri, anche con la virgola decimale: 0,3 L corrispondono a 300 ml. Ogni registrazione conserva millilitri interi e una data; puoi modificarla, spostarla a un altro giorno, rimuoverla e annullare l'ultima rimozione. Il limite per una registrazione è da 1 a 10.000 ml: è un limite tecnico, non un obiettivo di consumo.
+
+Il totale del giorno e il riepilogo settimanale usano solo le registrazioni dell'acqua. La media è indicata come **Media sui giorni con acqua registrata**, insieme al numero di giorni considerati. I giorni senza registrazioni mostrano un trattino o **Non registrata** e sono esclusi dalla media. Le spunte **Giornata completa** riguardano il cibo e non cambiano la media dell'acqua. L'app non propone un obiettivo automatico di idratazione.
+
+L'acqua è inclusa nei PDF e nel backup completo. Un giorno con sola acqua rimane senza registrazioni alimentari: non entra nelle medie del cibo.
 
 ## Obiettivi e riepilogo settimanale
 
@@ -64,11 +72,11 @@ Gli abbinamenti richiedono lo stesso nome dopo aver normalizzato maiuscole, acce
 
 ## Archivio locale e backup completo
 
-**Esporta backup completo** scarica un JSON con diario, prodotti e porzioni, pesate, obiettivi, giorni completi, versioni delle ricette, preferiti, menu, dispensa e spunte della spesa. L'interfaccia indica l'ultima esportazione avviata su quel dispositivo e ricorda di ripeterla dopo sette giorni. Controlla che il file sia nei download e conservalo privatamente.
+**Esporta backup completo** scarica un JSON con diario, acqua, prodotti e porzioni, pesate, obiettivi, giorni completi, versioni delle ricette, preferiti, menu, dispensa e spunte della spesa. L'interfaccia indica l'ultima esportazione avviata su quel dispositivo e ricorda di ripeterla dopo sette giorni. Controlla che il file sia nei download e conservalo privatamente.
 
 **Importa backup** accetta il formato `cibo-sano-full-v1` e il precedente `cibo-sano-diary-v1`, fino a 15 MB. Prima mostra il contenuto; **Unisci ai dati del dispositivo** conferma l'importazione. L'app valida l'intero file e il risultato della fusione prima di salvare l'archivio. Un file non valido non produce scritture parziali.
 
-L'importazione aggiunge gli elementi mancanti. Conserva i dati locali per ID coincidenti di voci del diario, prodotti, versioni, pasti pianificati e scorte; per date coincidenti delle pesate e degli obiettivi; per la stessa settimana, nome normalizzato e unità delle spunte della spesa. Il precedente obiettivo calorico locale prevale se già definito. Preferiti e date dei giorni completi vengono uniti senza duplicati. Non elimina dati locali assenti nel file importato.
+L'importazione aggiunge gli elementi mancanti. Conserva i dati locali per ID coincidenti di voci del diario, registrazioni dell'acqua, prodotti, versioni, pasti pianificati e scorte; per date coincidenti delle pesate e degli obiettivi; per la stessa settimana, nome normalizzato e unità delle spunte della spesa. Il precedente obiettivo calorico locale prevale se già definito. Preferiti e date dei giorni completi vengono uniti senza duplicati. Non elimina dati locali assenti nel file importato.
 
 L'archivio usa `localStorage`, chiave `cibo-sano:diary:v1`, con `schemaVersion: 1`. I campi sono validati in [diary.mjs](diary.mjs) e nei moduli indicati sotto. I campi aggiunti sono facoltativi, così i diari precedenti restano leggibili.
 
@@ -76,13 +84,14 @@ L'archivio usa `localStorage`, chiave `cibo-sano:diary:v1`, con `schemaVersion: 
 | --- | --- |
 | `entries`, `foods`, `goal` | Voci con valori propri, prodotti personali e precedente obiettivo calorico (`null` se assente); le porzioni facoltative sono in `foods[].portions` |
 | `weights` | Pesate per data; facoltativo nei dati precedenti |
+| `waterEntries` | Registrazioni con `id`, `date`, `ml`, `createdAt` e `updatedAt`; validazione e riepiloghi in [water.mjs](water.mjs). Campo facoltativo nei dati precedenti |
 | `targets`, `completeDays` | Obiettivi per decorrenza e date dei giorni completi, gestiti da [targets.mjs](targets.mjs) |
 | `personalRecipes`, `favorites` | Versioni con valori nutrizionali negli ingredienti e ID preferiti, gestiti da [personal-recipes.mjs](personal-recipes.mjs) |
 | `plans`, `pantry`, `shoppingChecks` | Pasti previsti con dosi e nutrienti per porzione, scorte e spunte per settimana, gestiti da [kitchen.mjs](kitchen.mjs) |
 
 Se `favorites` manca, la lettura recupera i preferiti validi dalla precedente chiave `cibo-sano:favorites:v1`; il successivo salvataggio li include nell'archivio unico. Un campo facoltativo assente viene trattato come vuoto; un campo presente ma non valido causa il rifiuto dei dati.
 
-Le scritture sono serializzate con Web Locks nei browser che lo supportano; negli altri il ciclo lettura/scrittura non garantisce l'assenza di conflitti fra finestre contemporanee. Gli editor rilevano modifiche concorrenti alle voci, ai prodotti, alle pesate, agli obiettivi e ai record di menu e dispensa. Errori di quota o accesso non vengono mostrati come salvataggi riusciti. Un archivio corrotto resta conservato ed è esportabile come copia di recupero.
+Le scritture sono serializzate con Web Locks nei browser che lo supportano; negli altri il ciclo lettura/scrittura non garantisce l'assenza di conflitti fra finestre contemporanee. Gli editor rilevano modifiche concorrenti alle voci, all'acqua, ai prodotti, alle pesate, agli obiettivi e ai record di menu e dispensa. Errori di quota o accesso non vengono mostrati come salvataggi riusciti. Un archivio corrotto resta conservato ed è esportabile come copia di recupero.
 
 I dati personali non vengono caricati nel repository, inclusi nel link pubblico o sincronizzati fra dispositivi. Cancellare i dati del browser può eliminarli. Le foto delle etichette e il testo OCR temporaneo non sono inclusi nel backup: vengono salvati solo i valori confermati del prodotto.
 
@@ -92,11 +101,15 @@ La sezione **Peso** registra una pesata per giorno con data e chilogrammi. Accet
 
 I filtri **1 mese**, **3 mesi**, **6 mesi** e **1 anno** selezionano un intervallo che termina oggi e inizia lo stesso giorno del mese iniziale, adattato all'ultimo giorno disponibile quando necessario. Le date ai due estremi sono incluse. Il grafico colloca le misure in base alla distanza tra le date e mostra la scala in kg. La variazione del periodo è la differenza fra l'ultima e la prima pesata disponibili in quell'intervallo; con meno di due misure non viene calcolata. I giorni senza misure restano senza dati. Lo storico consente di leggere i valori anche senza usare il grafico.
 
-Ogni elemento di `weights` contiene `date`, `kg` e `updatedAt`. Le modifiche rilevano se un'altra finestra ha cambiato la stessa pesata dopo l'apertura del modulo. L'annullamento di una rimozione conserva un eventuale nuovo valore già presente per quella data. Salvataggio, backup e funzionamento offline usano lo stesso archivio locale del diario; le pesate non sono pubblicate con l'app. I PDF alimentari continuano a riepilogare pasti e nutrienti.
+Ogni elemento di `weights` contiene `date`, `kg` e `updatedAt`. Le modifiche rilevano se un'altra finestra ha cambiato la stessa pesata dopo l'apertura del modulo. L'annullamento di una rimozione conserva un eventuale nuovo valore già presente per quella data. Salvataggio, backup e funzionamento offline usano lo stesso archivio locale del diario; le pesate non sono pubblicate con l'app. I PDF del diario riepilogano pasti, nutrienti e acqua; non includono le pesate.
 
 ## Riepiloghi PDF
 
-In **Esporta riepiloghi PDF**, **Scarica PDF del giorno** usa il giorno selezionato nel diario e include voci, quantità, kcal e macro, subtotali dei quattro pasti e totale giornaliero. Per **Scarica PDF del mese** scegli il mese nel campo dedicato: il documento inizia con il totale mensile, la media dei giorni con almeno una voce e una riga per ogni giorno del mese. Seguono i dettagli dei giorni registrati, ciascuno su una nuova pagina: colazione, spuntino, pranzo e cena hanno una sezione con alimenti o ricette, quantità, kcal, proteine, carboidrati, grassi e subtotali. I pasti senza voci sono indicati come non registrati. Gli elenchi lunghi proseguono sulle pagine successive, mantenendo data e nome del pasto. I giorni senza voci hanno un trattino nel riepilogo, non hanno pagine di dettaglio e non entrano nella media; un giorno parzialmente compilato invece entra nella media. Non vengono ricostruiti obiettivi storici.
+In **Esporta riepiloghi PDF**, **Scarica PDF del giorno** usa il giorno selezionato nel diario. Include voci, quantità, kcal e macro, subtotali dei quattro pasti e totale alimentare; la sezione **Acqua** mostra il totale in ml e il numero di registrazioni. Se l'acqua manca, indica **Non registrata**. Puoi esportare anche un giorno con sola acqua: i valori alimentari mostrano un trattino e i quattro pasti risultano non registrati.
+
+Per **Scarica PDF del mese** scegli il mese nel campo dedicato. Il documento inizia con totale alimentare, media sui giorni con almeno una voce alimentare e riepilogo dell'acqua. Una colonna dedicata mostra i ml di ogni giorno. La media dell'acqua usa soltanto i giorni con acqua registrata e indica il proprio denominatore; la media alimentare include i giorni parziali con cibo, indipendentemente dall'acqua e dalle spunte di completamento.
+
+Seguono i dettagli dei giorni con cibo o acqua, ciascuno su una nuova pagina. Colazione, spuntino, pranzo e cena mantengono alimenti o ricette, quantità, kcal, proteine, carboidrati, grassi e subtotali. I pasti senza voci sono indicati come non registrati. Gli elenchi lunghi proseguono sulle pagine successive, mantenendo data e nome del pasto. I giorni senza cibo né acqua hanno trattini nel riepilogo e nessuna pagina di dettaglio. Nei vecchi diari senza `waterEntries`, l'acqua risulta non registrata. Non vengono ricostruiti obiettivi storici.
 
 I numeri provengono dalle copie salvate nelle voci del diario, non dal catalogo corrente. Il calcolo precede l'arrotondamento (kcal intere, macro con un decimale). Il PDF è creato e scaricato nel browser con la copia locale di jsPDF, anche offline una volta completata la cache. Non viene inviato al repository o a un servizio esterno. Per importare i dati in un altro dispositivo serve il backup JSON: il PDF è un riepilogo da leggere o condividere. I font standard conservano le lettere italiane; emoji e caratteri fuori dall'alfabeto Latin-1 sono omessi.
 
@@ -141,7 +154,7 @@ node --test tests/*.test.mjs
 
 Il campo `foods` nello stesso file associa il nome esatto di ogni ingrediente strutturato a kcal, proteine (`protein`), carboidrati (`carbs`) e grassi (`fat`) per 100 g. Ogni voce mantiene fonte, riferimento, URL ed eventuale nota sull'alimento assunto. Una nuova ricetta con dosi deve avere una voce completa per ogni ingrediente.
 
-Il primo comando aggiorna l'identificativo e la data del ricettario se cambia il contenuto. Aggiorna anche la versione della cache offline quando cambiano i file dell'app. Il secondo verifica dati, filtri, calcoli, backup, obiettivi, menu, dispensa, parser delle etichette e riferimenti alle risorse offline. I test del parser non misurano l'accuratezza dell'OCR su fotografie reali.
+Il primo comando aggiorna l'identificativo e la data del ricettario se cambia il contenuto. Aggiorna anche la versione della cache offline quando cambiano i file dell'app. Il secondo verifica dati, filtri, calcoli, backup, obiettivi, acqua, menu, dispensa, parser delle etichette e riferimenti alle risorse offline. I test del parser non misurano l'accuratezza dell'OCR su fotografie reali.
 
 Salva le modifiche su Git e inviale al ramo `main`. Con GitHub Pages configurato su **Deploy from a branch → main → / (root)**, ogni aggiornamento del ramo avvia una nuova pubblicazione. La disponibilità effettiva dipende dal completamento della pubblicazione GitHub.
 
@@ -189,11 +202,12 @@ Apri `http://127.0.0.1:8765`. Usa un server HTTP; l'apertura diretta di `index.h
 | [app.js](app.js), [lib.mjs](lib.mjs) | Ricerca, filtri, dettagli, dosi e preferiti |
 | [diary.mjs](diary.mjs), [diary-ui.js](diary-ui.js), [diary.css](diary.css) | Archivio locale condiviso, validazione, fusione del backup e interfaccia dei pasti |
 | [targets.mjs](targets.mjs), [insights-ui.js](insights-ui.js), [insights.css](insights.css) | Obiettivi con decorrenza, giorni completi e riepilogo settimanale |
+| [water.mjs](water.mjs), [water-ui.js](water-ui.js), [water.css](water.css) | Registrazioni dell'acqua, totali per giorno/intervallo e interfaccia |
 | [personal-recipes.mjs](personal-recipes.mjs), [recipe-versions-ui.js](recipe-versions-ui.js) | Versioni personali con valori nutrizionali conservati e migrazione dei preferiti |
 | [backup-ui.js](backup-ui.js), [platform-extras.css](platform-extras.css) | Esportazione completa, anteprima d'importazione e interfaccia delle versioni |
 | [kitchen.mjs](kitchen.mjs), [kitchen-ui.js](kitchen-ui.js), [kitchen.css](kitchen.css) | Menu, lista della spesa, dispensa e suggerimenti |
 | [portions.mjs](portions.mjs), [label-ocr.mjs](label-ocr.mjs), [food-extras.css](food-extras.css) | Porzioni dei prodotti, lettore e parser locale delle etichette |
-| [reports.mjs](reports.mjs), [report-export.js](report-export.js) | Aggregazione giornaliera/mensile e download PDF locale |
+| [reports.mjs](reports.mjs), [report-export.js](report-export.js) | Riepiloghi giornalieri/mensili di alimenti e acqua, download PDF locale |
 | [weight.mjs](weight.mjs), [weight-ui.js](weight-ui.js), [weight.css](weight.css) | Intervalli del peso, grafico e storico delle pesate |
 | [foods.mjs](foods.mjs), [scanner.js](scanner.js), [vendor/](vendor/) | Ricerca prodotti e scanner |
 | [recipes.json](recipes.json) | Ricette pubbliche, senza dati del profilo personale |
@@ -202,7 +216,7 @@ Apri `http://127.0.0.1:8765`. Usa un server HTTP; l'apertura diretta di `index.h
 
 Il service worker prova la rete per `recipes.json`; se non riesce usa la copia salvata e segnala che sta mostrando dati locali. I file dell'interfaccia sono salvati insieme nella cache di una versione. I link esterni non vengono scaricati o memorizzati dall'app.
 
-[app.js](app.js) inizializza le interfacce e aggiorna ricettario, diario e menu quando cambia l'archivio locale. I moduli di calcolo [targets.mjs](targets.mjs), [kitchen.mjs](kitchen.mjs) e [personal-recipes.mjs](personal-recipes.mjs) non importano il diario: [diary.mjs](diary.mjs) ne usa i validatori prima dell'unica scrittura dell'archivio.
+[app.js](app.js) inizializza le interfacce e aggiorna ricettario, diario e menu quando cambia l'archivio locale. I moduli di calcolo [targets.mjs](targets.mjs), [water.mjs](water.mjs), [kitchen.mjs](kitchen.mjs) e [personal-recipes.mjs](personal-recipes.mjs) non importano il diario: [diary.mjs](diary.mjs) ne usa i validatori prima dell'unica scrittura dell'archivio.
 
 L'app e la repository sono pubbliche. Il tag `noindex` chiede ai motori di ricerca di non indicizzare la pagina, ma non limita l'accesso e non garantisce riservatezza. Nei file del repository inserisci soltanto dati destinati alla pubblicazione: niente email, credenziali, diari esportati, profili nutrizionali personali o link alla raccolta privata. Le registrazioni effettuate nell’interfaccia del diario restano invece nel browser.
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#264c37">
-  <meta name="description" content="Il tuo diario alimentare, il peso nel tempo e le tue ricette. Pasti, calorie e macronutrienti, anche offline.">
+  <meta name="description" content="Il tuo diario alimentare, l’acqua, il peso nel tempo e le tue ricette. Pasti, calorie e macronutrienti, anche offline.">
   <meta name="robots" content="noindex,nofollow">
   <meta name="color-scheme" content="light">
   <link rel="manifest" href="./manifest.webmanifest">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./diary.css">
   <link rel="stylesheet" href="./weight.css">
   <link rel="stylesheet" href="./insights.css">
+  <link rel="stylesheet" href="./water.css">
   <link rel="stylesheet" href="./kitchen.css">
   <link rel="stylesheet" href="./food-extras.css">
   <link rel="stylesheet" href="./platform-extras.css">
@@ -28,18 +29,18 @@
   <nav class="platform-nav" aria-label="Sezioni principali"><a href="#diario" id="nav-diary" aria-current="page"><span aria-hidden="true">◷</span> Diario</a><a href="#ricette" id="nav-recipes"><span aria-hidden="true">▤</span> Ricette</a><a href="#menu" id="nav-kitchen"><span aria-hidden="true">▦</span> Menu</a><a href="#dispensa" id="nav-pantry"><span aria-hidden="true">▧</span> Dispensa</a><a href="#peso" id="nav-weight"><span aria-hidden="true">↗</span> Peso</a></nav>
   <main id="main-content" tabindex="-1">
     <section id="diary-page" aria-labelledby="diary-heading">
-      <div class="diary-heading"><div><div class="eyebrow">UN PASTO ALLA VOLTA</div><h1 id="diary-heading">Il tuo <em>diario.</em></h1><p>Quello che mangi, tutto qui.</p></div><span class="local-badge">Solo su questo dispositivo</span></div>
+      <div class="diary-heading"><div><div class="eyebrow">UN PASTO ALLA VOLTA</div><h1 id="diary-heading">Il tuo <em>diario.</em></h1><p>Quello che mangi, tutto qui.</p></div></div>
       <div class="diary-datebar"><div class="date-navigation"><button type="button" id="diary-prev" class="icon-button" aria-label="Giorno precedente">←</button><label><span id="diary-date-label"></span><input type="date" id="diary-date" aria-label="Giorno del diario" min="1900-01-01" max="2200-12-31"></label><button type="button" id="diary-next" class="icon-button" aria-label="Giorno successivo">→</button></div><button type="button" id="diary-today" class="secondary-button">Oggi</button></div>
       <div id="diary-storage-error" class="notice" role="alert" hidden><p id="diary-storage-message"></p><button type="button" id="diary-recovery" class="secondary-button">Esporta copia di recupero</button></div>
       <section id="diary-totals" class="daily-summary" aria-label="Totali del giorno" aria-live="polite"></section>
       <div id="diary-undo" class="undo-notice" role="status" hidden><span id="diary-undo-label"></span><button type="button" class="text-button" id="diary-undo-button">Annulla rimozione</button></div>
       <div id="diary-meals" class="meals-grid"></div>
       <details class="diary-settings diary-reports"><summary>Esporta riepiloghi PDF</summary>
-        <div class="settings-grid"><div><h3>Riepilogo giornaliero</h3><p>Pasti, quantità, calorie e macro del giorno selezionato nel diario: <strong id="diary-report-date"></strong>.</p><button type="button" id="diary-pdf-day" class="secondary-button">Scarica PDF del giorno</button></div>
-        <div><h3>Riepilogo mensile</h3><p>Totali e medie del mese, poi il dettaglio di ogni giorno registrato: colazione, spuntino, pranzo e cena, con alimenti, quantità, kcal e macro.</p><label class="field"><span>Mese da esportare</span><input id="diary-report-month" type="month" min="1900-01" max="2200-12"></label><button type="button" id="diary-pdf-month" class="secondary-button">Scarica PDF del mese</button></div></div>
+        <div class="settings-grid"><div><h3>Riepilogo giornaliero</h3><p>Pasti, quantità, calorie, macro e acqua del giorno selezionato nel diario: <strong id="diary-report-date"></strong>.</p><button type="button" id="diary-pdf-day" class="secondary-button">Scarica PDF del giorno</button></div>
+        <div><h3>Riepilogo mensile</h3><p>Totali e medie del mese, acqua registrata e dettaglio di ogni giorno: colazione, spuntino, pranzo e cena, con alimenti, quantità, kcal e macro.</p><label class="field"><span>Mese da esportare</span><input id="diary-report-month" type="month" min="1900-01" max="2200-12"></label><button type="button" id="diary-pdf-month" class="secondary-button">Scarica PDF del mese</button></div></div>
         <p class="small-note">I PDF vengono creati sul dispositivo, anche offline dopo il primo caricamento. Per trasferire il diario usa il backup qui sotto.</p><p id="diary-report-status" class="small-note" role="status"></p>
       </details>
-      <details class="diary-settings"><summary>Obiettivi e backup completo</summary><div class="settings-grid"><div><h3>I tuoi obiettivi, se vuoi</h3><p>Puoi indicare calorie e macro del tuo piano e la data da cui usarli. I valori non vengono calcolati automaticamente.</p><form id="diary-goal-form"><label class="field"><span>Obiettivo giornaliero (kcal)</span><input id="diary-goal" inputmode="numeric" placeholder="Facoltativo"></label><button type="submit" class="secondary-button">Salva obiettivo</button></form></div><div><h3>Conserva tutti i tuoi dati</h3><p>Diario, pesate, obiettivi, prodotti, versioni delle ricette, preferiti, menu e dispensa restano in questo browser. Cancellando i dati del browser potresti perderli. Non si sincronizzano tra telefono e PC.</p><div class="backup-actions"><button type="button" id="diary-export" class="secondary-button">Esporta backup completo</button><label class="secondary-button import-label">Importa backup<input type="file" id="diary-import" accept="application/json,.json"></label></div><p class="small-note">Un unico file per tutti i tuoi dati personali, comprese porzioni dei prodotti, versioni delle ricette e spunte della spesa. Puoi importare anche i vecchi backup del diario. Le voci già presenti vengono conservate. Tieni il file privato.</p></div></div></details>
+      <details class="diary-settings"><summary>Obiettivi e backup completo</summary><div class="settings-grid"><div><h3>I tuoi obiettivi, se vuoi</h3><p>Puoi indicare calorie e macro del tuo piano e la data da cui usarli. I valori non vengono calcolati automaticamente.</p><form id="diary-goal-form"><label class="field"><span>Obiettivo giornaliero (kcal)</span><input id="diary-goal" inputmode="numeric" placeholder="Facoltativo"></label><button type="submit" class="secondary-button">Salva obiettivo</button></form></div><div><h3>Conserva tutti i tuoi dati</h3><p>Diario, acqua, pesate, obiettivi, prodotti, versioni delle ricette, preferiti, menu e dispensa restano in questo browser. Cancellando i dati del browser potresti perderli. Non si sincronizzano tra telefono e PC.</p><div class="backup-actions"><button type="button" id="diary-export" class="secondary-button">Esporta backup completo</button><label class="secondary-button import-label">Importa backup<input type="file" id="diary-import" accept="application/json,.json"></label></div><p class="small-note">Un unico file per tutti i tuoi dati personali, comprese le registrazioni dell’acqua, porzioni dei prodotti, versioni delle ricette e spunte della spesa. Puoi importare anche i vecchi backup del diario. Le voci già presenti vengono conservate. Tieni il file privato.</p></div></div></details>
     </section>
     <section id="weight-page" aria-labelledby="weight-heading" hidden></section>
     <section id="kitchen-page" aria-label="Menu settimanale e lista della spesa" hidden></section>

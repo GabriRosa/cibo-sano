@@ -1,0 +1,44 @@
+.water-card{margin:0 0 24px;background:var(--white);border:1px solid #d3e1df;border-radius:17px;padding:22px 25px}
+.water-heading{display:flex;align-items:center;justify-content:space-between;gap:10px 25px;flex-wrap:wrap;margin-bottom:17px}
+.water-heading h2{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:400;font-size:27px;margin:0}
+.water-heading svg{width:24px;height:28px;fill:#d6eae5;stroke:#497d76;stroke-width:1.5}
+.water-heading p,.water-help{font-size:12px;color:var(--muted);margin:0;line-height:1.6}
+.water-card-grid{display:grid;grid-template-columns:minmax(180px,1fr) minmax(0,1.5fr);gap:18px 35px;align-items:center}
+.water-daily-total strong{font-size:40px;line-height:1.2;font-weight:550;color:#315f58;font-variant-numeric:tabular-nums}
+.water-daily-total p{font-size:12px;margin:9px 0 0;color:var(--muted)}
+.water-quick{display:flex;gap:10px;margin-bottom:13px}
+.water-quick button{flex:1;border-color:#b7d3cc;background:#eef6f1;color:#315f58;font-size:14px}
+.water-quick button:hover{background:#e3f0ea}
+.water-add-form{display:grid;grid-template-columns:minmax(80px,1fr) 80px auto;gap:10px;align-items:end}
+.water-add-form .field{margin:0;min-width:0}
+.water-add-form .field input,.water-add-form .field select{width:100%;min-width:0}
+.water-add-form>button{white-space:nowrap}
+.water-controls>.water-help{margin-top:8px}
+.water-card>.form-error{margin:14px 0 0}
+.water-history{border-top:1px solid var(--line);margin-top:20px;padding-top:13px}
+.water-history summary{font-size:12px;font-weight:600;cursor:pointer;min-height:30px;padding:4px 0}
+.water-history summary span{font-weight:400;color:var(--muted);margin-left:5px}
+.water-history ul{list-style:none;margin:7px 0 0;padding:0}
+.water-history li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-top:1px solid #edf0e9}
+.water-history li>div:first-child{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.water-history li strong{font-size:14px;font-weight:550;font-variant-numeric:tabular-nums}
+.water-history li small{font-size:11px;color:var(--muted)}
+.water-entry-actions{display:flex;gap:15px;flex-shrink:0}
+.water-entry-actions button{font-size:12px;min-height:36px}
+.water-history .water-help{padding-top:7px}
+.water-undo{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px 14px;background:#eef6f1;border-radius:8px;margin-top:16px;padding:10px 13px;font-size:12px}
+.water-undo button{font-size:12px}
+.weekly-water{border-top:1px solid var(--line);padding-top:20px;margin-top:23px}
+.weekly-water-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;background:#edf5f1;border-radius:10px;padding:15px 18px;margin-bottom:12px}
+.weekly-water-metrics>div{display:flex;flex-direction:column;gap:4px}
+.weekly-water-metrics span{font-size:11px;color:#57746a}
+.weekly-water-metrics strong{font-size:24px;color:#315f58;font-weight:550;font-variant-numeric:tabular-nums}
+.weekly-water .insights-help{margin-bottom:14px}
+.water-week-days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px;list-style:none;margin:0;padding:0}
+.water-week-days li{background:#f0f5f0;padding:10px 8px;border-radius:8px;display:flex;flex-direction:column;gap:5px;font-size:12px;text-align:center}
+.water-week-days time{font-size:11px;color:#667a6b;text-transform:capitalize}
+.water-week-days strong{font-size:12px;font-weight:550}
+.water-week-days li.is-missing{background:#f5f5ef;color:var(--muted)}
+.water-week-days li.is-missing strong{font-weight:400;font-size:10px}
+@media(max-width:700px){.water-card{padding:19px 20px}.water-card-grid{grid-template-columns:1fr;gap:19px}.water-heading{margin-bottom:14px}.water-heading p{max-width:260px}.water-daily-total strong{font-size:36px}.water-add-form{grid-template-columns:minmax(0,1fr) 80px}.water-add-form>button{grid-column:1/-1}.water-history li>div:first-child{flex-direction:column;gap:0}.water-entry-actions{gap:12px}.water-week-days{grid-template-columns:repeat(3,minmax(0,1fr))}.weekly-water-metrics{padding:14px;gap:12px}.weekly-water-metrics strong{font-size:22px}}
+@media print{.water-controls,.water-entry-actions,.water-undo{display:none!important}}

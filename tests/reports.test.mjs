@@ -7,6 +7,8 @@ import {dailyReport,monthlyReport,createReportPDF,pdfText} from '../reports.mjs'
 
 const entry=(date,overrides={})=>({date,name:'Yogurt e caffè',meal:'breakfast',quantity:150,basis:100,unit:'g',nutrients:{kcal:101,protein:8.2,carbs:10.4,fat:3.6},...overrides});
 const diary=entries=>({...emptyDiary(),entries});
+let waterId=0;
+const water=(date,ml)=>({id:`water-${++waterId}`,date,ml,createdAt:`${date}T12:00:00Z`,updatedAt:`${date}T12:00:00Z`});
 const context={console,atob,btoa,TextEncoder,TextDecoder,navigator:{userAgent:'node'}};
 context.window=context;context.self=context;
 runInNewContext(readFileSync(new URL('../vendor/jspdf.umd.min.js',import.meta.url),'utf8'),context);
@@ -105,4 +107,81 @@ test('long monthly meal details repeat their date and meal without losing entrie
 });
 test('PDF fonts preserve Italian accents and normalize unsupported decorations',()=>{
   assert.equal(pdfText('Caffè – quantità “½” 🥗\n'), 'Caffè - quantità "1/2"');
+});
+
+test('daily reports keep water separate from food totals and include only the selected date',()=>{
+  const original=diary([entry('2026-10-14'),entry('2026-10-15')]);
+  original.waterEntries=[water('2026-10-14',250),water('2026-10-14',375),water('2026-10-15',1000)];
+  const before=JSON.stringify(original),report=dailyReport(original,'2026-10-14');
+  assert.deepEqual(report.water,{date:'2026-10-14',recorded:true,entryCount:2,totalMl:625});
+  assert.deepEqual(report.total,dailyReport({...original,waterEntries:[]},'2026-10-14').total);
+  assert.equal(report.entryCount,1);
+  assert.equal(JSON.stringify(original),before);
+  const pdf=createReportPDF(report,MeasuredPDF),texts=pdf.placements.map(item=>item.text);
+  assert(texts.includes('Acqua'));assert(texts.includes('625 ml'));assert(texts.includes('2 registrazioni'));
+});
+
+test('monthly water averages count water dates independently of food and complete-day markers',()=>{
+  const data=diary([entry('2026-10-01'),entry('2026-10-03',{nutrients:{kcal:0,protein:0,carbs:0,fat:0}})]);
+  data.completeDays=['2026-10-02'];
+  data.waterEntries=[water('2026-10-02',250),water('2026-10-02',125),water('2026-10-03',500),water('2026-11-01',9000)];
+  const report=monthlyReport(data,'2026-10');
+  assert.equal(report.recordedDays,2);assert.equal(report.entryCount,2);
+  assert.equal(report.average.kcal,75.75);
+  assert.equal(report.water.totalMl,875);assert.equal(report.water.entryCount,3);
+  assert.equal(report.water.recordedDays,2);assert.equal(report.water.missingDays,29);assert.equal(report.water.averageMl,437.5);
+  assert.equal(report.days[0].water.recorded,false);
+  assert.equal(report.days[1].entryCount,0);assert.equal(report.days[1].total,null);assert.equal(report.days[1].water.totalMl,375);
+  assert.equal(report.days[2].total.kcal,0);assert.equal(report.days[2].water.totalMl,500);
+  const texts=createReportPDF(report,MeasuredPDF).placements.map(item=>item.text);
+  assert(texts.includes('Media sui giorni con acqua registrata (2): 437,5 ml.'));
+  assert(texts.includes('02/10 - solo acqua'));
+  assert(texts.includes('2 ottobre 2026'));
+});
+
+test('legacy diaries show water as unregistered, with no fabricated zero or unavailable-number output',()=>{
+  const data=diary([entry('2026-10-14')]),day=dailyReport(data,'2026-10-14'),month=monthlyReport(data,'2026-10');
+  assert.deepEqual(day.water,{date:'2026-10-14',recorded:false,entryCount:0,totalMl:0});
+  assert.equal(month.water.averageMl,null);assert.equal(month.water.recordedDays,0);
+  const dailyText=createReportPDF(day,MeasuredPDF).placements.map(item=>item.text);
+  const monthlyText=createReportPDF(month,MeasuredPDF).placements.map(item=>item.text);
+  assert(dailyText.includes('Non registrata'));
+  assert(monthlyText.includes('Acqua: non registrata nel mese.'));
+  assert(monthlyText.includes('Media sui giorni con acqua registrata: non disponibile (0 giorni).'));
+  assert(![...dailyText,...monthlyText].some(text=>/NaN|undefined|\b0 ml\b/.test(text)));
+});
+
+test('water-only dates produce daily and monthly PDFs while food remains explicitly unregistered',()=>{
+  const data={...diary([]),waterEntries:[water('2026-10-04',250),water('2026-10-05',750)]};
+  const day=dailyReport(data,'2026-10-04'),month=monthlyReport(data,'2026-10');
+  assert.equal(day.entryCount,0);assert.equal(day.total.kcal,0);assert.equal(day.water.totalMl,250);
+  assert.equal(month.recordedDays,0);assert.equal(month.entryCount,0);assert.equal(month.average,null);
+  assert.equal(month.water.totalMl,1000);assert.equal(month.water.recordedDays,2);assert.equal(month.water.averageMl,500);
+  const dailyPdf=createReportPDF(day,MeasuredPDF),monthlyPdf=createReportPDF(month,MeasuredPDF);
+  assert(Buffer.from(dailyPdf.output('arraybuffer')).subarray(0,5).equals(Buffer.from('%PDF-')));
+  assert.equal(monthlyPdf.getNumberOfPages(),3);
+  const dayTexts=dailyPdf.placements.map(item=>item.text);
+  assert(dayTexts.includes('250 ml'));assert(dayTexts.includes('Alimenti non registrati.'));
+  assert.equal(dayTexts.filter(text=>text==='Nessuna voce registrata').length,4);
+  for(const label of ['Colazione','Spuntino','Pranzo','Cena'])assert(dayTexts.includes(label));
+  for(const [page,date,amount] of [[2,'4 ottobre 2026','250 ml'],[3,'5 ottobre 2026','750 ml']]){
+    const texts=monthlyPdf.placements.filter(item=>item.page===page).map(item=>item.text);
+    assert(texts.includes(date));assert(texts.includes(amount));assert(texts.includes('Alimenti non registrati.'));
+    assert.equal(texts.filter(text=>text==='Nessuna voce registrata').length,4);
+  }
+});
+
+test('31-day water overview fits one page and keeps large quantities inside the report margins',()=>{
+  const waterEntries=Array.from({length:31},(_,index)=>water(`2026-10-${String(index+1).padStart(2,'0')}`,10000));
+  const report=monthlyReport({...diary([]),waterEntries},'2026-10');
+  assert.equal(report.water.totalMl,310000);assert.equal(report.water.averageMl,10000);
+  const pdf=createReportPDF(report,MeasuredPDF),first=pdf.placements.filter(item=>item.page===1);
+  assert.equal(pdf.getNumberOfPages(),32);
+  assert(first.some(item=>item.text==='31/10 - solo acqua'));
+  assert(first.some(item=>item.text==='Acqua (ml)'));
+  assert.equal(first.filter(item=>item.text==='10.000').length,31);
+  for(const item of pdf.placements)assert(item.x>=15.9&&item.right<=194.1&&item.y>=15&&item.y<=287,JSON.stringify(item));
+  const huge=createReportPDF(dailyReport({...diary([]),waterEntries:Array.from({length:100},()=>water('2026-10-14',10000))},'2026-10-14'),MeasuredPDF);
+  assert(huge.placements.some(item=>item.text==='1.000.000 ml'));
+  for(const item of huge.placements)assert(item.x>=15.9&&item.right<=194.1&&item.y<=287,JSON.stringify(item));
 });

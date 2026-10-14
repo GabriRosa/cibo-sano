@@ -6,7 +6,8 @@ const counts=data=>[
   ['Voci del diario',data.entries.length],['Prodotti personali',data.foods.length],['Pesate',(data.weights||[]).length],['Obiettivo calorico precedente (kcal)',data.goal||0],
   ['Versioni delle ricette',(data.personalRecipes||[]).length],['Preferiti',(data.favorites||[]).length],
   ['Obiettivi con data',(data.targets||[]).length],['Giorni completati',(data.completeDays||[]).length],
-  ['Pasti pianificati',(data.plans||[]).length],['Voci della dispensa',(data.pantry||[]).length],['Spunte della spesa',(data.shoppingChecks||[]).length]
+  ['Pasti pianificati',(data.plans||[]).length],['Voci della dispensa',(data.pantry||[]).length],['Spunte della spesa',(data.shoppingChecks||[]).length],
+  ['Registrazioni dell’acqua',(data.waterEntries||[]).length]
 ];
 export function initBackup({toast,storage=globalThis.localStorage}) {
   const store=new DiaryStore(storage),$=id=>document.getElementById(id);

@@ -1,6 +1,7 @@
 import {escapeHTML as e} from './lib.mjs';
 import {DIARY_KEY, MEALS, DiaryStore, withDiaryLock, localDate, decimal, sumEntries} from './diary.mjs';
 import {TARGET_KEYS, validInsightDate, targetsForDay, setTargets, setDayComplete, weeklySummary} from './targets.mjs';
+import {waterRangeSummary} from './water.mjs';
 
 const labels = {kcal: 'Calorie', protein: 'Proteine', carbs: 'Carboidrati', fat: 'Grassi'};
 const fmt = (number, digits = 1) => new Intl.NumberFormat('it-IT', {maximumFractionDigits: digits}).format(number);
@@ -28,7 +29,13 @@ function totalsHTML(totals) {
   return TARGET_KEYS.map(key => `<div><span>${labels[key]}</span><strong>${fmt(totals[key], key === 'kcal' ? 0 : 1)}<small> ${unit(key)}</small></strong></div>`).join('');
 }
 
-function weeklyHTML(summary, selectedDate) {
+function weeklyWaterHTML(data, start, end) {
+  const water = waterRangeSummary(data, start, end);
+  const label = ml => ml >= 1000 ? `${fmt(ml / 1000, 3)} L` : `${fmt(ml)} ml`;
+  return `<section class="weekly-water" aria-labelledby="weekly-water-title"><h3 id="weekly-water-title">Acqua nella settimana</h3><div class="weekly-water-metrics"><div><span>Totale registrato</span><strong>${water.recordedDays ? label(water.totalMl) : '—'}</strong></div><div><span>Media sui giorni con acqua registrata</span><strong>${water.averageMl === null ? '—' : label(water.averageMl)}</strong></div></div><p class="insights-help">${water.recordedDays} ${water.recordedDays === 1 ? 'giorno con acqua registrata' : 'giorni con acqua registrata'} su ${water.days.length}. I giorni senza registrazioni sono esclusi dalla media. Le spunte delle giornate complete riguardano solo il cibo.</p><ul class="water-week-days">${water.days.map(day => `<li${day.recorded ? '' : ' class="is-missing"'}><time datetime="${day.date}">${e(new Date(`${day.date}T12:00:00`).toLocaleDateString('it-IT', {weekday: 'short', day: 'numeric'}))}</time><strong>${day.recorded ? label(day.totalMl) : 'Non registrata'}</strong></li>`).join('')}</ul></section>`;
+}
+
+function weeklyHTML(summary, selectedDate, data) {
   const statusLabels = {complete: 'Completa', partial: 'Parziale', unregistered: 'Non registrata'};
   return `<p class="insights-help">Le medie includono solo le giornate segnate come complete. I giorni parziali e non registrati non vengono conteggiati come zero.</p>
     <div class="weekly-average"><h3>Media delle giornate complete <span>(${summary.completeCount} su 7)</span></h3>${summary.averages ? `<div class="weekly-metrics">${totalsHTML(summary.averages)}</div>` : '<p class="insights-help">Segna almeno una giornata come completa per calcolare le medie.</p>'}</div>
@@ -37,7 +44,7 @@ function weeklyHTML(summary, selectedDate) {
     <div class="weekly-distribution"><h3>Distribuzione delle calorie per pasto</h3><p class="insights-help">Calcolata su tutti i pasti registrati nella settimana.</p><ul>${Object.entries(MEALS).map(([key, label]) => {
       const meal = summary.mealDistribution[key], percentage = meal.share === null ? null : meal.share * 100;
       return `<li><div><span>${label}</span><strong>${metric(meal.totals.kcal, 'kcal')}${percentage === null ? '' : ` <small>· ${fmt(percentage, 0)}%</small>`}</strong></div><div class="meal-share-track" aria-hidden="true"><span style="width:${percentage === null ? 0 : Math.max(0, Math.min(100, percentage))}%"></span></div></li>`;
-    }).join('')}</ul></div>`;
+    }).join('')}</ul></div>${weeklyWaterHTML(data, summary.start, summary.end)}`;
 }
 
 export function initInsights({toast, storage, getDay = localDate}) {
@@ -92,7 +99,7 @@ export function initInsights({toast, storage, getDay = localDate}) {
     const summary = weeklySummary(data, selectedDate);
     $('insights-week-label').textContent = `${shortDate(summary.start)} – ${fullDate(summary.end)}`;
     $('insights-week-count').textContent = `${summary.completeCount}/7 complete`;
-    $('insights-week-body').innerHTML = weeklyHTML(summary, selectedDate);
+    $('insights-week-body').innerHTML = weeklyHTML(summary, selectedDate, data);
     const history = [...(data.targets || [])].sort((a, b) => b.date.localeCompare(a.date));
     $('insights-target-history').innerHTML = history.length ? `<details class="insights-target-history"><summary>Storico obiettivi (${history.length})</summary><ul>${history.slice(0, 12).map(target => `<li><button type="button" class="text-button" data-target-date="${target.date}">${e(fullDate(target.date))}</button><span>${TARGET_KEYS.every(key => target[key] === null) ? 'Obiettivi disattivati' : TARGET_KEYS.filter(key => target[key] !== null).map(key => `${key === 'kcal' ? '' : `${labels[key]} `}${metric(target[key], key)}`).join(' · ')}</span></li>`).join('')}</ul>${history.length > 12 ? '<p class="insights-help">Sono mostrati gli ultimi 12 cambi. Scegli una data precedente nel campo “Validi dal” per consultare o modificare i valori più vecchi.</p>' : ''}</details>` : '';
     formState();
